@@ -43,7 +43,7 @@ def display_msg(x="",is_dict=False):
     else:
         print(x)
 
-def is_grid_alive(grid=config.grid_vip):
+def is_grid_alive(grid=config.grid1_master_vip):
     """
     Checks whether the grid is reachable
     """
@@ -66,7 +66,7 @@ def remove_known_hosts_file():
     else:
         display_msg("Couldnt clear known hosts file")
 
-def restart_services(grid=config.grid_vip, service=['ALL']):
+def restart_services(grid=config.grid1_master_vip, service=['ALL']):
     """
     Restart Services
     """
@@ -85,7 +85,7 @@ def restart_services(grid=config.grid_vip, service=['ALL']):
     sleep(20)
 
     
-def generate_token_from_file(filepath, filename,grid=config.grid_vip):
+def generate_token_from_file(filepath, filename,grid=config.grid1_master_vip):
     dir_name=filepath
     base_filename=filename
     filename= os.path.join(dir_name, base_filename)
@@ -103,7 +103,7 @@ def generate_token_from_file(filepath, filename,grid=config.grid_vip):
     filename="/"+filename
     return token
 
-def get_current_epoch_time(grid=config.grid_vip):
+def get_current_epoch_time(grid=config.grid1_master_vip):
     """
     Returns current time from the Grid IP provided
     """
@@ -127,7 +127,7 @@ def get_current_epoch_time(grid=config.grid_vip):
     finally:
         client.close()
 
-def gmc_promotion_forced_end(grid=config.grid_vip):
+def gmc_promotion_forced_end(grid=config.grid1_master_vip):
     """
     Forcefully ends GMC Promotion and releases GMC Group Promotion Schedule wizard.
     """
@@ -157,7 +157,7 @@ def gmc_promotion_forced_end(grid=config.grid_vip):
     display_msg("WARNING: Expected output not found. Please debug the above message.")
     return 0
 
-def gmc_promotion_disable(grid=config.grid_vip):
+def gmc_promotion_disable(grid=config.grid1_master_vip):
     """
     Disable Activate GMC Group Promotion Schedule.
     """
@@ -187,7 +187,7 @@ def gmc_promotion_disable(grid=config.grid_vip):
         return False
     return True
 
-def is_master(vip=config.grid_vip):
+def is_master(vip=config.grid1_master_vip):
     """
     Checks if this is a master.
     """
@@ -219,7 +219,7 @@ def is_master(vip=config.grid_vip):
         display_msg("WARNING: Device is not up and running. Please check.")
         return False
 
-def create_gmc_promotion_group(name,scheduled_time,members=[],gmc_promotion_policy='SIMULTANEOUSLY',grid_master=config.grid_vip):
+def create_gmc_promotion_group(name,scheduled_time,members=[],gmc_promotion_policy='SIMULTANEOUSLY',grid_master=config.grid1_master_vip):
     """
     Creates GMC Promotion Group with below data
     name (string)
@@ -258,7 +258,7 @@ def create_gmc_promotion_group(name,scheduled_time,members=[],gmc_promotion_poli
     else:
         display_msg("PASS: GMC Promotion Group '"+name+"' created")
 
-def get_grid_info(grid=config.grid_vip):
+def get_grid_info(grid=config.grid1_master_vip):
     """
     Returns lists of online and offline members (IP address)
     """
@@ -276,7 +276,7 @@ def get_grid_info(grid=config.grid_vip):
             continue
     return online,offline
 
-def get_online_offline_members(grid=config.grid_vip):
+def get_online_offline_members(grid=config.grid1_master_vip):
     """
     Returns lists of online and offline members (hostname)
     """
@@ -370,7 +370,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("Add an authoritative zone test.com")
         data = {"fqdn": "test.com",
                 "view":"default",
-                "grid_primary": [{"name": config.grid_fqdn,"stealth": False},{"name":config.grid_member1_fqdn}]
+                "grid_primary": [{"name": config.grid1_master_fqdn,"stealth": False},{"name":config.grid1_member1_fqdn}]
                 }
         response = ib_NIOS.wapi_request('POST',object_type="zone_auth",fields=json.dumps(data))
         display_msg(response)
@@ -446,17 +446,17 @@ class RFE_4753(unittest.TestCase):
     @pytest.mark.run(order=7)
     def test_007_set_member1_as_master_candidate(self):
         """
-        Set grid_member1 as master candidate
+        Set grid1_member1 as master candidate
         """
         display_msg()
         display_msg("----------------------------------------------------")
         display_msg("|          Test Case 7 Execution Started           |")
         display_msg("----------------------------------------------------")
-        display_msg("Set grid_member1 as master candidate")
+        display_msg("Set grid1_member1 as master candidate")
         get_ref = ib_NIOS.wapi_request('GET', object_type='member')
         display_msg(get_ref)
         for ref in json.loads(get_ref):
-            if config.grid_member1_fqdn in ref['_ref']:
+            if config.grid1_member1_fqdn in ref['_ref']:
                 response = ib_NIOS.wapi_request('PUT', ref=ref['_ref'], fields=json.dumps({"master_candidate":True}))
                 if type(response) == tuple:
                     display_msg("FAIL: Setting member "+ref['_ref'].split(':')[-1]+" master candidate")
@@ -472,7 +472,7 @@ class RFE_4753(unittest.TestCase):
     @pytest.mark.run(order=8)
     def test_008_validate_member1_as_master_candidate(self):
         """
-        Validate grid_member1 as master candidate
+        Validate grid1_member1 as master candidate
         """
         display_msg()
         display_msg("+------------------------------------------+")
@@ -482,7 +482,7 @@ class RFE_4753(unittest.TestCase):
         get_ref1 = ib_NIOS.wapi_request('GET', object_type='member?_return_fields=master_candidate')
         display_msg(get_ref1)
         for ref1 in json.loads(get_ref1):
-            if config.grid_member1_fqdn in ref1['_ref']:
+            if config.grid1_member1_fqdn in ref1['_ref']:
                 if ref1['master_candidate'] == True:
                     display_msg("PASS: Master candidate enabled on member "+ref1['_ref'].split(':')[-1])
                 else:
@@ -567,7 +567,7 @@ class RFE_4753(unittest.TestCase):
         scheduled_time = current_epoch_time + (10*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid_member2_fqdn,config.grid_member3_fqdn])
+        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid1_member2_fqdn,config.grid1_member3_fqdn])
         
         display_msg("---------Test Case 11 Execution Completed----------")
 
@@ -600,7 +600,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Perform GMC Promotion")
-        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid_member1_vip
+        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid1_member1_vip
         args = shlex.split(args)
         try:
             child = Popen(args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
@@ -627,7 +627,7 @@ class RFE_4753(unittest.TestCase):
         count = 0
         display_msg("Sleeping till Grid comes up")
         sleep(60)
-        while not is_grid_alive(config.grid_member1_vip):
+        while not is_grid_alive(config.grid1_member1_vip):
             if count == 4:
                 display_msg("Giving up after 5 tries")
                 assert False
@@ -648,11 +648,11 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         
         display_msg("Checking if Old GMC has become new Master")
-        status = is_master(config.grid_member1_vip)
+        status = is_master(config.grid1_member1_vip)
         if status:
-            display_msg("PASS: "+config.grid_member1_vip+" is the new master")
+            display_msg("PASS: "+config.grid1_member1_vip+" is the new master")
         else:
-            display_msg("FAIL: "+config.grid_member1_vip+" is not a master")
+            display_msg("FAIL: "+config.grid1_member1_vip+" is not a master")
             assert False
 
         display_msg("---------Test Case 14 Execution Completed----------")
@@ -668,14 +668,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
-        online,offline = get_online_offline_members(config.grid_member1_vip)
+        online,offline = get_online_offline_members(config.grid1_member1_vip)
         display_msg("Online members: ")
         display_msg(online)
         display_msg("Offline members: ")
         display_msg(offline)
         
         display_msg("Getting the GMC Group Members")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         groups = json.loads(get_ref)
@@ -702,10 +702,10 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Start capturing syslog ...")
-        log("start","/var/log/messages",config.grid_member1_vip)
+        log("start","/var/log/messages",config.grid1_member1_vip)
         
         global scheduled_time
-        current_epoch_time = get_current_epoch_time(config.grid_member1_vip)
+        current_epoch_time = get_current_epoch_time(config.grid1_member1_vip)
         sleep_time = int(scheduled_time) - int(current_epoch_time)
         display_msg("Remaining scheduled time : "+str(sleep_time))
         if sleep_time > 0:
@@ -713,15 +713,15 @@ class RFE_4753(unittest.TestCase):
             sleep(sleep_time+120)
             
             display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid_member1_vip)
+            log("stop","/var/log/messages",config.grid1_member1_vip)
             
             display_msg("Validate if the master promotion notice is sent to the group 1 members")
             try:
-                logv("'Sent master promotion notice to grid member "+config.grid_member2_fqdn+"'",'/var/log/messages',config.grid_member1_vip)
-                logv("'Sent master promotion notice to grid member "+config.grid_member3_fqdn+"'",'/var/log/messages',config.grid_member1_vip)
-                logv("'Acknowledgement is received from the pnode "+config.grid_member2_vip+"'",'/var/log/messages',config.grid_member1_vip)
-                logv("'Acknowledgement is received from the pnode "+config.grid_member3_vip+"'",'/var/log/messages',config.grid_member1_vip)
-                logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid_member1_vip)
+                logv("'Sent master promotion notice to grid member "+config.grid1_member2_fqdn+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'Sent master promotion notice to grid member "+config.grid1_member3_fqdn+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'Acknowledgement is received from the pnode "+config.grid1_member2_vip+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'Acknowledgement is received from the pnode "+config.grid1_member3_vip+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid1_member1_vip)
                 display_msg("PASS: Master Promotion notice is sent to the group 1 members")
                 display_msg("PASS: Acknowledgement is received from the group 1 members")
             except Exception as E:
@@ -732,13 +732,13 @@ class RFE_4753(unittest.TestCase):
                 assert False
         else:
             display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid_member1_vip)
+            log("stop","/var/log/messages",config.grid1_member1_vip)
             
             display_msg("WARNING: Scheduled time has already passed")
             try:
                 client = paramiko.SSHClient()
                 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                client.connect(config.grid_member1_vip, username='root', password = 'infoblox')
+                client.connect(config.grid1_member1_vip, username='root', password = 'infoblox')
                 stdin, stdout, stderr = client.exec_command("cat /var/log/messages | grep 'Sent master promotion notice to grid member'")
                 error = stderr.read()
                 output = stdout.read()
@@ -770,28 +770,28 @@ class RFE_4753(unittest.TestCase):
         global current_epoch_time
         global scheduled_time
         display_msg("Force end the GMC Promotion if it is in progress")
-        gmc_promotion_forced_end(config.grid_member1_vip)
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        gmc_promotion_forced_end(config.grid1_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
-        current_epoch_time = int(get_current_epoch_time(config.grid_member1_vip))
+        current_epoch_time = int(get_current_epoch_time(config.grid1_member1_vip))
         
         #group 1
         scheduled_time = current_epoch_time + (15*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid_member2_fqdn],grid_master=config.grid_member1_vip)
+        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid1_member2_fqdn],grid_master=config.grid1_member1_vip)
         
         # group 2
         scheduled_time = current_epoch_time + (10*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 2',scheduled_time,members=[config.grid_member3_fqdn],grid_master=config.grid_member1_vip)
+        create_gmc_promotion_group('group 2',scheduled_time,members=[config.grid1_member3_fqdn],grid_master=config.grid1_member1_vip)
         
         # group 3
         scheduled_time = current_epoch_time + (15*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 3',scheduled_time,grid_master=config.grid_member1_vip)
+        create_gmc_promotion_group('group 3',scheduled_time,grid_master=config.grid1_member1_vip)
         
         display_msg("---------Test Case 17 Execution Completed----------")
 
@@ -804,7 +804,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         display_msg("|           Validation                     |")
         display_msg("+------------------------------------------+")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         if 'group 2' not in get_ref:
             display_msg("FAIL: GMC Promotion Group 'group 2' not found")
@@ -829,7 +829,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Perform GMC Promotion")
-        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid_vip
+        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid1_master_vip
         args = shlex.split(args)
         try:
             child = Popen(args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
@@ -877,11 +877,11 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         
         display_msg("Checking if Old GMC has become new Master")
-        status = is_master(config.grid_vip)
+        status = is_master(config.grid1_master_vip)
         if status:
-            display_msg("PASS: "+config.grid_vip+" is the new master")
+            display_msg("PASS: "+config.grid1_master_vip+" is the new master")
         else:
-            display_msg("FAIL: "+config.grid_vip+" is not a master")
+            display_msg("FAIL: "+config.grid1_master_vip+" is not a master")
             assert False
 
         display_msg("---------Test Case 20 Execution Completed----------")
@@ -897,14 +897,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
-        online,offline = get_online_offline_members(config.grid_vip)
+        online,offline = get_online_offline_members(config.grid1_master_vip)
         display_msg("Online members: ")
         display_msg(online)
         display_msg("Offline members: ")
         display_msg(offline)
         
         display_msg("Getting the GMC Group Members")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_master_vip)
         display_msg(get_ref)
         
         groups = json.loads(get_ref)
@@ -931,7 +931,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("|          Test Case 22 Execution Started          |")
         display_msg("----------------------------------------------------")
         
-        log("start","/var/log/messages",config.grid_vip)
+        log("start","/var/log/messages",config.grid1_master_vip)
         display_msg("Started capturing syslog ...")
         
         display_msg("---------Test Case 22 Execution Completed----------")
@@ -947,7 +947,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Performing Join Group Now operation on 'group 2'")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?name=group%202",grid_vip=config.grid_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?name=group%202",grid_vip=config.grid1_master_vip)
         display_msg(get_ref)
         
         if not json.loads(get_ref):
@@ -955,7 +955,7 @@ class RFE_4753(unittest.TestCase):
             assert False
         data = {"gmc_group_name":"group 2"}
         ref = json.loads(get_ref)[0]["_ref"]+"?_function=reconnect_group_now"
-        response = ib_NIOS.wapi_request('POST',ref=ref,fields=json.dumps(data),grid_vip=config.grid_vip)
+        response = ib_NIOS.wapi_request('POST',ref=ref,fields=json.dumps(data),grid_vip=config.grid1_master_vip)
         display_msg(response)
         if type(response) == tuple:
                 display_msg("Failure: Function call reconnect_group_now failed")
@@ -979,13 +979,13 @@ class RFE_4753(unittest.TestCase):
         sleep(100)
         
         display_msg("Stop capturing syslog ...")
-        log("stop","/var/log/messages",config.grid_vip)
+        log("stop","/var/log/messages",config.grid1_master_vip)
         
         display_msg("Validate if the master promotion notice is sent to the group 2 members")
         try:
-            logv("'Sent master promotion notice to grid member "+config.grid_member3_fqdn+"'",'/var/log/messages',config.grid_vip)
-            logv("'Acknowledgement is received from the pnode "+config.grid_member3_vip+"'",'/var/log/messages',config.grid_vip)
-            #logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid_vip)
+            logv("'Sent master promotion notice to grid member "+config.grid1_member3_fqdn+"'",'/var/log/messages',config.grid1_master_vip)
+            logv("'Acknowledgement is received from the pnode "+config.grid1_member3_vip+"'",'/var/log/messages',config.grid1_master_vip)
+            #logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid1_master_vip)
             display_msg("PASS: Master Promotion notice is sent to the group 2 members")
             display_msg("PASS: Acknowledgement is received from the group 2 members")
         except Exception as E:
@@ -1007,7 +1007,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("|          Test Case 25 Execution Started          |")
         display_msg("----------------------------------------------------")
         
-        log("start","/var/log/messages",config.grid_vip)
+        log("start","/var/log/messages",config.grid1_master_vip)
         display_msg("Started capturing syslog ...")
         
         display_msg("---------Test Case 25 Execution Completed----------")
@@ -1023,7 +1023,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Performing Join Group Now operation on 'group 2' again")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?name=group%202",grid_vip=config.grid_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?name=group%202",grid_vip=config.grid1_master_vip)
         display_msg(get_ref)
         
         if not json.loads(get_ref):
@@ -1031,7 +1031,7 @@ class RFE_4753(unittest.TestCase):
             assert False
         data = {"gmc_group_name":"group 2"}
         ref = json.loads(get_ref)[0]["_ref"]+"?_function=reconnect_group_now"
-        response = ib_NIOS.wapi_request('POST',ref=ref,fields=json.dumps(data),grid_vip=config.grid_vip)
+        response = ib_NIOS.wapi_request('POST',ref=ref,fields=json.dumps(data),grid_vip=config.grid1_master_vip)
         display_msg(response)
         if type(response) == tuple:
                 display_msg("Failure: Function call reconnect_group_now failed")
@@ -1054,15 +1054,15 @@ class RFE_4753(unittest.TestCase):
         sleep(30)
         
         display_msg("Stop capturing syslog ...")
-        log("stop","/var/log/messages",config.grid_vip)
+        log("stop","/var/log/messages",config.grid1_master_vip)
         
         display_msg("Validate if the master promotion notice is sent to the group 2 members")
         flag = False
         try:
-            logv("'Sent master promotion notice to grid member "+config.grid_member3_fqdn+"'",'/var/log/messages',config.grid_vip)
+            logv("'Sent master promotion notice to grid member "+config.grid1_member3_fqdn+"'",'/var/log/messages',config.grid1_master_vip)
             flag = True
             display_msg("FAIL: Master Promotion notice is sent to the group 2 members")
-            logv("'Acknowledgement is received from the pnode "+config.grid_member3_vip+"'",'/var/log/messages',config.grid_vip)
+            logv("'Acknowledgement is received from the pnode "+config.grid1_member3_vip+"'",'/var/log/messages',config.grid1_master_vip)
             display_msg("FAIL: Acknowledgement is received from the group 2 members")
             assert False
         except Exception as E:
@@ -1088,10 +1088,10 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Start capturing syslog ...")
-        log("start","/var/log/messages",config.grid_vip)
+        log("start","/var/log/messages",config.grid1_master_vip)
         
         global scheduled_time
-        current_epoch_time = get_current_epoch_time(config.grid_vip)
+        current_epoch_time = get_current_epoch_time(config.grid1_master_vip)
         sleep_time = int(scheduled_time) - int(current_epoch_time)
         display_msg("Remaining scheduled time : "+str(sleep_time))
         if sleep_time > 0:
@@ -1099,13 +1099,13 @@ class RFE_4753(unittest.TestCase):
             sleep(sleep_time+120)
             
             display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid_vip)
+            log("stop","/var/log/messages",config.grid1_master_vip)
             
             display_msg("Validate if the master promotion notice is sent to the group 1 members")
             try:
-                logv("'Sent master promotion notice to grid member "+config.grid_member2_fqdn+"'",'/var/log/messages',config.grid_vip)
-                logv("'Acknowledgement is received from the pnode "+config.grid_member2_vip+"'",'/var/log/messages',config.grid_vip)
-                logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid_vip)
+                logv("'Sent master promotion notice to grid member "+config.grid1_member2_fqdn+"'",'/var/log/messages',config.grid1_master_vip)
+                logv("'Acknowledgement is received from the pnode "+config.grid1_member2_vip+"'",'/var/log/messages',config.grid1_master_vip)
+                logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid1_master_vip)
                 display_msg("PASS: All the members of the grid notified of master promotion")
             except Exception as E:
                 if 'returned non-zero exit status 1' in str(E):
@@ -1115,13 +1115,13 @@ class RFE_4753(unittest.TestCase):
                 assert False
         else:
             display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid_vip)
+            log("stop","/var/log/messages",config.grid1_master_vip)
             
             display_msg("WARNING: Scheduled time has already passed")
             try:
                 client = paramiko.SSHClient()
                 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                client.connect(config.grid_vip, username='root', password = 'infoblox')
+                client.connect(config.grid1_master_vip, username='root', password = 'infoblox')
                 stdin, stdout, stderr = client.exec_command("cat /var/log/messages | grep 'All the members of the grid notified of master promotion'")
                 error = stderr.read()
                 output = stdout.read()
@@ -1150,16 +1150,16 @@ class RFE_4753(unittest.TestCase):
         
         global scheduled_time
         display_msg("Force end the GMC Promotion if it is in progress")
-        gmc_promotion_forced_end(config.grid_vip)
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_vip)
+        gmc_promotion_forced_end(config.grid1_master_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_master_vip)
         display_msg(get_ref)
-        current_epoch_time = int(get_current_epoch_time(config.grid_vip))
+        current_epoch_time = int(get_current_epoch_time(config.grid1_master_vip))
         
         #group 1
         scheduled_time = current_epoch_time + (3*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid_member2_fqdn],grid_master=config.grid_vip)
+        create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid1_member2_fqdn],grid_master=config.grid1_master_vip)
         
         display_msg("---------Test Case 29 Execution Completed----------")
 
@@ -1174,7 +1174,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Perform GMC Promotion")
-        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid_member1_vip
+        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid1_member1_vip
         args = shlex.split(args)
         try:
             child = Popen(args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
@@ -1201,7 +1201,7 @@ class RFE_4753(unittest.TestCase):
         count = 0
         display_msg("Sleeping till Grid comes up")
         sleep(60)
-        while not is_grid_alive(config.grid_member1_vip):
+        while not is_grid_alive(config.grid1_member1_vip):
             if count == 4:
                 display_msg("Giving up after 5 tries")
                 assert False
@@ -1222,11 +1222,11 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         
         display_msg("Checking if Old GMC has become new Master")
-        status = is_master(config.grid_member1_vip)
+        status = is_master(config.grid1_member1_vip)
         if status:
-            display_msg("PASS: "+config.grid_member1_vip+" is the new master")
+            display_msg("PASS: "+config.grid1_member1_vip+" is the new master")
         else:
-            display_msg("FAIL: "+config.grid_member1_vip+" is not a master")
+            display_msg("FAIL: "+config.grid1_member1_vip+" is not a master")
             assert False
 
         display_msg("---------Test Case 31 Execution Completed----------")
@@ -1242,14 +1242,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
-        online,offline = get_online_offline_members(config.grid_member1_vip)
+        online,offline = get_online_offline_members(config.grid1_member1_vip)
         display_msg("Online members: ")
         display_msg(online)
         display_msg("Offline members: ")
         display_msg(offline)
         
         display_msg("Getting the GMC Group Members")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         groups = json.loads(get_ref)
@@ -1269,7 +1269,7 @@ class RFE_4753(unittest.TestCase):
     @pytest.mark.run(order=33)
     def test_033_Execute_set_gmc_promotion_forced_end_CLI_on_members(self):
         """
-        Execute set gmc_promotion forced_end CLI on the member grid_member2_vip.
+        Execute set gmc_promotion forced_end CLI on the member grid1_member2_vip.
         """
         display_msg()
         display_msg("----------------------------------------------------")
@@ -1277,7 +1277,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Execute 'set gmc_promotion forced_end' CLI on members")
-        return_code = gmc_promotion_forced_end(config.grid_member2_vip)
+        return_code = gmc_promotion_forced_end(config.grid1_member2_vip)
         if return_code == 3: 
             display_msg("PASS: Executing 'set gmc_promotion forced_end' CLI is restricted on members")
         else:
@@ -1296,13 +1296,13 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Validate GMC Promotion status")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         for ref in json.loads(get_ref):
-            if config.grid_member1_vip in ref['_ref']:
+            if config.grid1_member1_vip in ref['_ref']:
                 data = {"comment":"Updated comment in test_035"}
-                response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid_member1_vip)
+                response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
                 if 'GMC Promotion is in progress' in response:
                     display_msg("PASS: GMC Promotion process is still in progress")
@@ -1324,7 +1324,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Execute 'set gmc_promotion forced_end' CLI on Master")
-        return_code = gmc_promotion_forced_end(config.grid_member1_vip)
+        return_code = gmc_promotion_forced_end(config.grid1_member1_vip)
         if return_code == 1: 
             display_msg("PASS: Executing 'set gmc_promotion forced_end' is successful on the Master")
         else:
@@ -1343,13 +1343,13 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Validate GMC Promotion status")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         for ref in json.loads(get_ref):
-            if config.grid_member1_vip in ref['_ref']:
+            if config.grid1_member1_vip in ref['_ref']:
                 data = {"comment":"Updated comment in test_037"}
-                response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid_member1_vip)
+                response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
                 if 'GMC Promotion is in progress' in response:
                     display_msg("FAIL: GMC Promotion process is still in progress")
@@ -1371,7 +1371,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Execute 'set gmc_promotion disable' CLI on members")
-        return_code = gmc_promotion_disable(config.grid_member2_vip)
+        return_code = gmc_promotion_disable(config.grid1_member2_vip)
         if return_code: 
             display_msg("FAIL: Executing 'set gmc_promotion disable' is successful on the Member")
             assert False
@@ -1391,7 +1391,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Validate GMC Group Promotion Schedule is deactivated")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcschedule",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcschedule",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         if 'true' in get_ref:
@@ -1414,7 +1414,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Execute 'set gmc_promotion disable' CLI on members")
-        return_code = gmc_promotion_disable(config.grid_vip)
+        return_code = gmc_promotion_disable(config.grid1_master_vip)
         if return_code: 
             display_msg("PASS: Executing 'set gmc_promotion disable' is successful on the Master")
         else:
@@ -1433,7 +1433,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Validate GMC Group Promotion Schedule is deactivated")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcschedule",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcschedule",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         
         if 'true' in get_ref:
@@ -1460,7 +1460,7 @@ class RFE_4753(unittest.TestCase):
                                "gateway":"10.35.0.1",
                                "subnet_mask":"255.255.0.0"}
                 }
-        response = ib_NIOS.wapi_request('POST',object_type="member",fields=json.dumps(data),grid_vip=config.grid_member1_vip)
+        response = ib_NIOS.wapi_request('POST',object_type="member",fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
         display_msg(response)
         if type(response) == tuple:
             display_msg("FAIL: Failed to add offline member")
@@ -1478,7 +1478,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         display_msg("|           Validation                     |")
         display_msg("+------------------------------------------+")
-        member_ref = ib_NIOS.wapi_request('GET', object_type='member', params='?host_name=offline.member',grid_vip=config.grid_member1_vip)
+        member_ref = ib_NIOS.wapi_request('GET', object_type='member', params='?host_name=offline.member',grid_vip=config.grid1_member1_vip)
         display_msg(member_ref)
         if 'offline.member' in member_ref:
             display_msg("PASS: Offline member found")
@@ -1499,13 +1499,13 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Deleting all the custom GMC groups")
-        gmc_promotion_forced_end(config.grid_member1_vip)
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        gmc_promotion_forced_end(config.grid1_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         for group in json.loads(get_ref):
             if group["name"] == "Default":
                 continue
-            response = ib_NIOS.wapi_request("DELETE", ref=group["_ref"],grid_vip=config.grid_member1_vip)
+            response = ib_NIOS.wapi_request("DELETE", ref=group["_ref"],grid_vip=config.grid1_member1_vip)
             if type(response) == tuple:
                 display_msg(response)
                 display_msg("FAIL: Failed to delete group : "+group["name"])
@@ -1525,8 +1525,8 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         
         display_msg("Validate all the custom GMC groups are deleted")
-        gmc_promotion_forced_end(config.grid_member1_vip)
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        gmc_promotion_forced_end(config.grid1_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         if not len(json.loads(get_ref)) == 1:
             display_msg("FAIL: Custom GMC groups are found")
@@ -1549,16 +1549,16 @@ class RFE_4753(unittest.TestCase):
         
         global scheduled_time
         display_msg("Force end the GMC Promotion if it is in progress")
-        gmc_promotion_forced_end(config.grid_member1_vip)
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid_member1_vip)
+        gmc_promotion_forced_end(config.grid1_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
-        current_epoch_time = int(get_current_epoch_time(config.grid_member1_vip))
+        current_epoch_time = int(get_current_epoch_time(config.grid1_member1_vip))
         
         #group 1
         scheduled_time = current_epoch_time + (15*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
-        create_gmc_promotion_group('group 1',scheduled_time,members=['offline.member'],grid_master=config.grid_member1_vip)
+        create_gmc_promotion_group('group 1',scheduled_time,members=['offline.member'],grid_master=config.grid1_member1_vip)
         
         display_msg("---------Test Case 45 Execution Completed----------")
 
@@ -1571,7 +1571,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         display_msg("|           Validation                     |")
         display_msg("+------------------------------------------+")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         if 'group 1' not in get_ref:
             display_msg("FAIL: GMC Promotion Group 'group 1' not found")
@@ -1591,9 +1591,9 @@ class RFE_4753(unittest.TestCase):
         display_msg("+--------------------------------------------------+")
         
         display_msg("Activate GMC Group Promotion Schedule")
-        get_ref = ib_NIOS.wapi_request('GET', object_type='gmcschedule?_return_fields=activate_gmc_group_schedule',grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET', object_type='gmcschedule?_return_fields=activate_gmc_group_schedule',grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
-        response = ib_NIOS.wapi_request('PUT', ref=json.loads(get_ref)[0]['_ref'], fields=json.dumps({"activate_gmc_group_schedule":True}),grid_vip=config.grid_member1_vip)
+        response = ib_NIOS.wapi_request('PUT', ref=json.loads(get_ref)[0]['_ref'], fields=json.dumps({"activate_gmc_group_schedule":True}),grid_vip=config.grid1_member1_vip)
         if type(response) == tuple:
             display_msg(response)
             display_msg("FAIL: Activate GMC Group Promotion Schedule")
@@ -1611,7 +1611,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         display_msg("|           Validation                     |")
         display_msg("+------------------------------------------+")
-        get_ref = ib_NIOS.wapi_request('GET', object_type='gmcschedule?_return_fields=activate_gmc_group_schedule',grid_vip=config.grid_member1_vip)
+        get_ref = ib_NIOS.wapi_request('GET', object_type='gmcschedule?_return_fields=activate_gmc_group_schedule',grid_vip=config.grid1_member1_vip)
         display_msg(get_ref)
         if 'true' in get_ref:
             display_msg("PASS: Activate GMC Group Promotion Schedule validation")
@@ -1632,7 +1632,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Perform GMC Promotion")
-        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid_vip
+        args = "sshpass -p 'infoblox' ssh -o StrictHostKeyChecking=no admin@"+config.grid1_master_vip
         args = shlex.split(args)
         try:
             child = Popen(args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
@@ -1660,7 +1660,7 @@ class RFE_4753(unittest.TestCase):
         count = 0
         display_msg("Sleeping till Grid comes up")
         sleep(60)
-        while not is_grid_alive(config.grid_vip):
+        while not is_grid_alive(config.grid1_master_vip):
             if count == 4:
                 display_msg("Giving up after 5 tries")
                 assert False
@@ -1681,11 +1681,11 @@ class RFE_4753(unittest.TestCase):
         display_msg("+------------------------------------------+")
         
         display_msg("Checking if Old GMC has become new Master")
-        status = is_master(config.grid_vip)
+        status = is_master(config.grid1_master_vip)
         if status:
-            display_msg("PASS: "+config.grid_vip+" is the new master")
+            display_msg("PASS: "+config.grid1_master_vip+" is the new master")
         else:
-            display_msg("FAIL: "+config.grid_vip+" is not a master")
+            display_msg("FAIL: "+config.grid1_master_vip+" is not a master")
             assert False
 
         display_msg("---------Test Case 50 Execution Completed----------")
@@ -1702,14 +1702,14 @@ class RFE_4753(unittest.TestCase):
         
         display_msg("Getting the Grid status")
         sleep(60)
-        online,offline = get_online_offline_members(config.grid_vip)
+        online,offline = get_online_offline_members(config.grid1_master_vip)
         display_msg("Online members: ")
         display_msg(online)
         display_msg("Offline members: ")
         display_msg(offline)
         
         display_msg("Getting the GMC Group Members")
-        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid_vip)
+        get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup?_return_fields=name,members",grid_vip=config.grid1_master_vip)
         display_msg(get_ref)
         
         groups = json.loads(get_ref)
@@ -1737,10 +1737,10 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Start capturing syslog ...")
-        log("start","/var/log/messages",config.grid_vip)
+        log("start","/var/log/messages",config.grid1_master_vip)
         
         global scheduled_time
-        current_epoch_time = get_current_epoch_time(config.grid_vip)
+        current_epoch_time = get_current_epoch_time(config.grid1_master_vip)
         sleep_time = int(scheduled_time) - int(current_epoch_time)
         display_msg("Remaining scheduled time : "+str(sleep_time))
         if sleep_time > 0:
@@ -1748,20 +1748,20 @@ class RFE_4753(unittest.TestCase):
             sleep(sleep_time+30)
             
             display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid_vip)
+            log("stop","/var/log/messages",config.grid1_master_vip)
             
         else:
             display_msg("WARNING: Scheduled time has already passed")
         
         display_msg("Stop capturing syslog ...")
-        log("stop","/var/log/messages",config.grid_vip)
+        log("stop","/var/log/messages",config.grid1_master_vip)
         
         display_msg("Validate if the master promotion notice is sent to the group 1 members")
         sleep(300)
         try:
             client = paramiko.SSHClient()
             client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            client.connect(config.grid_vip, username='root', password = 'infoblox')
+            client.connect(config.grid1_master_vip, username='root', password = 'infoblox')
             stdin, stdout, stderr = client.exec_command("cat /var/log/messages | grep 'Sent master promotion notice to grid member offline.member'")
             error = stderr.read()
             output = stdout.read()
