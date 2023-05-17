@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="ipv6rangetemplate_results" skips="0" tests="14" time="0.788"><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="26" name="test_1_create_ipv6addressrangetemplate" time="0.048150062561"><system-out>&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUx:customtemplate1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="39" name="test_2_duplicate_ipv6addressrangetemplate" time="0.0344481468201"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:DHCP Range Template &apos;customtemplate1&apos; already exists in the database.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;DHCP Range Template &apos;customtemplate1&apos; already exists in the database.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="53" name="test_3_name_ipv6addressrangetemplate" time="0.0339789390564"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="65" name="test_4_address_ipv6addressrangetemplate" time="0.0300478935242"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: number_of_addresses&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: number_of_addresses&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="77" name="test_5_offset_ipv6addressrangetemplate" time="0.0285627841949"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: offset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: offset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="90" name="test_6_duplicate_name_ipv6addressrangetemplate" time="0.0438590049744"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:DHCP Range Template &apos;customtemplate1&apos; already exists in the database.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;DHCP Range Template &apos;customtemplate1&apos; already exists in the database.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="102" name="test_7_get_ipv6addressrangetemplate" time="0.0339798927307"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUx:customtemplate1&quot;, 
+        &quot;name&quot;: &quot;customtemplate1&quot;, 
+        &quot;number_of_addresses&quot;: 2048, 
+        &quot;offset&quot;: 24
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="117" name="test_8_create_comment__ipv6addressrangetemplate" time="0.0370109081268"><system-out>&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUxMw:customtemplate13&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="131" name="test_9_duplicate_name_ipv6addressrangetemplate" time="0.0311501026154"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: offset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: offset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="145" name="test_10_get_ipv6addressrangetemplate" time="0.0476861000061"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUx:customtemplate1&quot;, 
+        &quot;name&quot;: &quot;customtemplate1&quot;, 
+        &quot;number_of_addresses&quot;: 2048, 
+        &quot;offset&quot;: 24
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="159" name="test_11_get_ipv6addressrangetemplate" time="0.103783130646"><system-out>ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUx:customtemplate1
+&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUyMg:customtemplate22&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="179" name="test_12_get_ipv6addressrangetemplate" time="0.0723671913147"><system-out>ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUyMg:customtemplate22
+&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUyMg:customtemplate22&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="199" name="test_13_get_ipv6addressrangetemplate" time="0.0911748409271"><system-out>ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUyMg:customtemplate22
+&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUyMg:customtemplate22&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6rangetemplate.Ipv6_address_range_template" file="WAPI82_Automation/test_ipv6rangetemplate.py" line="216" name="test_14_DELETE_ipv6addressrangetemplate" time="0.0749590396881"><system-out>ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUxMw:customtemplate13
+&quot;ipv6rangetemplate/ZG5zLmRoY3BfcmFuZ2VfdGVtcGxhdGUkY3VzdG9tdGVtcGxhdGUxMw:customtemplate13&quot;
+</system-out></testcase></testsuite>

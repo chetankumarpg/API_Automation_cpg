@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="discoverytask_results" skips="0" tests="43" time="1.649"><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="24" name="test_1_Get_operation_to_read_discoverytask_object" time="0.0396280288696"><system-out>[{u&apos;discovery_task_oid&apos;: u&apos;current&apos;, u&apos;_ref&apos;: u&apos;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&apos;, u&apos;member_name&apos;: u&apos;ib-10-35-195-2.infoblox.com&apos;}, {u&apos;discovery_task_oid&apos;: u&apos;scheduled&apos;, u&apos;_ref&apos;: u&apos;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJHNjaGVkdWxlZA:scheduled&apos;, u&apos;member_name&apos;: u&apos;ib-10-35-195-2.infoblox.com&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="41" name="test_2_create_discoverytask_object_N" time="0.0297019481659"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for discoverytask&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for discoverytask&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="53" name="test_3_Delete_discoverytask_object_N" time="0.040787935257"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for discoverytask&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for discoverytask&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="66" name="test_4_Modify_discoverytask_object_N" time="0.0386521816254"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:discoverytask does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;discoverytask does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="78" name="test_5_Get_operation_to_read_discoverytask_object_N" time="0.0293629169464"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: state&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: state&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="90" name="test_6_Modify_discoverytask_object_N" time="0.0376331806183"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: state&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: state&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="102" name="test_7_Modify_discoverytask_object_N" time="0.0386009216309"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: state_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: state_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="115" name="test_8_Get_operation_to_read_discoverytask_object_N" time="0.0295970439911"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: state&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: state&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="128" name="test_9_Get_operation_to_read_discoverytask_object_N" time="0.0365941524506"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="140" name="test_10_Modify_discoverytask_object_N" time="0.0315251350403"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="153" name="test_11_Modify_discoverytask_object_N" time="0.0355660915375"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: status_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: status_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="166" name="test_12_Get_operation_to_read_discoverytask_object_N" time="0.0305089950562"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="178" name="test_13_Modify_the_discoverytask_object_with_mode" time="0.0337789058685"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for mode (\&quot;\&quot;) valid values are: FULL, ICMP, NETBIOS, TCP, CSV&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for mode (\&quot;\&quot;) valid values are: FULL, ICMP, NETBIOS, TCP, CSV&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="190" name="test_14_create_discoverytask_with_modify_mode" time="0.0429737567902"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="198" name="test_15_create_discoverytask_with_modify_mode" time="0.0389530658722"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="206" name="test_16_create_discoverytask_with_modify_mode" time="0.0381226539612"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="215" name="test_17_create_discoverytask_with_modify_mode" time="0.0390503406525"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="223" name="test_18_create_discoverytask_with_modify_mode" time="0.0358819961548"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="232" name="test_19_Modify_the_discoverytask_object_with_mode" time="0.0324759483337"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for mode (\&quot;%20CSV\&quot;) valid values are: FULL, ICMP, NETBIOS, TCP, CSV&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for mode (\&quot;%20CSV\&quot;) valid values are: FULL, ICMP, NETBIOS, TCP, CSV&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="243" name="test_20_Get_operation_to_read_discoverytask_object_N" time="0.0301620960236"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: mode&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: mode&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="256" name="test_21_Get_operation_to_read_discoverytask_object_N" time="0.0363330841064"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: network_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: network_view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="269" name="test_22_Modify_discoverytask_object_N" time="0.0809540748596"><system-out>discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current
+404
+{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: Network View null not found&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, 
+  &quot;text&quot;: &quot;Network View null not found&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="288" name="test_23_create_discoverytask_with_modify_network_view" time="0.0299804210663"><system-out>404
+{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: Network View defa not found&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, 
+  &quot;text&quot;: &quot;Network View defa not found&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="300" name="test_24_Get_operation_to_read_discoverytask_object_N" time="0.0276937484741"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: networks&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: networks&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="313" name="test_25_Get_operation_to_read_discoverytask_object_N" time="0.0301427841187"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tcp_ports&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tcp_ports&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="325" name="test_26_Modify_discoverytask_object_N" time="0.0301101207733"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: tcp_ports&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: tcp_ports&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="337" name="test_27_create_discoverytask_with_modify_tcp_ports" time="0.0375859737396"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="345" name="test_28_Modify_the_discoverytask_object_with_networks" time="0.0300109386444"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for number: \&quot;\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for number: \&quot;\&quot;: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="358" name="test_29_Modify_the_discoverytask_object_with_networks" time="0.0296716690063"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: 123: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: 123: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="370" name="test_30_Modify_the_discoverytask_object_with_tcp_scan_technique" time="0.0284850597382"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tcp_scan_technique (\&quot;SY\&quot;) valid values are: SYN, CONNECT&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tcp_scan_technique (\&quot;SY\&quot;) valid values are: SYN, CONNECT&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="382" name="test_31_create_discoverytask_with_modify_tcp_scan_technique" time="0.035227060318"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="390" name="test_32_create_discoverytask_with_modify_tcp_scan_technique" time="0.0336439609528"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="398" name="test_33_Get_operation_to_read_discoverytask_object_N" time="0.0275440216064"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tcp_scan_technique&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tcp_scan_technique&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="410" name="test_34_Get_operation_to_read_discoverytask_object_N" time="0.0272281169891"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ping_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ping_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="422" name="test_35_Modify_the_discoverytask_object_with_ping_retries" time="0.031968832016"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: ping_retries must be between 1 and 5&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;ping_retries must be between 1 and 5&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="433" name="test_36_Modify_the_discoverytask_object_with_ping_retries" time="0.0289297103882"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ping_retries: \&quot;\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ping_retries: \&quot;\&quot;: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="446" name="test_37_create_discoverytask_with_modify_ping_retries" time="0.0366220474243"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="454" name="test_38_Modify_the_discoverytask_object_with_ping_timeout" time="0.0345249176025"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ping_timeout: \&quot;\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ping_timeout: \&quot;\&quot;: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="466" name="test_39_Modify_the_discoverytask_object_with_ping_timeout_N" time="0.0339918136597"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: ping_timeout must be between 5 and 4000&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;ping_timeout must be between 5 and 4000&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="478" name="test_40_create_discoverytask_with_modify_ping_timeout" time="0.0403940677643"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="487" name="test_41_Get_operation_to_read_discoverytask_object_N" time="0.0359098911285"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ping_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ping_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="499" name="test_42_Modify_the_discoverytask_object_with_warning_N" time="0.0339498519897"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: warning&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: warning&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytask.RangeTemplate" file="WAPI82_Automation/test_discoverytask.py" line="511" name="test_43_Get_operation_to_read_discoverytask_object_N" time="0.031229019165"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: warning&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: warning&quot;
+}
+</system-out></testcase></testsuite>

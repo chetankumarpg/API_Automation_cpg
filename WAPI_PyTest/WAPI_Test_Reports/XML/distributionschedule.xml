@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="distributionschedule_results" skips="0" tests="11" time="1.484"><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="24" name="test_1_GET_the_distributionschedule_object_with_time_zone_start_time_active_upgrade_groups" time="0.128677845001"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;distributionschedule/Li5kaXN0cmlidXRlc2NoZWR1bGUkZGlzdHJpYnV0aW9uX3NjaGVkdWxl:distribution&quot;, 
+        &quot;active&quot;: false, 
+        &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;, 
+        &quot;upgrade_groups&quot;: [
+            {
+                &quot;name&quot;: &quot;Default&quot;, 
+                &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;
+            }
+        ]
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="37" name="test_2_Modify_the_distributionschedule_with_time_zone_start_time_active_upgrade_groups" time="0.109045028687"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, \n  &quot;text&quot;: &quot;Missing upgrade groups&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="49" name="test_3_Create_the_upgradeschedule_with_time_zone_start_time_active_upgrade_groups_N" time="0.0371909141541"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for distributionschedule&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for distributionschedule&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="63" name="test_4_DELETE_the_fields_in_distributionschedule_object_N" time="0.0427913665771"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for distributionschedule&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for distributionschedule&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="77" name="test_5_Global_search_the_distributionschedule_object_N" time="0.409565448761"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="93" name="test_6_Adding_CSV_export_for_the_distributionschedule_object_N" time="0.0407333374023"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: distributionschedule objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;distributionschedule objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="107" name="test_7_Modify_distributionschedule_field_with_time_zone_start_time_active_upgrade_groups" time="0.0941519737244"></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="117" name="test_8_Modify_distributionschedule_field_with_active_N" time="0.0863618850708"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for active: 123: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for active: 123: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="131" name="test_9_Modify_distributionschedule_field_with_start_time_N" time="0.211004972458"><system-out>distributionschedule/Li5kaXN0cmlidXRlc2NoZWR1bGUkZGlzdHJpYnV0aW9uX3NjaGVkdWxl:distribution
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="149" name="test_10_Modify_distributionschedule_field_with_start_Upgrade_group_N" time="0.104704856873"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_distributionschedule.RangeTemplate" file="WAPI82_Automation/test_distributionschedule.py" line="164" name="test_11_Modify_distributionschedule_field_with_start_Upgrade_group_name_N" time="0.163963079453"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase></testsuite>

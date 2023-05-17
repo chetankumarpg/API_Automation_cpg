@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="diagnostic_F_Call_phase_2_results" skips="0" tests="10" time="0.730"><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="24" name="test_1_diagnostic_FC_discovery_gridproperties" time="0.0729839801788"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:IP address is excluded from the discovery)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;IP address is excluded from the discovery&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="40" name="test_2_diagnostic_FC_discovery_gridproperties" time="0.0684568881989"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: address&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="57" name="test_3_address_diagnostic_FC_discovery_gridproperties" time="0.0740067958832"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for address: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for address: true: Must be string type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="74" name="test_4_community_string_diagnostic_FC_discovery_gridproperties" time="0.0674667358398"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for community_string: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for community_string: true: Must be string type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="91" name="test_5_discovery_member_diagnostic_FC_discovery_gridproperties" time="0.063720703125"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for discovery_member: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for discovery_member: true: Must be string type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="108" name="test_6_force_test_diagnostic_FC_discovery_gridproperties" time="0.0721383094788"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for force_test: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for force_test: 1: Must be boolean type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="126" name="test_7_diagnostic_status_FC_discovery_gridproperties" time="0.061820268631"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: start&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: start&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="143" name="test_8_start_diagnostic_status_FC_discovery_gridproperties" time="0.0614531040192"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for start: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for start: true: Must be integer type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="160" name="test_9_diagnostic_status_FC_discovery_gridproperties" time="0.0631527900696"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: session_id&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: session_id&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_diagnostic_F_Call_phase_2.Diagnostic_Function_Call" file="WAPI82_Automation/test_diagnostic_F_Call_phase_2.py" line="178" name="test_8_session_id_diagnostic_status_FC_discovery_gridproperties" time="0.0607531070709"><system-out>discovery:gridproperties/ZGlzY292ZXJ5LmNsdXN0ZXJfZGlzY292ZXJ5X3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for session_id: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for session_id: true: Must be string type&quot;
+}
+400
+</system-out></testcase></testsuite>

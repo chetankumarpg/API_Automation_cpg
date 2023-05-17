@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="record_nsec_results" skips="0" tests="36" time="3.064"><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="27" name="test_1_Modify_view_to_enable_dnssec" time="0.110078811646"><system-out>&quot;view/ZG5zLnZpZXckLl9kZWZhdWx0:default/true&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="37" name="test_2_Create_auth_zone" time="0.0575308799744"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4:domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="47" name="test_3_Modify_the_zone_to_add_grid_primary_member" time="0.0868437290192"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4:domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="57" name="test_4_Create_A_record" time="0.0442600250244"><system-out>&quot;record:a/ZG5zLmJpbmRfYSQuX2RlZmF1bHQuY29tLmRvbWFpbixhLDEuMS4xLjE:a.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="68" name="test_5_Modify_to_enable_the_nsec_in_auth_zone" time="0.0799031257629"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4:domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="78" name="test_6_create_for_sign_the_zone" time="1.35832381248"><system-out>{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="88" name="test_7_Get_operation_to_read_record_nsec_object" time="0.0356101989746"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="105" name="test_8_create_record_nsec_object_N" time="0.0400719642639"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for record:nsec&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for record:nsec&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="118" name="test_9_Delete_record_nsec_object_N" time="0.0317571163177"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for record:nsec&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for record:nsec&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="129" name="test_10_Modify_record_nsec_object_N" time="0.0370538234711"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation update not allowed for record:nsec&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation update not allowed for record:nsec&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="141" name="test_11_Get_operation_to_read_record_nsec_object_using_name_with_negoation" time="0.0391161441803"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="158" name="test_12_Get_operation_to_read_record_nsec_object_using_name_with_colon" time="0.0442349910736"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="178" name="test_13_Get_operation_to_read_record_nsec_object_using_name" time="0.044792175293"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="195" name="test_14_Get_operation_to_read_record_nsec_object_N" time="0.0410690307617"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="207" name="test_15_Get_operation_to_read_record_nsec_object_using_view" time="0.0429041385651"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="224" name="test_16_Search_operation_to_read_record_nsec_object_with_negotation" time="0.0314860343933"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="236" name="test_17_Search_operation_to_read_record_nsec_object_with_colon" time="0.0369420051575"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="248" name="test_18_Get_operation_to_read_record_nsec_object_using_zone" time="0.0463190078735"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="264" name="test_19_Search_operation_to_read_record_nsec_object_with_negotation" time="0.0432019233704"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="276" name="test_20_Search_operation_to_read_record_nsec_object_with_colon" time="0.0438137054443"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="288" name="test_21_Modify_the_record_zone_with_wrong_value" time="0.0360269546509"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for zone: \&quot; subzone.domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for zone: \&quot; subzone.domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="300" name="test_22_Get_operation_to_read_record_nsec_object_N" time="0.0332498550415"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="313" name="test_23_Get_the_record_nsec_object" time="0.0392620563507"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for creator (\&quot;subzo\&quot;) valid values are: SYSTEM, STATIC, DYNAMIC&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for creator (\&quot;subzo\&quot;) valid values are: SYSTEM, STATIC, DYNAMIC&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="325" name="test_24_Get_operation_to_read_record_nsec_object_using_creator" time="0.034322977066"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="342" name="test_25_Get_operation_to_read_record_nsec_object_using_creator" time="0.0384831428528"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="351" name="test_26_Get_operation_to_read_record_nsec_object_using_creator" time="0.0368118286133"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="360" name="test_27_Get_operation_to_read_record_nsec__object_N" time="0.0292150974274"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="372" name="test_28_Get_operation_to_read_record_nsec__object_N" time="0.0389349460602"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_queried&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_queried&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="384" name="test_29_Get_operation_to_read_record_nsec_object_N" time="0.0333461761475"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cloud_info&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cloud_info&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="397" name="test_30_Get_operation_to_read_record_nsec_object_using_next_owner_name" time="0.0356242656708"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="414" name="test_31_Get_operation_to_read_record_nsec_object_using_next_owner_name" time="0.0396559238434"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="430" name="test_32_Get_operation_to_read_record_nsec_object_using_next_owner_name" time="0.0486941337585"><system-out>[{u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbiw:domain.com/default&apos;, u&apos;name&apos;: u&apos;domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;record:nsec/ZG5zLmJpbmRfbnNlYyQuX2RlZmF1bHQuY29tLmRvbWFpbixh:a.domain.com/default&apos;, u&apos;name&apos;: u&apos;a.domain.com&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="447" name="test_33_Get_operation_to_read_record_nsec_object_N" time="0.0383529663086"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_next_owner_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_next_owner_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="459" name="test_34_Get_operation_to_read_record_nsec_object_N" time="0.0481152534485"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: rrset_types&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: rrset_types&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="471" name="test_35_Modify_view_to_disable_dnssec" time="0.0475499629974"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Can\&apos;t disable DNSSEC as the following zones in this view are signed: domain.com)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, \n  &quot;text&quot;: &quot;Can\&apos;t disable DNSSEC as the following zones in this view are signed: domain.com&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_nsec.RangeTemplate" file="WAPI82_Automation/test_record_nsec.py" line="480" name="test_36_delete_zone_auth_object" time="0.0789108276367"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4:domain.com/default&quot;
+</system-out></testcase></testsuite>

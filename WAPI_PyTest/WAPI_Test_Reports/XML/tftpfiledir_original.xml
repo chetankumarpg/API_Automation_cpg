@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="tftpfiledir_original_results" skips="0" tests="87" time="5.287"><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="22" name="test_1_get_tftpfiledir" time="0.034786939621"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="33" name="test_2_csv_tftpfiledir" time="0.0297780036926"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: tftpfiledir objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;tftpfiledir objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="44" name="test_3_schedule_tftpfiledir" time="0.0310008525848"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:tftpfiledir does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;tftpfiledir does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="55" name="test_4_create_tftpfiledir" time="0.0309932231903"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: None (IBCallError: IB.Call:A file can only be created with the upload file operation)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;A file can only be created with the upload file operation&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="66" name="test_5_create_tftpfiledir1" time="0.0343730449677"></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="75" name="test_6_create_tftpfiledir2" time="0.0396659374237"></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="85" name="test_7_create_tftpfiledir3" time="0.290791988373"><system-out>{
+    &quot;token&quot;: &quot;eJyVUEFOwzAQvO9H2kvjOGmalFtRqYSECmrhvHJsp6yU2MZ2UPt7bCS4cOJga3dnduwZKa27odcX\nSJe0JkQ/y2g9OA5LSWaw/WivhTU6n3hzOsBeRIEnPYCrQCL2M42RDCIokhFcDUvl1nBe6Ksjf8NI\nk16Aa+DAm7Kq2qrpeLFZt+u25hDOi9mPCd6khfcYXbhjjJdF3RR82xQVyzNUlD4XcaBRI1nm9QeS\nWr29PD3v9itelh0Toi+uUxZqsyapVHVJ8i81AdtMUclFqnmZWCwky+KiWZzc/1/k/EcPtZFWkbnk\naZWE7x+Puax/CZNVOQye89nvXnd4ejjkvoEQT45vcna8TeBAelQBo0VpJyf891YHx2yuFw7JuDni\np/aBrMnYNmF98QXWxJEz\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/aab.xml&quot;
+}
+{u&apos;url&apos;: u&apos;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/aab.xml&apos;, u&apos;token&apos;: u&apos;eJyVUEFOwzAQvO9H2kvjOGmalFtRqYSECmrhvHJsp6yU2MZ2UPt7bCS4cOJga3dnduwZKa27odcX\nSJe0JkQ/y2g9OA5LSWaw/WivhTU6n3hzOsBeRIEnPYCrQCL2M42RDCIokhFcDUvl1nBe6Ksjf8NI\nk16Aa+DAm7Kq2qrpeLFZt+u25hDOi9mPCd6khfcYXbhjjJdF3RR82xQVyzNUlD4XcaBRI1nm9QeS\nWr29PD3v9itelh0Toi+uUxZqsyapVHVJ8i81AdtMUclFqnmZWCwky+KiWZzc/1/k/EcPtZFWkbnk\naZWE7x+Puax/CZNVOQye89nvXnd4ejjkvoEQT45vcna8TeBAelQBo0VpJyf891YHx2yuFw7JuDni\np/aBrMnYNmF98QXWxJEz\n&apos;}
+eJyVUEFOwzAQvO9H2kvjOGmalFtRqYSECmrhvHJsp6yU2MZ2UPt7bCS4cOJga3dnduwZKa27odcX
+SJe0JkQ/y2g9OA5LSWaw/WivhTU6n3hzOsBeRIEnPYCrQCL2M42RDCIokhFcDUvl1nBe6Ksjf8NI
+k16Aa+DAm7Kq2qrpeLFZt+u25hDOi9mPCd6khfcYXbhjjJdF3RR82xQVyzNUlD4XcaBRI1nm9QeS
+Wr29PD3v9itelh0Toi+uUxZqsyapVHVJ8i81AdtMUclFqnmZWCwky+KiWZzc/1/k/EcPtZFWkbnk
+aZWE7x+Puax/CZNVOQye89nvXnd4ejjkvoEQT45vcna8TeBAelQBo0VpJyf891YHx2yuFw7JuDni
+p/aBrMnYNmF98QXWxJEz
+
+https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/aab.xml
+/aab.xml
+{}
+</system-out><system-err>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   294    0     0  100   294      0   1720 --:--:-- --:--:-- --:--:--  1729
+</system-err></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="110" name="test_8_create_tftpfiledir2" time="0.276639223099"><system-out>{
+    &quot;token&quot;: &quot;eJyVULFuwyAU3N+POEvAOHUSd3OVRqpUpVXSzk824PRJNlDAVfL3hUjt0qkD6Hh3HNxJad0VvT5D\n2qQ1IfpZRuvBCVhIMoPtR3th1ui84tXpALsudnjUA7gKJGI/0xjJIIIiGcGtYKHcHZwKfXHkrxhp\n0gW4GvaiLqtqU9VbwZrNuhEbCKdi9mNi10n/EaML95yLkq1qJpqaVTzPUFH6W8SBRo1kudefSGr5\n/vr80u6Woiwb3vWSXaZsdPMkldA2Wf6VJqLJEpVCJCzKpOIhJe7OmsfJ/f9FIX78UBtpFZlznlbJ\n+OHpkOHqVzBZlbsQuZ5d+9bi8XGfzzWEeHRinatLtZyKgfSoAkaL0k6u87dbWzjkcH3nkIybI35p\nH8iazDWJ69k3fRWREQ==\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1009/abc.xml&quot;
+}
+{u&apos;url&apos;: u&apos;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1009/abc.xml&apos;, u&apos;token&apos;: u&apos;eJyVULFuwyAU3N+POEvAOHUSd3OVRqpUpVXSzk824PRJNlDAVfL3hUjt0qkD6Hh3HNxJad0VvT5D\n2qQ1IfpZRuvBCVhIMoPtR3th1ui84tXpALsudnjUA7gKJGI/0xjJIIIiGcGtYKHcHZwKfXHkrxhp\n0gW4GvaiLqtqU9VbwZrNuhEbCKdi9mNi10n/EaML95yLkq1qJpqaVTzPUFH6W8SBRo1kudefSGr5\n/vr80u6Woiwb3vWSXaZsdPMkldA2Wf6VJqLJEpVCJCzKpOIhJe7OmsfJ/f9FIX78UBtpFZlznlbJ\n+OHpkOHqVzBZlbsQuZ5d+9bi8XGfzzWEeHRinatLtZyKgfSoAkaL0k6u87dbWzjkcH3nkIybI35p\nH8iazDWJ69k3fRWREQ==\n&apos;}
+eJyVULFuwyAU3N+POEvAOHUSd3OVRqpUpVXSzk824PRJNlDAVfL3hUjt0qkD6Hh3HNxJad0VvT5D
+2qQ1IfpZRuvBCVhIMoPtR3th1ui84tXpALsudnjUA7gKJGI/0xjJIIIiGcGtYKHcHZwKfXHkrxhp
+0gW4GvaiLqtqU9VbwZrNuhEbCKdi9mNi10n/EaML95yLkq1qJpqaVTzPUFH6W8SBRo1kudefSGr5
+/vr80u6Woiwb3vWSXaZsdPMkldA2Wf6VJqLJEpVCJCzKpOIhJe7OmsfJ/f9FIX78UBtpFZlznlbJ
++OHpkOHqVzBZlbsQuZ5d+9bi8XGfzzWEeHRinatLtZyKgfSoAkaL0k6u87dbWzjkcH3nkIybI35p
+H8iazDWJ69k3fRWREQ==
+
+https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1009/abc.xml
+/abc.xml
+{}
+</system-out><system-err>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   294    0     0  100   294      0   2210 --:--:-- --:--:-- --:--:--  2210
+100   294    0     0  100   294      0   2183 --:--:-- --:--:-- --:--:--  2177
+</system-err></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="136" name="test_9_get_tftpfiledir" time="0.0321619510651"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="148" name="test_10_get_tftpfiledir" time="0.0319318771362"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="160" name="test_11_get_tftpfiledir" time="0.0302438735962"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="172" name="test_12_get_tftpfiledir" time="0.0307121276855"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="185" name="test_13_get_tftpfiledir" time="0.0311539173126"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="200" name="test_14_get_tftpfiledir" time="0.39531826973"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="211" name="test_15_get_tftpfiledir" time="0.364754676819"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="223" name="test_16_approvable_Non_super_user_tftpfiledir" time="0.0301840305328"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="234" name="test_17_approvable_non_super_user_get_file_tftpfiledir" time="0.0678808689117"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: Error getting reference tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml: Cannot read directory: permission denied&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Error getting reference tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml: Cannot read directory: permission denied&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="249" name="test_18_approvable_non_super_user_get_dir_tftpfiledir" time="0.0787386894226"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: Error getting reference tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2: Cannot read directory: permission denied&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Error getting reference tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2: Cannot read directory: permission denied&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="265" name="test_19_approvable_Super_user_tftpfiledir" time="0.035786151886"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="278" name="test_20_get_directory_field_tftpfiledir" time="0.0365810394287"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="289" name="test_21_update_directory_field_tftpfiledir" time="0.068598985672"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: directory&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: directory&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="305" name="test_22_update_directory_field_tftpfiledir" time="0.0776319503784"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: directory&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: directory&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="321" name="test_23_search_directory_field_tftpfiledir" time="0.0291395187378"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="331" name="test_24_search_directory_field_tftpfiledir" time="0.0344960689545"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="341" name="test_25_search_directory_field_tftpfiledir" time="0.0327339172363"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="355" name="test_26_search_directory_field_tftpfiledir" time="0.0293731689453"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="366" name="test_27_search_directory_field_tftpfiledir" time="0.0294020175934"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="377" name="test_28_search_directory_field_tftpfiledir" time="0.0282227993011"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="388" name="test_29_get_is_synced_to_gm_field_tftpfiledir" time="0.0299799442291"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="398" name="test_30_update_is_synced_to_gm_field_tftpfiledir" time="0.0601801872253"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: is_synced_to_gm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: is_synced_to_gm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="415" name="test_31_update_directory_field_tftpfiledir" time="0.0643832683563"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: is_synced_to_gm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: is_synced_to_gm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="432" name="test_32_search_is_synced_to_gm_field_tftpfiledir" time="0.033499956131"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="442" name="test_33_search_is_synced_to_gm_field_tftpfiledir" time="0.0313260555267"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="452" name="test_34_search_is_synced_to_gm_field_tftpfiledir" time="0.0275089740753"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="462" name="test_35_search_is_synced_to_gm_field_tftpfiledir" time="0.0305058956146"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="472" name="test_36_search_is_synced_to_gm_field_tftpfiledir" time="0.0373568534851"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="482" name="test_37_search_is_synced_to_gm_field_tftpfiledir" time="0.028192281723"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="492" name="test_38_get_last_modify_field_tftpfiledir" time="0.0388698577881"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="502" name="test_39_update_last_modify_field_tftpfiledir" time="0.0679130554199"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_modify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_modify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="519" name="test_40_update_last_modify_field_tftpfiledir" time="0.0752131938934"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_modify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_modify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="536" name="test_41_search_last_modify_field_tftpfiledir" time="0.0285029411316"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="546" name="test_42_search_last_modify_field_tftpfiledir" time="0.0293250083923"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="556" name="test_43_search_last_modify_field_tftpfiledir" time="0.0360269546509"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="566" name="test_44_search_last_modify_field_tftpfiledir" time="0.0288109779358"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="576" name="test_45_search_last_modify_field_tftpfiledir" time="0.027970790863"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="586" name="test_46_search_last_modify_field_tftpfiledir" time="0.0365662574768"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="597" name="test_47_get_name_field_tftpfiledir" time="0.027960062027"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="608" name="test_48_update_name_field_tftpfiledir" time="0.0658061504364"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: None (IBCallError: IB.Call:File renaming is not supported)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;File renaming is not supported&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="625" name="test_49_update_name_field_tftpfiledir" time="0.070503950119"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{
+    &quot;_ref&quot;: &quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9OZXdEaXJlY3Rvcnkx:DIRECTORY/NewDirectory1&quot;, 
+    &quot;last_modify&quot;: 1502268981
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="642" name="test_50_update_name_field_tftpfiledir" time="0.0687820911407"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9OZXdEaXJlY3Rvcnkx:DIRECTORY/NewDirectory1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;NewDirectory1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:A directory name can only contain alphanumeric characters and dot, dash or underscore characters. A single dot is not allowed)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;A directory name can only contain alphanumeric characters and dot, dash or underscore characters. A single dot is not allowed&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="658" name="test_51_update_name_field_tftpfiledir" time="0.0738658905029"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9OZXdEaXJlY3Rvcnkx:DIRECTORY/NewDirectory1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;NewDirectory1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{
+    &quot;_ref&quot;: &quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC8uXy1OZXdEaXJlY3Rvcnkx:DIRECTORY/._-NewDirectory1&quot;, 
+    &quot;last_modify&quot;: 1502268981
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="673" name="test_52_update_name_field_tftpfiledir" time="0.068293094635"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC8uXy1OZXdEaXJlY3Rvcnkx:DIRECTORY/._-NewDirectory1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;._-NewDirectory1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{
+    &quot;_ref&quot;: &quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&quot;, 
+    &quot;last_modify&quot;: 1502268981
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="689" name="test_53_search_last_modify_field_tftpfiledir" time="0.0282878875732"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="699" name="test_54_search_name_field_tftpfiledir" time="0.0277969837189"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="709" name="test_55_search_name_field_tftpfiledir" time="0.0375909805298"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="719" name="test_56_search_name_field_tftpfiledir" time="0.0283780097961"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="729" name="test_57_search_name_field_tftpfiledir" time="0.0299589633942"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="739" name="test_58_search_name_field_tftpfiledir" time="0.032112121582"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="749" name="test_59_get_type_field_tftpfiledir" time="0.0301768779755"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="760" name="test_60_update_type_field_tftpfiledir" time="0.0736410617828"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="775" name="test_61_update_type_field_tftpfiledir" time="0.0670502185822"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+{
+    &quot;_ref&quot;: &quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&quot;, 
+    &quot;type&quot;: &quot;DIRECTORY&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="792" name="test_62_update_type_field_tftpfiledir" time="0.0691590309143"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="809" name="test_63_update_type_field_tftpfiledir" time="0.073915719986"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="830" name="test_64_search_type_field_tftpfiledir" time="0.0405459403992"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="840" name="test_65_search_type_field_tftpfiledir" time="0.0441009998322"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="850" name="test_66_search_type_field_tftpfiledir" time="0.0301277637482"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="860" name="test_67_search_type_field_tftpfiledir" time="0.0345449447632"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="870" name="test_68_search_type_field_tftpfiledir" time="0.0282661914825"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="880" name="test_69_search_type_field_tftpfiledir" time="0.0294082164764"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="890" name="test_70_search_type_field_tftpfiledir" time="0.0280330181122"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="900" name="test_71_search_type_field_tftpfiledir" time="0.0324583053589"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="910" name="test_72_get_recursive_field_tftpfiledir" time="0.0304999351501"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="920" name="test_73_update_recursive_field_tftpfiledir" time="0.077220916748"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: recursive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: recursive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="937" name="test_74_update_recursive_field_tftpfiledir" time="0.0644788742065"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: recursive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: recursive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="954" name="test_75_search_recursive_field_tftpfiledir" time="0.0300970077515"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="964" name="test_76_search_recursive_field_tftpfiledir" time="0.0305082798004"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="974" name="test_77_search_recursive_field_tftpfiledir" time="0.0303916931152"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="984" name="test_78_search_recursive_field_tftpfiledir" time="0.0316789150238"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="994" name="test_79_search_recursive_field_tftpfiledir" time="0.0294499397278"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1004" name="test_80_search_recursive_field_tftpfiledir" time="0.0303559303284"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1014" name="test_81_search_recursive_field_tftpfiledir" time="0.0358180999756"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1024" name="test_82_search_recursive_field_tftpfiledir" time="0.0376210212708"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1034" name="test_83_get_all_fields_tftpfiledir" time="0.0286750793457"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required search parameter &apos;directory&apos; is missing&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required search parameter &apos;directory&apos; is missing&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1044" name="test_84_update_type_field_tftpfiledir" time="0.0799169540405"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir1&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+&quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIx:DIRECTORY/Dir1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1059" name="test_85_update_type_field_tftpfiledir" time="0.0879790782928"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;Dir2&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+&quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9EaXIy:DIRECTORY/Dir2&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1073" name="test_86_update_type_field_tftpfiledir" time="0.0701470375061"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;aab.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+&quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYWIueG1s:FILE/aab.xml&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tftpfiledir_original.MemberFileDistribution" file="WAPI82_Automation/test_tftpfiledir_original.py" line="1087" name="test_87_update_type_field_tftpfiledir" time="0.068873167038"><system-out>[{u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&apos;, u&apos;type&apos;: u&apos;FILE&apos;, u&apos;name&apos;: u&apos;abc.xml&apos;}, {u&apos;directory&apos;: u&apos;/&apos;, u&apos;_ref&apos;: u&apos;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9mdHB1c2Vycw:DIRECTORY/ftpusers&apos;, u&apos;type&apos;: u&apos;DIRECTORY&apos;, u&apos;name&apos;: u&apos;ftpusers&apos;}]
+&quot;tftpfiledir/Li5vbmUuZGlyZWN0b3J5JC9hYmMueG1s:FILE/abc.xml&quot;
+</system-out></testcase></testsuite>

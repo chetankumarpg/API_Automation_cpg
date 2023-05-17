@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="grid_threatanalystics_results" skips="0" tests="33" time="1.779"><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="23" name="test_1_get_grid_threatanalytics" time="0.0504717826843"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&quot;, 
+        &quot;enable_auto_download&quot;: false, 
+        &quot;enable_scheduled_download&quot;: false, 
+        &quot;module_update_policy&quot;: &quot;AUTOMATIC&quot;, 
+        &quot;name&quot;: &quot;Infoblox&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="35" name="test_2_create_threat_analytics" time="0.0345358848572"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for grid:threatanalytics&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for grid:threatanalytics&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="46" name="test_3_delete_threat_analytics" time="0.0523090362549"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for grid:threatanalytics&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for grid:threatanalytics&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="57" name="test_4_csvexport_threat_analytics" time="0.0517337322235"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: grid:threatanalytics objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;grid:threatanalytics objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="70" name="test_5_approvable_Non_super_user_threat_analytics" time="0.0333681106567"></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="77" name="test_6_approvable_Super_user_threat_analytics" time="0.0337538719177"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="89" name="test_7_globalsearch_threat_analytics" time="0.324278831482"></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="96" name="test_8_schedule_threat_analytics" time="0.033775806427"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for grid:threatanalytics&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for grid:threatanalytics&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="107" name="test_9_get_all_fields_member_FD" time="0.0389111042023"><system-out>[{u&apos;_ref&apos;: u&apos;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&apos;, u&apos;name&apos;: u&apos;Infoblox&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="119" name="test_10_current_moduleset_with_value_for_ref_threat_analytics" time="0.0310869216919"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: current_moduleset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: current_moduleset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="130" name="test_11_current_moduleset_with_search1_threat_analytics" time="0.0313372612"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: current_moduleset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: current_moduleset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="140" name="test_12_current_moduleset_with_value_for_ref_threat_analytics" time="0.0407741069794"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: dns_tunnel_black_list_rpz_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: dns_tunnel_black_list_rpz_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="153" name="test_13_dns_tunnel_black_list_rpz_zone_with_search_threat_analytics" time="0.040506362915"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_tunnel_black_list_rpz_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_tunnel_black_list_rpz_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="166" name="test_14_enable_auto_download_filelist_with_true_threat_analytics" time="0.0477201938629"><system-out>{u&apos;_ref&apos;: u&apos;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&apos;, u&apos;enable_auto_download&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="180" name="test_15_enable_auto_download_with_search_threat_analytics" time="0.0320081710815"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_auto_download&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_auto_download&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="192" name="test_16_enable_scheduled_download_with_value_for_ref_threat_analytics" time="0.0516738891602"><system-out>{
+    &quot;_ref&quot;: &quot;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&quot;, 
+    &quot;enable_scheduled_download&quot;: false
+}
+{u&apos;_ref&apos;: u&apos;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&apos;, u&apos;enable_scheduled_download&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="204" name="test_17_enable_scheduled_download_with_search_threat_analytics" time="0.0410759449005"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_scheduled_download&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_scheduled_download&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="217" name="test_18_last_checked_for_update_with_value_for_ref_threat_analytics" time="0.0419101715088"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_checked_for_update&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_checked_for_update&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="228" name="test_19_last_checked_for_update_with_search1_threat_analytics" time="0.0388848781586"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_checked_for_update&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_checked_for_update&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="240" name="test_20_last_module_update_time_with_value_for_ref_threat_analytics" time="0.0362458229065"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_module_update_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_module_update_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="251" name="test_21_last_module_update_time_with_search1_threat_analytics" time="0.0357389450073"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_module_update_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_module_update_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="263" name="test_22_last_module_update_version_with_value_for_ref_threat_analytics" time="0.0390188694"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_module_update_version&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_module_update_version&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="274" name="test_23_last_module_update_version_with_search1_threat_analytics" time="0.0384049415588"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_module_update_version&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_module_update_version&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="287" name="test_24_last_whitelist_update_time_with_value_for_ref_threat_analytics" time="0.055563211441"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_whitelist_update_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_whitelist_update_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="298" name="test_25_last_whitelist_update_time_with_search1_threat_analytics" time="0.0329310894012"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_whitelist_update_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_whitelist_update_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="309" name="test_26_last_whitelist_update_version_with_value_for_ref_threat_analytics" time="0.0321929454803"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: last_whitelist_update_version&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: last_whitelist_update_version&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="320" name="test_27_last_whitelist_update_version_with_search1_threat_analytics" time="0.0285320281982"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_whitelist_update_version&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_whitelist_update_version&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="332" name="test_28_module_update_policy_with_value_for_ref_threat_analytics" time="0.0623738765717"><system-out>{u&apos;_ref&apos;: u&apos;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&apos;, u&apos;module_update_policy&apos;: u&apos;MANUAL&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="343" name="test_29_module_update_policy_with_search1_threat_analytics" time="0.0341873168945"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: module_update_policy&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: module_update_policy&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="355" name="test_30_name_with_value_for_ref_threat_analytics" time="0.0364511013031"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="368" name="test_31_name_with_search1_threat_analytics" time="0.0551550388336"><system-out>[{u&apos;_ref&apos;: u&apos;grid:threatanalytics/YW5hbHl0aWNzLmNsdXN0ZXJfYW5hbHl0aWNzX3Byb3BlcnRpZXMkMA:Infoblox&apos;, u&apos;enable_auto_download&apos;: False, u&apos;enable_scheduled_download&apos;: False, u&apos;name&apos;: u&apos;Infoblox&apos;, u&apos;module_update_policy&apos;: u&apos;MANUAL&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="383" name="test_32_scheduled_download_with_value_for_ref_threat_analytics" time="0.039046049118"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Structure expected in scheduled_download (infoblox)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Structure expected in scheduled_download (infoblox)&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatanalystics.MemberFileDistribution" file="WAPI82_Automation/test_grid_threatanalystics.py" line="394" name="test_33_scheduled_download_with_search1_threat_analytics" time="0.047532081604"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: scheduled_download&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: scheduled_download&quot;
+}
+</system-out></testcase></testsuite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="upgrade_status_results" skips="0" tests="9" time="0.945"><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="25" name="test_1_Add_operation_to_upgradeschedule_object_with_distribution_time_name_upgrade_time" time="0.036908864975"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for upgradeschedule&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for upgradeschedule&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="41" name="test_2_Modify_operation_to_upgradeschedule_object" time="0.189541816711"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: time_zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: time_zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="62" name="test_3_Modify_the_upgradeschedule_object" time="0.0903990268707"></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="72" name="test_4_GET_the_upgradeschedule_object_with_active_start_tie_time_zone_upgrade_groups_fileds" time="0.104664802551"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade&quot;, 
+        &quot;active&quot;: false
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="87" name="test_5_Modify_operation_to_upgradeschedule_object_distribution_time" time="0.0901741981506"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Error converting argument distribution_time: Invalid value, must be an integer between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Error converting argument distribution_time: Invalid value, must be an integer between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="102" name="test_6_Modify_operation_to_upgradeschedule_object_upgrade_time_N" time="0.0995440483093"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Error converting argument upgrade_time: Invalid value, must be an integer between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Error converting argument upgrade_time: Invalid value, must be an integer between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="115" name="test_7_Modify_operation_to_upgradeschedule_object_name" time="0.0952990055084"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for name: 123: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for name: 123: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="129" name="test_8_Modify_operation_to_upgradeschedule_object_distribution_time" time="0.0901167392731"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for active: \&quot;\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for active: \&quot;\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgrade_status.RangeTemplate" file="WAPI82_Automation/test_upgrade_status.py" line="142" name="test_9_GET_On_Upgradeschedule" time="0.0973620414734"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade&quot;, 
+        &quot;active&quot;: false, 
+        &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;
+    }
+]
+[{u&apos;active&apos;: False, u&apos;_ref&apos;: u&apos;upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade&apos;, u&apos;time_zone&apos;: u&apos;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&apos;}]
+</system-out></testcase></testsuite>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="tacacsplus_authservice_results" skips="0" tests="45" time="2.433"><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="25" name="test_1_Create_Tacacsplus_Authservice" time="0.0403628349304"><system-out>&quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="38" name="test_2_Format_Tacacsplus_Authservice" time="0.0385460853577"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="53" name="test_3_Schedule_Tacacsplus_Authservice" time="0.0373482704163"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:tacacsplus:authservice does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;tacacsplus:authservice does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="65" name="test_4_Csv_Export_Tacacsplus_Authservice" time="0.0410308837891"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="77" name="test_5_return_fields_Tacacsplus_Authservice" time="0.0445189476013"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="91" name="test_6_Req_Fields_1_Create_Tacacsplus_Authservice" time="0.0301511287689"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="103" name="test_7_Req_Fields_2_Create_Tacacsplus_Authservice" time="0.0361740589142"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="115" name="test_8_acct_retries_Tacacsplus_Authservice" time="0.0478961467743"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;acct_retries&apos;: 0}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;acct_retries&apos;: 0}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="130" name="test_9_Serach_acct_retries_exact_equality" time="0.0454730987549"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="142" name="test_10_Serach_acct_retries_case_insensitive" time="0.0439138412476"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="153" name="test_11_Serach_acct_retries_case_regular_expression" time="0.0348117351532"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="164" name="test_12_acct_timeout_Tacacsplus_Authservice" time="0.0540988445282"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;acct_timeout&apos;: 1000}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;acct_timeout&apos;: 1000}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="179" name="test_13_Serach_acct_timeout_exact_equality" time="0.0392210483551"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="190" name="test_14_Serach_acct_timeout_case_insensitive" time="0.0470359325409"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="201" name="test_15_Serach_acct_timeout_case_regular_expression" time="0.0349249839783"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="212" name="test_16_auth_retries_Tacacsplus_Authservice" time="0.0443012714386"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;auth_retries&apos;: 0}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;auth_retries&apos;: 0}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="227" name="test_17_Serach_auth_retries_exact_equality" time="0.0449600219727"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="238" name="test_18_Serach_auth_retries_case_insensitive" time="0.0414841175079"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="250" name="test_19_Serach_auth_retries_case_regular_expression" time="0.0455780029297"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="261" name="test_20_auth_timeout_Tacacsplus_Authservice" time="0.0377292633057"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;auth_timeout&apos;: 5000}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;auth_timeout&apos;: 5000}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="277" name="test_21_Serach_auth_timeout_exact_equality" time="0.047687292099"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="288" name="test_22_Serach_auth_timeout_case_insensitive" time="0.0400919914246"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="300" name="test_23_Serach_auth_timeout_case_regular_expression" time="0.0387511253357"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="311" name="test_24_comment_Tacacsplus_Authservice" time="0.0468842983246"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="326" name="test_25_Serach_comment_exact_equality" time="0.0428166389465"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="337" name="test_26_Serach_comment_case_insensitive" time="0.0325450897217"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="347" name="test_27_Serach_comment_regular_expression" time="0.0346636772156"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="357" name="test_28_disable_Tacacsplus_Authservice" time="0.0325841903687"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;disable&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="373" name="test_29_Serach_disable_exact_equality" time="0.03049492836"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="385" name="test_30_Serach_disable_case_insensitive" time="0.0345828533173"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="396" name="test_31_Serach_disable_regular_expression" time="0.0411319732666"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="408" name="test_32_name_Tacacsplus_Authservice" time="0.0547239780426"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="424" name="test_33_Serach_name_exact_equality" time="0.0394010543823"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="435" name="test_34_Serach_name_case_insensitive" time="0.0359373092651"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="445" name="test_35_Serach_name_regular_expression" time="0.0372309684753"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="455" name="test_36_servers_Tacacsplus_Authservice" time="0.0382142066956"><system-out>[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;port&apos;: 49}]}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;port&apos;: 49}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="470" name="test_37_Serach_servers_exact_equality" time="0.0482828617096"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="482" name="test_38_Serach_servers_case_insensitive" time="0.0360119342804"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="494" name="test_39_Serach_servers_regular_expression" time="0.0534679889679"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="505" name="test_40_Update_On_name_1_Tacacsplus_Authservice" time="0.14350104332"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJHVzZXI:user&apos;, u&apos;name&apos;: u&apos;user&apos;}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJHVzZXI:user&apos;, u&apos;name&apos;: u&apos;user&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="527" name="test_41_Update_On_name_2_Tacacsplus_Authservice" time="0.114868164062"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJHVzZXI:user
+[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="550" name="test_42_Update_On_servers_1_Tacacsplus_Authservice" time="0.141669988632"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.38.40&apos;, u&apos;port&apos;: 49}]}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.38.40&apos;, u&apos;port&apos;: 49}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="574" name="test_43_Update_On_servers_2_Tacacsplus_Authservice" time="0.121785402298"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+[{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;port&apos;: 49}]}]
+{u&apos;_ref&apos;: u&apos;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;CHAP&apos;, u&apos;use_accounting&apos;: False, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;port&apos;: 49}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="598" name="test_44_Create_2nd_2nd_Tacacsplus_Authservice" time="0.0434062480927"><system-out>{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Only one TACACS+ Authentication Service may be configured)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Only one TACACS+ Authentication Service may be configured&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice.Tacacsplus_Authservice" file="WAPI82_Automation/test_tacacsplus_authservice.py" line="610" name="test_45_DELETE_Tacacsplus_Authservice" time="0.0743849277496"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+&quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;
+</system-out></testcase></testsuite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="Networkview_Assocmember_results" skips="0" tests="3" time="0.134"><testcase classname="WAPI82_Automation.test_Networkview_Assocmember.Networkview_Assocmember" file="WAPI82_Automation/test_Networkview_Assocmember.py" line="25" name="test_1_Search_Networkview_Assocmember" time="0.0355792045593"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_members&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview_Assocmember.Networkview_Assocmember" file="WAPI82_Automation/test_Networkview_Assocmember.py" line="38" name="test_2_return_fields_Networkview_Assocmember" time="0.0326282978058"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&quot;, 
+        &quot;associated_members&quot;: []
+    }
+]
+[{u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;associated_members&apos;: []}]
+{u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;associated_members&apos;: []}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview_Assocmember.Networkview_Assocmember" file="WAPI82_Automation/test_Networkview_Assocmember.py" line="53" name="test_3_POST_Networkview_Assocmember" time="0.0333609580994"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: associated_members&quot;
+}
+</system-out></testcase></testsuite>

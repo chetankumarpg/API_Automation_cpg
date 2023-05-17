@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="discoverytaskport_results" skips="0" tests="6" time="0.293"><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="24" name="test_1_Modify_the_discoverytask_object_N" time="0.0379319190979"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: 123: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: 123: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="36" name="test_2_Modify_the_discoverytask_object" time="0.0531258583069"><system-out>&quot;discoverytask/ZG5zLmRpc2NvdmVyeV90YXNrJGN1cnJlbnQ:current&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="46" name="test_3_Get_operation_to_read_discoverytask_object_N" time="0.0364110469818"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tcp_ports&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tcp_ports&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="58" name="test_4_Modify_the_discoverytask_object_N" time="0.0359120368958"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: tcp_ports&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: tcp_ports&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="70" name="test_5_Modify_the_discoverytask_object_N" time="0.0454709529877"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for number: 10123646444: Invalid value, must be between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for number: 10123646444: Invalid value, must be between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discoverytaskport.RangeTemplate" file="WAPI82_Automation/test_discoverytaskport.py" line="82" name="test_6_Modify_the_discoverytask_object_N" time="0.0427799224854"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for number: \&quot;123\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for number: \&quot;123\&quot;: Must be integer type&quot;
+}
+</system-out></testcase></testsuite>

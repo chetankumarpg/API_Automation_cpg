@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="record_dname_results" skips="0" tests="40" time="2.009"><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="24" name="test_1_create_zone" time="0.059051990509"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Duplicate object \&apos;domain.com\&apos; of type zone exists in the database.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, \n  &quot;text&quot;: &quot;Duplicate object \&apos;domain.com\&apos; of type zone exists in the database.&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="32" name="test_2_create_record_dname" time="0.0474231243134"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="40" name="test_3_create_record_dname_with_wrong_domain" time="0.0413999557495"><system-out>{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:The action is not allowed. A parent was not found.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;The action is not allowed. A parent was not found.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="52" name="test_4_create_record_dname_with_wrong_target" time="0.029079914093"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for target: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for target: true: Must be string type&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="64" name="test_5_Get_record_dname_with_name" time="0.0472922325134"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="76" name="test_6_Get_record_dname_with_name" time="0.0351476669312"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="87" name="test_7_Get_record_dname_with_name" time="0.0526027679443"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="98" name="test_8_Modify_the_record_dname_with_wrong_target" time="0.0442838668823"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: \&quot; testing record:dname\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: \&quot; testing record:dname\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="110" name="test_9_Modify_the_record_dname" time="0.0352921485901"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: dns_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: dns_name&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="122" name="test_10_Search_the_record_dname_object" time="0.0319383144379"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="134" name="test_11_Search_the_record_dname_object_with_disable" time="0.0319948196411"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="146" name="test_12_Modify_the_record_dname_object_with_disable" time="0.0327970981598"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for disable: \&quot;Tru\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for disable: \&quot;Tru\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="158" name="test_13_Get_the_record_dname_object_with_ttl" time="0.235569000244"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="172" name="test_14_create_record_dname" time="0.0550756454468"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV90dGw:bind_dname_ttl.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="181" name="test_15_create_record_dname_with_modify_ttl" time="0.046422958374"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV90dGw:bind_dname_ttl.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="188" name="test_16_create_record_dname_for_view" time="0.0411429405212"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV92aWV3:bind_dname_view.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="198" name="test_17_Modify_the_record_dname_object_with_view" time="0.028989315033"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="210" name="test_18_Get_operation_to_read_record_dname_object_with_view" time="0.0532701015472"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}, {u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV90dGw:bind_dname_ttl.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname_ttl.domain.com&apos;, u&apos;target&apos;: u&apos;target.org_ttl&apos;}, {u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV92aWV3:bind_dname_view.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname_view.domain.com&apos;, u&apos;target&apos;: u&apos;target.org_view&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="229" name="test_19_Get_operation_to_read_record_dname_object_with_zone" time="0.0344130992889"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}, {u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV90dGw:bind_dname_ttl.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname_ttl.domain.com&apos;, u&apos;target&apos;: u&apos;target.org_ttl&apos;}, {u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV92aWV3:bind_dname_view.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname_view.domain.com&apos;, u&apos;target&apos;: u&apos;target.org_view&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="246" name="test_20_Modify_the_record_dname_object_with_zone" time="0.0292308330536"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="257" name="test_21_Search_operation_to_read_record_dname_object_with_negotation" time="0.0337131023407"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="268" name="test_22_Search_operation_to_read_record_dname_object_with_colon" time="0.0463857650757"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="280" name="test_23_Get_the_record_dname_with_wrong_zone" time="0.0306017398834"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for zone: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for zone: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="292" name="test_24_delete_record_dname" time="0.0540940761566"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV90dGw:bind_dname_ttl.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="298" name="test_25_delete_record_dname" time="0.0495262145996"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV92aWV3:bind_dname_view.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="306" name="test_26_Search_operation_to_read_record_dname_object_with_extattrs" time="0.0371448993683"></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="314" name="test_27_Modify_the_record_dname_object_with_disable" time="0.0310883522034"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for creator (\&quot; STATIC\&quot;) valid values are: STATIC, DYNAMIC, SYSTEM&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for creator (\&quot; STATIC\&quot;) valid values are: STATIC, DYNAMIC, SYSTEM&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="327" name="test_28_Modify_the_record_dname_object_with_disable" time="0.0456430912018"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Creator of records cannot be changed to or from SYSTEM.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Creator of records cannot be changed to or from SYSTEM.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="339" name="test_29_Modify_the_record_dname_object_with_creator" time="0.0569229125977"></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="349" name="test_30_Get_operation_to_read_record_dname_object_with_zone" time="0.0485270023346"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="364" name="test_31_Search_operation_to_read_record_dname_object_with_negotation" time="0.0354917049408"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: creator&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: creator&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="375" name="test_32_Search_operation_to_read_record_dname_object_with_colon" time="0.0276427268982"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: creator&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: creator&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="386" name="test_33_Search_operation_to_read_record_dname_object_with_negotation" time="0.0387859344482"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="398" name="test_34_Modify_the_record_dname_object_with_creation_time" time="0.0328407287598"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="410" name="test_35_Search_operation_to_read_record_dname_object_with_colon" time="0.0353600978851"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="423" name="test_36_create_operation_for_record_dname_object_with_ddns_principal" time="0.0380611419678"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: Cannot assign DDNS principal to a resource record since the creator type of the record is not DYNAMIC.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Cannot assign DDNS principal to a resource record since the creator type of the record is not DYNAMIC.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="435" name="test_37_Create_record_dname" time="0.0379450321198"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV9kZG5z:bind_dname_ddns.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="443" name="test_38_delete_record_dname" time="0.0473082065582"><system-out>&quot;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZV9kZG5z:bind_dname_ddns.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="450" name="test_39_create_operation_for_record_dname_object_with_ddns_protected" time="0.0440309047699"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_protected&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_protected&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dname.RangeTemplate" file="WAPI82_Automation/test_record_dname.py" line="462" name="test_40_Get_operation_to_read_record_dname_object_with_reclaimable" time="0.0445718765259"><system-out>[{u&apos;_ref&apos;: u&apos;record:dname/ZG5zLmJpbmRfZG5hbWUkLl9kZWZhdWx0LmNvbS5kb21haW4uYmluZF9kbmFtZQ:bind_dname.domain.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;, u&apos;name&apos;: u&apos;bind_dname.domain.com&apos;, u&apos;target&apos;: u&apos;target.org&apos;}]
+</system-out></testcase></testsuite>

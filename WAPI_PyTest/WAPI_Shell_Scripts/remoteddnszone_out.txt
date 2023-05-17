@@ -1,0 +1,119 @@
+
+Case:1
+Test the remoteddnszone structure
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Testing,remote_forward_zones: [{fqdn: asm123.com,gss_tsig_dns_principal: saklfjlk,gss_tsig_domain: AD-21.LOCAL,key_type: GSS-TSIG,server_address: 10.39.39.45}]}' -X POST
+
+
+ Result
+"networkview/ZG5zLm5ldHdvcmtfdmlldyQxMDY:Testing/false"Response code:201
+
+
+Case:2
+ Test the fqdn field in remoteddnszone structure
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: GSS-TSIG,server_address: 10.0.0.2}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Required field missing: fqdn",
+  "code": "Client.Ibap.Proto",
+  "text": "Required field missing: fqdn"
+}Response code:400
+
+
+Case:3
+Test the gss_tsig_dns_principal field in remoteddnszon structure
+ Command: curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: 123 ,gss_tsig_domain: AD-21.LOCAL,key_type: GSS-TSIG,server_address: 10.0.0.2}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for gss_tsig_dns_principal: 123: Must be string type",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for gss_tsig_dns_principal: 123: Must be string type"
+}Response code:400
+
+
+Case:4
+Test the gss_tsig_domain field in remoteddnszon structure
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: 1234,key_type: GSS-TSIG,server_address: 10.0.0.2}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for gss_tsig_domain: 1234: Must be string type",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for gss_tsig_domain: 1234: Must be string type"
+}Response code:400
+
+
+Case:5
+Test the key_type field in remoteddnszon structure
+Command: curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: ASM,server_address: 10.0.0.2}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for key_type (\"ASM\") valid values are: GSS-TSIG, NONE, TSIG",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for key_type (\"ASM\") valid values are: GSS-TSIG, NONE, TSIG"
+}Response code:400
+
+
+Case:6
+ Test the server_address field in remoteddnszon structure
+Command: curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: GSS-TSIG}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Required field missing: server_address",
+  "code": "Client.Ibap.Proto",
+  "text": "Required field missing: server_address"
+}Response code:400
+
+
+Case:7
+ Test the server_address field in remoteddnszon structure
+Command :curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: GSS-TSIG,server_address: 10.0.A.2}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for server_address: \"10.0.A.2\": Invalid IP address",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for server_address: \"10.0.A.2\": Invalid IP address"
+}Response code:400
+
+
+Case:8
+ Test the tsig_key field in remoteddnszon structure
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: TSIG,server_address: 10.0.0.2,tsig_key: 1234,tsig_key_alg: HMAC-MD5,tsig_key_name: test}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for tsig_key: 1234: Must be string type",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for tsig_key: 1234: Must be string type"
+}Response code:400
+
+
+Case:9
+Test the tsig_key_alg field in remoteddnszon structure
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: TSIG,server_address: 10.0.0.2,tsig_key: lDenNrBKS7JMqodB0I703ldthZloYcwMycdS4vqWiOY=,tsig_key_alg: true,tsig_key_name: test}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for tsig_key_alg (true) valid values are: HMAC-MD5, HMAC-SHA256",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for tsig_key_alg (true) valid values are: HMAC-MD5, HMAC-SHA256"
+}Response code:400
+
+
+Case:10
+Test the tsig_key_name field in remoteddnszon structure
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/networkview -d '{name: Infoblox,remote_forward_zones: [{fqdn: infoblox.com,gss_tsig_dns_principal: test,gss_tsig_domain: AD-21.LOCAL,key_type: TSIG,server_address: 10.0.0.2,tsig_key: lDenNrBKS7JMqodB0I703ldthZloYcwMycdS4vqWiOY=,tsig_key_alg: HMAC-MD5,tsig_key_name: true}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Invalid value for tsig_key_name: true: Must be string type",
+  "code": "Client.Ibap.Proto",
+  "text": "Invalid value for tsig_key_name: true: Must be string type"
+}Response code:400
+
+
+

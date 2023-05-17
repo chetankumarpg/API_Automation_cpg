@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="radius_authservice_results" skips="0" tests="63" time="6.280"><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="25" name="test_1_Create_Radius_Authservice" time="0.0371568202972"><system-out>&quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="39" name="test_2_Format_Radius_Authservice" time="0.0490131378174"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="53" name="test_3_Schedule_Radius_Authservice" time="0.0366263389587"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:radius:authservice does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;radius:authservice does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="65" name="test_4_Csv_Export_Radius_Authservice" time="0.0552639961243"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="77" name="test_5_return_fields_Radius_Authservice" time="0.0439748764038"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="92" name="test_6_Req_Fields_1_Create_Radius_Authservice" time="0.0587577819824"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="105" name="test_7_Req_Fields_2_Create_Radius_Authservice" time="0.0386250019073"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="118" name="test_8_acct_retries_Radius_Authservice" time="0.0392241477966"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;acct_retries&apos;: 1000}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;acct_retries&apos;: 1000}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="134" name="test_9_Serach_acct_Retries_exact_equality" time="0.0498991012573"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="147" name="test_10_Serach_acct_Retries_case_insensitive" time="0.0416271686554"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="159" name="test_11_Serach_acct_Retries_case_regular_expression" time="0.0577991008759"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="171" name="test_12_acct_timeout_Radius_Authservice" time="0.0355663299561"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;acct_timeout&apos;: 5000}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;acct_timeout&apos;: 5000}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="187" name="test_13_Serach_acct_timeout_exact_equality" time="0.0324280261993"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="198" name="test_14_Serach_acct_timeout_case_insensitive" time="0.0357029438019"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="210" name="test_15_Serach_acct_timeout_case_regular_expression" time="0.0321550369263"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: acct_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: acct_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="222" name="test_16_auth_retries_Radius_Authservice" time="0.036878824234"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;auth_retries&apos;: 6}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;auth_retries&apos;: 6}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="238" name="test_17_Serach_auth_Retries_exact_equality" time="0.0368819236755"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="250" name="test_18_Serach_auth_Retries_case_insensitive" time="0.0360636711121"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="262" name="test_19_Serach_auth_Retries_case_regular_expression" time="0.0398020744324"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_retries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_retries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="274" name="test_20_auth_timeout_Radius_Authservice" time="0.0343127250671"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;auth_timeout&apos;: 5000}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;auth_timeout&apos;: 5000}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="290" name="test_21_Serach_auth_timeout_exact_equality" time="0.030611038208"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="302" name="test_22_Serach_auth_timeout_case_insensitive" time="0.0309226512909"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="314" name="test_23_Serach_auth_timeout_case_regular_expression" time="0.0388979911804"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_timeout&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_timeout&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="326" name="test_24_comment_Radius_Authservice" time="0.040796995163"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="342" name="test_25_Serach_comment_exact_equality" time="0.0374109745026"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="353" name="test_26_Serach_comment_case_insensitive" time="0.0443468093872"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="363" name="test_27_Serach_comment_regular_expression" time="0.0421016216278"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="375" name="test_28_disable_Radius_Authservice" time="0.0420739650726"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;disable&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="391" name="test_29_Serach_disable_exact_equality" time="0.0452039241791"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="403" name="test_30_Serach_disable_case_insensitive" time="0.0295038223267"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="415" name="test_31_Serach_disable_regular_expression" time="0.0298972129822"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="426" name="test_32_name_Radius_Authservice" time="0.032169342041"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;name&apos;: u&apos;admin&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="442" name="test_33_Serach_name_exact_equality" time="0.0329120159149"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="453" name="test_34_Serach_name_case_insensitive" time="0.0422308444977"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="463" name="test_35_Serach_name_regular_expression" time="0.0444450378418"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="474" name="test_36_servers_Radius_Authservice" time="0.0418858528137"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;PAP&apos;, u&apos;auth_port&apos;: 1812, u&apos;use_accounting&apos;: True, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;acct_port&apos;: 1813}]}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;PAP&apos;, u&apos;auth_port&apos;: 1812, u&apos;use_accounting&apos;: True, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.39.45&apos;, u&apos;acct_port&apos;: 1813}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="489" name="test_37_Serach_servers_exact_equality" time="0.0435268878937"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="501" name="test_38_Serach_servers_case_insensitive" time="0.0465621948242"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="513" name="test_39_Serach_servers_regular_expression" time="0.0479316711426"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="526" name="test_40_cache_ttl_Radius_Authservice" time="0.0348858833313"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;cache_ttl&apos;: 3600}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;cache_ttl&apos;: 3600}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="541" name="test_41_Serach_cache_ttl_exact_equality" time="0.0295379161835"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cache_ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cache_ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="553" name="test_42_Serach_cache_ttl_case_insensitive" time="0.0371749401093"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cache_ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cache_ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="565" name="test_43_Serach_cache_ttl_regular_expression" time="0.034252166748"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cache_ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cache_ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="577" name="test_44_enable_cache_Radius_Authservice" time="0.0411989688873"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;enable_cache&apos;: False}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;enable_cache&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="592" name="test_45_Serach_enable_cache_exact_equality" time="0.0380229949951"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_cache&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_cache&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="604" name="test_46_Serach_enable_cache_case_insensitive" time="0.0416250228882"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_cache&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_cache&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="616" name="test_47_Serach_enable_cache_regular_expression" time="0.0459718704224"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_cache&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_cache&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="630" name="test_48_mode_Radius_Authservice" time="0.0347850322723"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;mode&apos;: u&apos;HUNT_GROUP&apos;}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;mode&apos;: u&apos;HUNT_GROUP&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="647" name="test_49_Serach_mode_exact_equality" time="0.0370149612427"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;admin&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="659" name="test_50_Serach_mode_case_insensitive" time="0.0352149009705"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: mode&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: mode&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="671" name="test_51_Serach_mode_regular_expression" time="0.029139995575"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: mode&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: mode&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="682" name="test_52_recovery_interval_Radius_Authservice" time="0.0395767688751"><system-out>[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;recovery_interval&apos;: 30}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&apos;, u&apos;recovery_interval&apos;: 30}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="697" name="test_53_Serach_recovery_interval_exact_equality" time="0.0363631248474"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: recovery_interval&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: recovery_interval&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="709" name="test_54_Serach_recovery_interval_case_insensitive" time="0.0318701267242"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: recovery_interval&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: recovery_interval&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="721" name="test_55_Serach_recovery_interval_regular_expression" time="0.0356681346893"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: recovery_interval&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: recovery_interval&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="732" name="test_Update_On_name_1_Radius_Authservice" time="0.128967285156"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;name&apos;: u&apos;user&apos;}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;name&apos;: u&apos;user&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="755" name="test_Update_On_servers_1_Radius_Authservice" time="0.112998247147"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;PAP&apos;, u&apos;auth_port&apos;: 1812, u&apos;use_accounting&apos;: True, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.38.40&apos;, u&apos;acct_port&apos;: 1813}]}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;servers&apos;: [{u&apos;auth_type&apos;: u&apos;PAP&apos;, u&apos;auth_port&apos;: 1812, u&apos;use_accounting&apos;: True, u&apos;disable&apos;: False, u&apos;use_mgmt_port&apos;: False, u&apos;address&apos;: u&apos;10.39.38.40&apos;, u&apos;acct_port&apos;: 1813}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="779" name="test_Update_On_mode_1_Radius_Authservice" time="0.136322259903"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;mode&apos;: u&apos;ROUND_ROBIN&apos;}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;mode&apos;: u&apos;ROUND_ROBIN&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="802" name="test_Update_On_recovery_interval_1_Radius_Authservice" time="0.142766714096"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;recovery_interval&apos;: 25}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;recovery_interval&apos;: 25}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="825" name="test_Update_On_enable_cache_1_Radius_Authservice" time="0.112322092056"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;enable_cache&apos;: True}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;enable_cache&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="848" name="test_Update_On_disable_1_Radius_Authservice" time="3.04171609879"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;disable&apos;: True}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;disable&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="870" name="test_Update_On_cache_ttl_1_Radius_Authservice" time="0.10148191452"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+[{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;cache_ttl&apos;: 3500}]
+{u&apos;_ref&apos;: u&apos;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&apos;, u&apos;cache_ttl&apos;: 3500}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice.Radius_Authservice" file="WAPI82_Automation/test_radius_authservice.py" line="892" name="test_45_DELETE_radius_Authservice" time="0.103851318359"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user
+&quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAudXNlcg:user&quot;
+</system-out></testcase></testsuite>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="SF_Global_function_call_results" skips="0" tests="13" time="1.124"><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="12" name="test_1_smartfolder_global" time="0.0879492759705"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="20" name="test_2_Create_smartfolder_global_object_with_function_call" time="0.139083147049"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{
+    &quot;result&quot;: &quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVyIENvcHk:global_testing_smartofolder%20Copy&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="42" name="test_2_Create_smartfolder_global_object_with_name_filed_in_function_call" time="0.128254890442"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{
+    &quot;result&quot;: &quot;smartfolder:personal/Li5teV9wZXJzb25hbF9zbWFydF9mb2xkZXIkb25lLnBlcnNvbmFsX3NtYXJ0X2ZvbGRlciQuY29tLmluZm9ibG94Lm9uZS5hZG1pbiRhZG1pbi5TbWFydF9jaGlsZF9wZXJzb25hbF80NA:Smart_child_personal_44/false&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="63" name="test_3_Create_smartfolder_global_object_with_is_shortcut_filed_in_function_call" time="0.118711948395"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{
+    &quot;result&quot;: &quot;smartfolder:personal/Li5teV9wZXJzb25hbF9zbWFydF9mb2xkZXIkb25lLnBlcnNvbmFsX3NtYXJ0X2ZvbGRlciQuY29tLmluZm9ibG94Lm9uZS5hZG1pbiRhZG1pbi5nbG9iYWxfdGVzdGluZ19zbWFydG9mb2xkZXIgQ29weQ:global_testing_smartofolder%20Copy/false&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="83" name="test_4_Result_Fild_smartfolder_global_object_with_function_call" time="0.0787749290466"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: result&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: result&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="99" name="test_5_Create_smartfolder_global_object_with_function_call" time="0.124032974243"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{
+    &quot;result&quot;: &quot;smartfolder:personal/Li5teV9wZXJzb25hbF9zbWFydF9mb2xkZXIkb25lLnBlcnNvbmFsX3NtYXJ0X2ZvbGRlciQuY29tLmluZm9ibG94Lm9uZS5hZG1pbiRhZG1pbi5nbG9iYWxfdGVzdGluZ19zbWFydG9mb2xkZXIgQ29weTE:global_testing_smartofolder%20Copy1/false&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="118" name="test_6_PUT_On_smartfolder_global_object_with_function_call" time="0.09308385849"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function save_as illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function save_as illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="134" name="test_7_DELETE_On_smartfolder_global_object_with_function_call" time="0.0850450992584"><system-out>smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkZ2xvYmFsX3Rlc3Rpbmdfc21hcnRvZm9sZGVy:global_testing_smartofolder
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function save_as illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function save_as illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="151" name="test_8_DELETE_the_smartfolder_global_object" time="0.0457611083984"></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="160" name="test_9_DELETE_the_smartfolder_global_object" time="0.0560131072998"></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="169" name="test_10_DELETE_the_smartfolder_global_object" time="0.0378479957581"></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="178" name="test_11_DELETE_the_smartfolder_global_object" time="0.0350370407104"></testcase><testcase classname="WAPI82_Automation.test_SF_Global_function_call.smartfolder_personal_Function_Call" file="WAPI82_Automation/test_SF_Global_function_call.py" line="187" name="test_12_DELETE_the_smartfolder_global_object" time="0.0341799259186"></testcase></testsuite>

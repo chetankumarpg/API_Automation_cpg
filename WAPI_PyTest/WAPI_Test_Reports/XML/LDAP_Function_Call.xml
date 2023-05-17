@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="LDAP_Function_Call_results" skips="0" tests="11" time="11.660"><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="27" name="test_1_POST_On_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0650050640106"><system-out>&quot;ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="42" name="test_2_GET_On_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0873878002167"><system-out>ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_ldap_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_ldap_server_settings illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="60" name="test_3_DELETE_On_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0777399539948"><system-out>ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_ldap_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_ldap_server_settings illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="77" name="test_4_PUT_On_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0829830169678"><system-out>ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_ldap_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_ldap_server_settings illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="95" name="test_5_Req_field_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0743391513824"><system-out>ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: ldap_server&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: ldap_server&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="113" name="test_6_version_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0339441299438"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for version (\&quot;V1\&quot;) valid values are: V2, V3&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for version (\&quot;V1\&quot;) valid values are: V2, V3&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="125" name="test_7_version_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0302331447601"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="137" name="test_8_conection_time_out_check_ldap_server_settings_FC_LDAP_Auth_Service" time="5.07186079025"><system-out>{
+    &quot;error_message&quot;: &quot;Connection timed out&quot;, 
+    &quot;overall_status&quot;: &quot;FAILED&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="150" name="test_9_error_message_check_ldap_server_settings_FC_LDAP_Auth_Service" time="2.95493388176"><system-out>{
+    &quot;error_message&quot;: &quot;No CA certificates uploaded&quot;, 
+    &quot;overall_status&quot;: &quot;FAILED&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="164" name="test_10_authentication_type_check_ldap_server_settings_FC_LDAP_Auth_Service" time="3.0271320343"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: You must specify bind_user_dn when authentication type is set to \&quot;AUTHENTICATED\&quot;.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;You must specify bind_user_dn when authentication type is set to \&quot;AUTHENTICATED\&quot;.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_LDAP_Function_Call.LDAP_Auth_Service_Function_Call" file="WAPI82_Automation/test_LDAP_Function_Call.py" line="177" name="test_11_DELETE_On_check_ldap_server_settings_FC_LDAP_Auth_Service" time="0.0838479995728"><system-out>ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP
+&quot;ldap_auth_service/b25lLmF1dGhfbGRhcF9zZXJ2aWNlJDAuTERBUA:LDAP&quot;
+</system-out></testcase></testsuite>

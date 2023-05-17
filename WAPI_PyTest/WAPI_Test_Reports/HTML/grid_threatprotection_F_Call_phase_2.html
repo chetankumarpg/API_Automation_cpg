@@ -1,0 +1,450 @@
+<!DOCTYPE html><html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <style>body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	min-width: 1200px;
+	color: #999;
+}
+h2 {
+	font-size: 16px;
+	color: black;
+}
+
+p {
+    color: black;
+}
+
+a {
+	color: #999;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+/******************************
+ * SUMMARY INFORMATION
+ ******************************/
+
+#environment td {
+	padding: 5px;
+	border: 1px solid #E6E6E6;
+}
+
+#environment tr:nth-child(odd) {
+	background-color: #f6f6f6;
+}
+
+/******************************
+ * TEST RESULT COLORS
+ ******************************/
+span.passed, .passed .col-result {
+	color: green;
+}
+span.skipped, span.xfailed, .skipped .col-result, .xfailed .col-result {
+	color: orange;
+}
+span.error, span.failed, span.xpassed, .error .col-result, .failed .col-result, .xpassed .col-result  {
+	color: red;
+}
+
+
+/******************************
+ * RESULTS TABLE
+ *
+ * 1. Table Layout
+ * 2. Extra
+ * 3. Sorting items
+ *
+ ******************************/
+
+/*------------------
+ * 1. Table Layout
+ *------------------*/
+
+#results-table {
+	border: 1px solid #e6e6e6;
+	color: #999;
+	font-size: 12px;
+	width: 100%
+}
+
+#results-table th, #results-table td {
+	padding: 5px;
+	border: 1px solid #E6E6E6;
+	text-align: left
+}
+#results-table th {
+	font-weight: bold
+}
+
+/*------------------
+ * 2. Extra
+ *------------------*/
+
+.log:only-child {
+	height: inherit
+}
+.log {
+	background-color: #e6e6e6;
+	border: 1px solid #e6e6e6;
+	color: black;
+	display: block;
+	font-family: "Courier New", Courier, monospace;
+	height: 230px;
+	overflow-y: scroll;
+	padding: 5px;
+	white-space: pre-wrap
+}
+div.image {
+	border: 1px solid #e6e6e6;
+	float: right;
+	height: 240px;
+	margin-left: 5px;
+	overflow: hidden;
+	width: 320px
+}
+div.image img {
+	width: 320px
+}
+
+/*------------------
+ * 3. Sorting items
+ *------------------*/
+.sortable {
+	cursor: pointer;
+}
+
+.sort-icon {
+	font-size: 0px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+	/*triangle*/
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+.inactive .sort-icon {
+	/*finish triangle*/
+	border-top: 8px solid #E6E6E6;
+}
+
+.asc.active .sort-icon {
+	/*finish triangle*/
+	border-bottom: 8px solid #999;
+}
+
+.desc.active .sort-icon {
+	/*finish triangle*/
+	border-top: 8px solid #999;
+}
+</style></head>
+  <body>
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+addEventListener("DOMContentLoaded", function() {
+    reset_sort_headers();
+
+    split_extra_onto_two_rows();
+    sort_column(find('.initial-sort'));
+
+    find_all('.col-links a.image').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  var node = elem;
+                                  while (node && !node.classList.contains('results-table-row')) {
+                                      node = node.parentNode;
+                                  }
+                                  if (node != null) {
+                                      if (node.nextSibling &&
+                                          node.nextSibling.classList.contains("extra")) {
+                                          var href = find('.image img', node.nextSibling).src;
+                                          window.open(href);
+                                      }
+                                  }
+                                  event.preventDefault();
+                              }, false)
+    });
+
+    find_all('.image a').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  window.open(find('img', elem).getAttribute('src'));
+                                  event.preventDefault();
+                              }, false)
+    });
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+});
+
+function sort_table(clicked, key_func) {
+    one_row_for_data();
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+
+    var sorted_rows = sort(rows, key_func, reversed);
+
+    var parent = document.getElementById('results-table-body');
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+
+    split_extra_onto_two_rows();
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+    var multiplier = reversed ? -1 : 1;
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+        return multiplier * (key_a >= key_b ? 1 : -1);
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'XFailed', 'XPassed', 'Skipped',
+                       'Passed'];
+        return strings.indexOf(elem.childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function split_extra_onto_two_rows() {
+    find_all('tr.results-table-row').forEach(function(elem) {
+        var new_row = document.createElement("tr")
+        new_row.className = "extra";
+        elem.parentNode.insertBefore(new_row, elem.nextSibling);
+        find_all(".extra", elem).forEach(function (td_elem) {
+            if (find("*:not(.empty)", td_elem)) {
+                new_row.appendChild(td_elem);
+                td_elem.colSpan=5;
+            } else {
+                td_elem.parentNode.removeChild(td_elem);
+            }
+        });
+    });
+}
+
+function one_row_for_data() {
+    find_all('tr.results-table-row').forEach(function(elem) {
+        if (elem.nextSibling.classList.contains('extra')) {
+            toArray(elem.nextSibling.childNodes).forEach(
+                function (td_elem) {
+                    elem.appendChild(td_elem);
+                })
+        } else {
+            var new_td = document.createElement("td");
+            new_td.className = "extra";
+            elem.appendChild(new_td);
+        }
+    });
+}
+</script>
+    <p>Report generated on 09-Aug-2017 at 02:17:49</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Platform</td>
+        <td>Linux-4.3.5-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>2.7.10</td></tr></table>
+    <h2>Summary</h2>
+    <p>10 tests ran in 2.60 seconds.<br/><span class="passed">6 passed</span>, <span class="skipped">0 skipped</span>, <span class="failed">4 failed</span>, <span class="error">0 errors</span>.<br/><span class="skipped">0 expected failures</span>, <span class="failed">0 unexpected passes</span>.</p>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable initial-sort result" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr></thead>
+      <tbody id="results-table-body">
+        <tr class="failed results-table-row">
+          <td class="col-result">Failed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_1_create_ruleset</td>
+          <td class="col-duration">0.27</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="log">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_1_create_ruleset&gt;<br/><br/>    @pytest.mark.run(order=1)<br/>    def test_1_create_ruleset(self):<br/>        filename="new_ruleset"<br/>        data = {"filename":filename}<br/>        logging.info("upload PT rule set")<br/>        create_file = ib_NIOS.wapi_request('POST', object_type="fileop",fields=json.dumps(data),params="?_function=uploadinit")<br/>        logging.info(create_file)<br/>        res = json.loads(create_file)<br/>        token = json.loads(create_file)['token']<br/>        url = json.loads(create_file)['url']<br/>        print create_file<br/>        print res<br/>        print token<br/>        print url<br/>        os.system('curl -k1 -u admin:infoblox -F name=%s -F filedata=@%s %s'%(filename,filename,url))<br/>        filename="/"+filename<br/>        print filename<br/>        data = {"token": token}<br/>        create_file1 = ib_NIOS.wapi_request('POST', object_type="fileop",fields=json.dumps(data),params="?_function=update_atp_ruleset")<br/>        logging.info(create_file1)<br/>        print create_file1<br/>&gt;       assert re.search(r"",create_file1)<br/><br/>WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:47: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>pattern = ''<br/>string = (400, '{ "Error": "AdmConDataError: None (IBDataError: IB.Data:Rule update failed: unable to decrypt the rule update file.)", \n  "code": "Client.Ibap.Data", \n  "text": "Rule update failed: unable to decrypt the rule update file."\n}')<br/>flags = 0<br/><br/>    def search(pattern, string, flags=0):<br/>        """Scan through string looking for a match to the pattern, returning<br/>        a match object, or None if no match was found."""<br/>&gt;       return _compile(pattern, flags).search(string)<br/><span class="error">E       TypeError: expected string or buffer</span><br/><br/>/usr/lib64/python2.7/re.py:146: TypeError<br/>----------------------------- Captured stdout call -----------------------------<br/>{
+    &quot;token&quot;: &quot;eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn\nRpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV\n0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP\nMGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn\njD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY\n62eETx2icTZhLWF99g3h6pVh\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset&quot;
+}
+{u&apos;url&apos;: u&apos;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset&apos;, u&apos;token&apos;: u&apos;eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn\nRpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV\n0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP\nMGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn\njD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY\n62eETx2icTZhLWF99g3h6pVh\n&apos;}
+eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn
+Rpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV
+0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP
+MGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn
+jD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY
+62eETx2icTZhLWF99g3h6pVh
+
+https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset
+/new_ruleset
+(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:Rule update failed: unable to decrypt the rule update file.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;Rule update failed: unable to decrypt the rule update file.&quot;\n}&apos;)
+----------------------------- Captured stderr call -----------------------------<br/>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (26) couldn&apos;t open file &quot;new_ruleset&quot;
+</div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_2_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr>
+        <tr class="failed results-table-row">
+          <td class="col-result">Failed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_3_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="log">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_3_atp_object_reset_Grid_Threatprotection_Function_Call&gt;<br/><br/>    @pytest.mark.run(order=3)<br/>    def test_3_atp_object_reset_Grid_Threatprotection_Function_Call(self):<br/>            get_ref1 = ib_NIOS.wapi_request('GET', object_type="threatprotection:ruleset")<br/>            logging.info(get_ref1)<br/>            res1 = json.loads(get_ref1)<br/>&gt;           ref1 = json.loads(get_ref1)[0]['_ref']<br/><span class="error">E           IndexError: list index out of range</span><br/><br/>WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:76: IndexError<br/></div></td></tr>
+        <tr class="failed results-table-row">
+          <td class="col-result">Failed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_4_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="log">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_4_atp_object_reset_Grid_Threatprotection_Function_Call&gt;<br/><br/>    @pytest.mark.run(order=4)<br/>    def test_4_atp_object_reset_Grid_Threatprotection_Function_Call(self):<br/>            get_ref1 = ib_NIOS.wapi_request('GET', object_type="threatprotection:ruleset")<br/>            logging.info(get_ref1)<br/>            res1 = json.loads(get_ref1)<br/>&gt;           ref1 = json.loads(get_ref1)[0]['_ref']<br/><span class="error">E           IndexError: list index out of range</span><br/><br/>WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:99: IndexError<br/></div></td></tr>
+        <tr class="failed results-table-row">
+          <td class="col-result">Failed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_5_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="log">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_5_atp_object_reset_Grid_Threatprotection_Function_Call&gt;<br/><br/>    @pytest.mark.run(order=5)<br/>    def test_5_atp_object_reset_Grid_Threatprotection_Function_Call(self):<br/>            get_ref1 = ib_NIOS.wapi_request('GET', object_type="threatprotection:ruleset")<br/>            logging.info(get_ref1)<br/>            res1 = json.loads(get_ref1)<br/>&gt;           ref1 = json.loads(get_ref1)[0]['_ref']<br/><span class="error">E           IndexError: list index out of range</span><br/><br/>WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:124: IndexError<br/></div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_6_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_7_PUT_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_8_DELETE_atp_object_reset_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.10</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_9_test_atp_server_connectivity_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">1.63</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr>
+        <tr class="passed results-table-row">
+          <td class="col-result">Passed</td>
+          <td class="col-name">WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py::Grid_Threatprotection_Function_Call::test_10_DELETE_test_atp_server_connectivity_Grid_Threatprotection_Function_Call</td>
+          <td class="col-duration">0.07</td>
+          <td class="col-links"></td>
+          <td class="extra">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>

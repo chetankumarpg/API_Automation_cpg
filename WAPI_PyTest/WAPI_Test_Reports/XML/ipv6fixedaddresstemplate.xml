@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="ipv6fixedaddresstemplate_results" skips="0" tests="75" time="4.817"><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="26" name="test_1_Create_New_ipv6fixedaddresstemplate" time="0.0545449256897"><system-out>&quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="42" name="test_2_Restriction_for_Scheduling_ipv6fixedaddresstemplate" time="0.0310051441193"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:ipv6fixedaddresstemplate does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;ipv6fixedaddresstemplate does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="54" name="test_3_Restriction_for_CSV_Export_ipv6fixedaddresstemplate" time="0.035856962204"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="67" name="test_4_Test_Fields_ipv6fixedaddresstemplate" time="0.0391068458557"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;Template1&quot;
+    }
+]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;, u&apos;name&apos;: u&apos;Template1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="82" name="test_5_Req_Fields_for_ipv6fixedaddresstemplate" time="0.0406250953674"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="95" name="test_6_comment_ipv6fixedaddresstemplate" time="0.0366778373718"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="111" name="test_7_Serach_comment_exact_equality" time="0.0321619510651"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;Template1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="122" name="test_8_Serach_comment_case_insensitive" time="0.0385482311249"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;Template1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="132" name="test_9_Serach_comment_regular_expression" time="0.0492808818817"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;Template1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="142" name="test_10_comment_field_datatype_ipv6fixedaddresstemplate" time="0.0895791053772"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="160" name="test_11_domain_name_field_datatype_ipv6fixedaddresstemplate" time="0.0812990665436"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for domain_name: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for domain_name: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="177" name="test_12_Update_domain_name_ipv6fixedaddresstemplate" time="0.132325172424"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;, u&apos;domain_name&apos;: u&apos;asm.com&apos;}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;, u&apos;domain_name&apos;: u&apos;asm.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="199" name="test_13_Serach_domain_name_exact_equality" time="0.0322163105011"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="212" name="test_14_Serach_domain_name_case_insensitive" time="0.0434081554413"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="224" name="test_15_Serach_domain_name_case_regular_expression" time="0.0458078384399"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="235" name="test_16_Update_domain_name_servers_ipv6fixedaddresstemplate" time="0.129698038101"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;, u&apos;domain_name_servers&apos;: [u&apos;2001:db8:a0b:12f0::1&apos;]}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1&apos;, u&apos;domain_name_servers&apos;: [u&apos;2001:db8:a0b:12f0::1&apos;]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="257" name="test_17_Serach_domain_name_servers_exact_equality" time="0.0423471927643"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="270" name="test_18_Serach_domain_name_servers_case_insensitive" time="0.0328860282898"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="282" name="test_19_Serach_domain_name_servers_case_regular_expression" time="0.0466821193695"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="293" name="test_20_Update_name_ipv6fixedaddresstemplate" time="0.13290810585"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkVGVtcGxhdGUx:Template1
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;name&apos;: u&apos;template&apos;}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;name&apos;: u&apos;template&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="316" name="test_21_Serach_name_exact_equality" time="0.0490701198578"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;template&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="327" name="test_22_Serach_name_case_insensitive" time="0.0447380542755"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;template&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="337" name="test_23_Serach_name_regular_expression" time="0.030396938324"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;name&quot;: &quot;template&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="349" name="test_24_name_field_datatype_ipv6fixedaddresstemplate" time="0.0683989524841"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for name: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for name: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="366" name="test_25_number_of_addresses_field_datatype_ipv6fixedaddresstemplate" time="0.0600218772888"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for number_of_addresses: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for number_of_addresses: true: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="384" name="test_26_Update_number_of_addresses_ipv6fixedaddresstemplate" time="0.124476194382"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Both the offset and number of addresses must be specified or empty)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Both the offset and number of addresses must be specified or empty&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="402" name="test_27_Serach_number_of_addresses_exact_equality" time="0.030385017395"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: number_of_addresses&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: number_of_addresses&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="415" name="test_28_Serach_number_of_addresses_case_insensitive" time="0.0341761112213"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: number_of_addresses&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: number_of_addresses&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="427" name="test_29_Serach_number_of_addresses_case_regular_expression" time="0.0321300029755"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: number_of_addresses&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: number_of_addresses&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="439" name="test_30_offset_field_datatype_ipv6fixedaddresstemplate" time="0.0758652687073"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for offset: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for offset: true: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="457" name="test_31_Update_offset_ipv6fixedaddresstemplate" time="0.107048034668"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Both the offset and number of addresses must be specified or empty)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Both the offset and number of addresses must be specified or empty&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="476" name="test_32_Serach_offset_exact_equality" time="0.0289287567139"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: offset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: offset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="489" name="test_33_Serach_offset_case_insensitive" time="0.0389409065247"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: offset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: offset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="501" name="test_34_Serach_offset_case_regular_expression" time="0.0371429920197"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: offset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: offset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="512" name="test_35_options_field_datatype_ipv6fixedaddresstemplate" time="0.0799641609192"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="529" name="test_36_Update_options_ipv6fixedaddresstemplate" time="0.130616903305"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="547" name="test_37_Serach_options_exact_equality" time="0.0349662303925"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="560" name="test_38_Serach_options_case_insensitive" time="0.0358309745789"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="572" name="test_39_Serach_options_case_regular_expression" time="0.0377697944641"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="584" name="test_40_preferred_lifetime_field_datatype_ipv6fixedaddresstemplate" time="0.0750820636749"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for preferred_lifetime: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for preferred_lifetime: true: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="602" name="test_41_Update_preferred_lifetime_ipv6fixedaddresstemplate" time="0.113677978516"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;preferred_lifetime&apos;: 2500}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;preferred_lifetime&apos;: 2500}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="623" name="test_42_Serach_preferred_lifetime_exact_equality" time="0.0343289375305"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="635" name="test_43_Serach_preferred_lifetime_case_insensitive" time="0.0291550159454"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="647" name="test_44_Serach_preferred_lifetime_case_regular_expression" time="0.0301239490509"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="658" name="test_45_use_domain_name_field_datatype_ipv6fixedaddresstemplate" time="0.0751309394836"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_domain_name: \&quot;yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_domain_name: \&quot;yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="675" name="test_46_Update_use_domain_name_ipv6fixedaddresstemplate" time="0.117740392685"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_domain_name&apos;: True}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_domain_name&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="696" name="test_47_Serach_use_domain_name_exact_equality" time="0.0306022167206"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="708" name="test_48_Serach_use_domain_name_case_insensitive" time="0.0337541103363"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="720" name="test_49_Serach_use_domain_name_case_regular_expression" time="0.048755645752"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="731" name="test_50_use_domain_name_servers_field_datatype_ipv6fixedaddresstemplate" time="0.0894169807434"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_domain_name_servers: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_domain_name_servers: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="750" name="test_51_Update_use_domain_name_servers_ipv6fixedaddresstemplate" time="0.150014877319"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_domain_name_servers&apos;: True}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_domain_name_servers&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="771" name="test_52_Serach_use_domain_name_servers_exact_equality" time="0.0379338264465"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="783" name="test_53_Serach_use_domain_name_servers_case_insensitive" time="0.0429441928864"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="795" name="test_54_Serach_use_domain_name_servers_case_regular_expression" time="0.0417082309723"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_domain_name_servers&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_domain_name_servers&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="807" name="test_55_use_options_field_datatype_ipv6fixedaddresstemplate" time="0.0815079212189"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_options: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_options: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="826" name="test_56_Update_use_options_ipv6fixedaddresstemplate" time="0.126044034958"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_options&apos;: True}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_options&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="848" name="test_57_Serach_use_options_exact_equality" time="0.0473499298096"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="860" name="test_58_Serach_use_options_case_insensitive" time="0.0352740287781"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="872" name="test_59_Serach_use_options_case_regular_expression" time="0.0324881076813"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_options&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_options&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="884" name="test_60_use_preferred_lifetime_field_datatype_ipv6fixedaddresstemplate" time="0.0883281230927"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_preferred_lifetime: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_preferred_lifetime: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="903" name="test_61_Update_use_preferred_lifetime_ipv6fixedaddresstemplate" time="0.138876438141"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_preferred_lifetime&apos;: True}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_preferred_lifetime&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="924" name="test_62_Serach_use_preferred_lifetime_exact_equality" time="0.0286056995392"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="936" name="test_63_Serach_use_preferred_lifetime_case_insensitive" time="0.0421798229218"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="948" name="test_64_Serach_use_preferred_lifetime_case_regular_expression" time="0.0333948135376"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_preferred_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_preferred_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="959" name="test_65_use_valid_lifetime_field_datatype_ipv6fixedaddresstemplate" time="0.0807938575745"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_valid_lifetime: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_valid_lifetime: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="978" name="test_66_Update_use_valid_lifetime_ipv6fixedaddresstemplate" time="0.117857217789"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_valid_lifetime&apos;: True}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;use_valid_lifetime&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="999" name="test_67_Serach_use_valid_lifetime_exact_equality" time="0.0311200618744"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1011" name="test_68_Serach_use_valid_lifetime_case_insensitive" time="0.0416078567505"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1023" name="test_69_Serach_use_valid_lifetime_case_regular_expression" time="0.0333952903748"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1034" name="test_70_valid_lifetime_field_datatype_ipv6fixedaddresstemplate" time="0.0698282718658"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for valid_lifetime: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for valid_lifetime: true: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1052" name="test_71_Update_valid_lifetime_ipv6fixedaddresstemplate" time="0.11837720871"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+[{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;valid_lifetime&apos;: 2500}]
+{u&apos;_ref&apos;: u&apos;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&apos;, u&apos;valid_lifetime&apos;: 2500}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1073" name="test_72_Serach_valid_lifetime_exact_equality" time="0.0343101024628"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1085" name="test_73_Serach_valid_lifetime_case_insensitive" time="0.0316858291626"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1097" name="test_74_Serach_valid_lifetime_case_regular_expression" time="0.029590845108"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: valid_lifetime&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: valid_lifetime&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6fixedaddresstemplate.IPv6_Fixed_Address_Template" file="WAPI82_Automation/test_ipv6fixedaddresstemplate.py" line="1108" name="test_75_DELETE_ipv6fixedaddresstemplate" time="0.0959460735321"><system-out>ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template
+&quot;ipv6fixedaddresstemplate/ZG5zLmZpeGVkX2FkZHJlc3NfdGVtcGxhdGUkdGVtcGxhdGU:template&quot;
+</system-out></testcase></testsuite>

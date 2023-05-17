@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="ftpuser_original_results" skips="0" tests="65" time="3.232"><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="22" name="test_1_get_ftpuser" time="0.0406188964844"><system-out>[
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="31" name="test_2_csv_ftpuser" time="0.0372860431671"><system-out>404
+{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: The CSV search did not match any objects&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, 
+  &quot;text&quot;: &quot;The CSV search did not match any objects&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="42" name="test_3_schedule_ftpuser" time="0.0348608493805"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:ftpuser does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;ftpuser does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="52" name="test_4_ftpuser" time="0.0530560016632"><system-out>{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;, u&apos;home_dir&apos;: u&apos;/ftpusers/ftpuser1&apos;, u&apos;extattrs&apos;: {}}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="64" name="test_5_get_ftpuser" time="0.034172296524"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;, u&apos;home_dir&apos;: u&apos;/ftpusers/ftpuser1&apos;, u&apos;extattrs&apos;: {}}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;, u&apos;home_dir&apos;: u&apos;/ftpusers/ftpuser1&apos;, u&apos;extattrs&apos;: {}}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="77" name="test_6_global_search_ftpuser" time="0.468688964844"></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="88" name="test_7_create_home_dir_ftpuser" time="0.037162065506"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="98" name="test_8_create_home_dir_with_true_ftpuser" time="0.0274291038513"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="110" name="test_9_create_home_dir_with_false_ftpuser" time="0.0291578769684"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="121" name="test_10_create_home_dir_with_invalid_ftpuser" time="0.0295629501343"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="133" name="test_11_create_home_dir_with_search1_ftpuser" time="0.0274710655212"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="143" name="test_12_create_home_dir_with_search2_ftpuser" time="0.0401473045349"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="153" name="test_13_create_home_dir_with_search3_ftpuser" time="0.0290720462799"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="163" name="test_14_create_home_dir_with_search4_ftpuser" time="0.0282816886902"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="173" name="test_15_create_home_dir_with_search5_ftpuser" time="0.036416053772"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="183" name="test_16_create_home_dir_with_search6_ftpuser" time="0.0293290615082"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: create_home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: create_home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="193" name="test_17_extattrs_ftpuser" time="0.04722905159"><system-out>{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;extattrs&apos;: {}}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="203" name="test_18_extattrs_with_true_ftpuser" time="0.0446631908417"><system-out>{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;extattrs&apos;: {u&apos;Site&apos;: {u&apos;value&apos;: u&apos;asfd@$$$$$$$#@!!13412d&apos;}, u&apos;IB Discovery Owned&apos;: {u&apos;value&apos;: u&apos;asf  ssdzghdf  egg2424533454@#@%@$&apos;}}}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="215" name="test_19_extattrs_with_search1_ftpuser" time="0.0328497886658"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="225" name="test_20_extattrs_with_search2_ftpuser" time="0.0365686416626"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="235" name="test_21_extattrs_with_search3_ftpuser" time="0.040390253067"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="245" name="test_22_extattrs_with_search4_ftpuser" time="0.0275931358337"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="255" name="test_23_extattrs_with_search5_ftpuser" time="0.0364308357239"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="265" name="test_24_extattrs_with_search6_ftpuser" time="0.0286540985107"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="276" name="test_25_home_dir_ftpuser" time="0.0395917892456"><system-out>{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;home_dir&apos;: u&apos;/ftpusers/ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="286" name="test_26_home_dir_with_true_ftpuser" time="0.0347900390625"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="298" name="test_27_home_dir_with_search1_ftpuser" time="0.0271792411804"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="308" name="test_28_home_dir_with_search2_ftpuser" time="0.0354101657867"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="318" name="test_29_home_dir_with_search3_ftpuser" time="0.0368680953979"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="328" name="test_30_home_dir_with_search4_ftpuser" time="0.0390100479126"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="338" name="test_31_home_dir_with_search5_ftpuser" time="0.0516111850739"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="348" name="test_32_home_dir_with_search6_ftpuser" time="0.0393657684326"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: home_dir&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: home_dir&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="361" name="test_33_password_ftpuser" time="0.0395011901855"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="371" name="test_34_password_with_true_ftpuser" time="0.0476841926575"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="381" name="test_35_password_with_true_ftpuser" time="0.0446970462799"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not readable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not readable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="391" name="test_36_password_with_search1_ftpuser" time="0.0475480556488"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="401" name="test_37_password_with_search2_ftpuser" time="0.0477070808411"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="411" name="test_38_password_with_search3_ftpuser" time="0.048043012619"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="421" name="test_39_password_with_search4_ftpuser" time="0.0339071750641"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="431" name="test_40_password_with_search5_ftpuser" time="0.031506061554"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="441" name="test_41_password_with_search6_ftpuser" time="0.0412871837616"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: password&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: password&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="459" name="test_42_permission_ftpuser" time="0.0496509075165"><system-out>[{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;}]
+{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="474" name="test_43_permission_ftpuser" time="0.0476911067963"><system-out>{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RW&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="485" name="test_44_permission_ftpuser" time="0.0380673408508"><system-out>{u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;, u&apos;permission&apos;: u&apos;RO&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="496" name="test_45_permission_ftpuser" time="0.0291938781738"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;ROO\&quot;) valid values are: RO, RW&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;ROO\&quot;) valid values are: RO, RW&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="510" name="test_46_permission_with_search1_ftpuser" time="0.0338139533997"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="520" name="test_47_permission_with_search2_ftpuser" time="0.0280590057373"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="530" name="test_48_permission_with_search3_ftpuser" time="0.0396718978882"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="540" name="test_49_permission_with_search4_ftpuser" time="0.0280809402466"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="550" name="test_50_permission_with_search5_ftpuser" time="0.0452589988708"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="560" name="test_51_permission_with_search6_ftpuser" time="0.0360851287842"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: permission&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: permission&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="574" name="test_52_username_ftpuser" time="0.0320389270782"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="587" name="test53_username_ftpuser" time="0.0422220230103"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not allowed for update: username&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not allowed for update: username&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="600" name="test_54_username_with_search1_ftpuser" time="0.0364470481873"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="614" name="test_55_username_with_search1_ftpuser" time="0.046658039093"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="628" name="test_56_username_with_search1_ftpuser" time="0.0406601428986"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="643" name="test_57_username_with_search1_ftpuser" time="0.0328319072723"></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="651" name="test_58_username_with_search1_ftpuser" time="0.0465450286865"></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="659" name="test_59_username_with_search1_ftpuser" time="0.0348589420319"></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="667" name="test_60_username_with_search1_ftpuser" time="0.0546309947968"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="681" name="test_61_username_with_search3_ftpuser" time="0.0476818084717"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for username: \&quot; user\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for username: \&quot; user\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="691" name="test_62_username_with_search4_ftpuser" time="0.0491461753845"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;!&apos; not allowed for field: username&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;!&apos; not allowed for field: username&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="701" name="test_63_username_with_search5_ftpuser" time="0.0296728610992"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: username&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: username&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="711" name="test_64_username_with_search6_ftpuser" time="0.0516600608826"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: username&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: username&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ftpuser_original.MemberFileDistribution" file="WAPI82_Automation/test_ftpuser_original.py" line="727" name="test_66_delete_ftpuser" time="0.108561754227"><system-out>[{u&apos;username&apos;: u&apos;ftpuser1&apos;, u&apos;_ref&apos;: u&apos;ftpuser/b25lLmZ0cF91c2VyJGZ0cHVzZXIx:ftpuser1&apos;}]
+</system-out></testcase></testsuite>

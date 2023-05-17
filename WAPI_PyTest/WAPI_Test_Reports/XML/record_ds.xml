@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="record_ds_results" skips="0" tests="39" time="1.569"><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="23" name="test_1_create_zone" time="0.0739622116089"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4:domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="31" name="test_2_create_grid_primary_for_zone" time="0.0326001644135"><system-out>(404, &apos;{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: Grid Member infoblox.localdomain not found&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, \n  &quot;text&quot;: &quot;Grid Member infoblox.localdomain not found&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="40" name="test_3_create_for_sign_the_zone" time="0.0353977680206"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:The zone cannot be signed because it does not have a member primary.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;The zone cannot be signed because it does not have a member primary.&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="49" name="test_4_create_sub_zone" time="0.0761382579803"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5kb21haW4uc3Vi:sub.domain.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="58" name="test_5_create_grid_primary_for_subzone" time="0.0327718257904"><system-out>(404, &apos;{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: Grid Member infoblox.localdomain not found&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, \n  &quot;text&quot;: &quot;Grid Member infoblox.localdomain not found&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="68" name="test_6_create_for_sign_the_subzone" time="0.0382449626923"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:The zone cannot be signed because it does not have a member primary.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;The zone cannot be signed because it does not have a member primary.&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="76" name="test_7_create_record_ds_object_N" time="0.0433261394501"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for record:ds&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for record:ds&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="89" name="test_8_Get_operation_to_read_record_ds_object" time="0.0317780971527"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="102" name="test_3_delete_record_ds_object" time="0.0268058776855"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for record:ds&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for record:ds&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="114" name="test_10_Modify_the_record_ds_object" time="0.0468249320984"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation update not allowed for record:ds&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation update not allowed for record:ds&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="126" name="test_11_Create_schedule_the_record_ds_object" time="0.0398020744324"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for record:ds&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for record:ds&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="136" name="test_12_Csvexport_for_record_ds_object" time="0.0429511070251"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="147" name="test_13_Get_operation_to_read_record_ds_object_with_algorithm_field_using" time="0.0315370559692"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="159" name="test_14_Get_operation_to_read_record_ds_object_with_algorithm_field_using_ECDSAP256SHA256" time="0.0459740161896"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="170" name="test_15_Get_operation_to_read_record_ds_object_with_algorithm_field_using_ECDSAP384SHA384" time="0.0304629802704"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="182" name="test_16_Get_operation_to_read_record_ds_object_with_algorithm_field_using_NSEC3RSASHA1" time="0.0392537117004"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="192" name="test_17_Get_operation_to_read_record_ds_object_with_algorithm_field_using_RSAMD5" time="0.0374031066895"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="203" name="test_18_Get_operation_to_read_record_ds_object_with_algorithm_field_using_RSASHA1" time="0.0330412387848"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="214" name="test_19_Get_operation_to_read_record_ds_object_with_algorithm_field_using_RSASHA256" time="0.0314118862152"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="225" name="test_20_Get_operation_to_read_record_ds_object_with_algorithm_field_using_RSASHA512" time="0.0406930446625"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="236" name="test_21_Get_operation_to_read_record_ds_object_with_algorithm_field_using_NSEC3DSA" time="0.0376298427582"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="248" name="test_22_Get_operation_to_read_record_ds_object_N" time="0.0298428535461"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cloud_info&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cloud_info&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="260" name="test_23_Get_operation_to_read_record_ds_object_with_comment_field" time="0.0309891700745"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="277" name="test_24_Search_operation_to_read_record_ds_object" time="0.0300250053406"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: algorithm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: algorithm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="289" name="test_25_Search_operation_to_read_record_ds_object" time="0.031543970108"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: algorithm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: algorithm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="301" name="test_26_Search_operation_to_read_record_ds_object_with_creation_time" time="0.0280792713165"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="313" name="test_27_return_fields_with_creator_time" time="0.030308008194"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="323" name="test_28_Search_operation_to_read_record_ds_object_with_digest" time="0.0276563167572"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: digest&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: digest&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="335" name="test_29_Get_operation_to_read_record_ds_object_with_digest_type_field_value_SHA1" time="0.0301389694214"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="349" name="test_30_Get_operation_to_read_record_ds_object_with_digest_type_field_value_SHA256" time="0.0426340103149"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="364" name="test_31_Search_operation_to_read_record_ds_object_with_modifier_colon" time="0.0294749736786"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: digest_type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: digest_type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="376" name="test_32_Search_operation_to_read_record_ds_object_with_modifier_negotiate" time="0.0325107574463"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: digest_type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: digest_type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="388" name="test_33_Get_operation_to_read_record_ds_object_with_dns_name" time="0.0372891426086"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="399" name="test_34_Search_operation_to_read_record_ds_object_with_keytag_modifier_colon" time="0.0314359664917"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: key_tag&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: key_tag&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="411" name="test_35_Search_operation_to_read_record_ds_object_with_modifier_negotiate" time="0.0323143005371"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: key_tag&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: key_tag&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="423" name="test_36_Get_operation_to_read_record_ds_object_with_last_queried" time="0.0328989028931"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: last_queried&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: last_queried&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="436" name="test_37_Get_operation_to_read_record_ds_object_with_ttl" time="0.0370597839355"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="450" name="test_38_Search_operation_to_read_record_ds_object_with_creator" time="0.0289561748505"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for creator (\&quot;DSA\&quot;) valid values are: SYSTEM&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for creator (\&quot;DSA\&quot;) valid values are: SYSTEM&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_ds.RangeTemplate" file="WAPI82_Automation/test_record_ds.py" line="462" name="test_39_Search_operation_to_read_record_ds_object_with_zone" time="0.0297491550446"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for zone: \&quot; default\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for zone: \&quot; default\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+</system-out></testcase></testsuite>

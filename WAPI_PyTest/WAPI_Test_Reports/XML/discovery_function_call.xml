@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="discovery_function_call_results" skips="0" tests="2" time="1.525"><testcase classname="WAPI82_Automation.test_discovery_function_call.RangeTemplate" file="WAPI82_Automation/test_discovery_function_call.py" line="27" name="test_1_upload_support_bundle_into_server" time="1.42362499237"><system-out>{
+    &quot;token&quot;: &quot;eJydULFuwyAU3PmRZAk2uI6TbK7SSJWqtEra+ckGnD7JBgq4Sv6+j0rt0q0D6Hh3HNwp5fwNgrkw\n2pSzMYVZJReYF2yp0A6uH92VO2vySjdvItt3qYOTGZiXTAH0M44JLQDTqBLzFVtqf8fOC3P1GG6Q\ncDIL5mt2EHUpZSPWsuaN3JRVzeJ5MYeR2DXp31PycVcUouRVzcW25rLIM9BIf0sw4GgAXRHMB6Be\nvb08Pbf7lShLWbSgY8+vU7ZqsitqQhsy/SsmYpslmmIQFiWpikiZu4sp0uT/86YQP45grHIa7SVP\nJVnfPx4zrH4Fk9O5D5Er2revLZweDvlMbaSTF+tcn2iIHNCMOkJyoNzku/B9a8OOOV7feUDr5wSf\nJkR0NnNb4nr+Bb/HklI=\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1002/A_dsb.xml&quot;
+}
+{u&apos;url&apos;: u&apos;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1002/A_dsb.xml&apos;, u&apos;token&apos;: u&apos;eJydULFuwyAU3PmRZAk2uI6TbK7SSJWqtEra+ckGnD7JBgq4Sv6+j0rt0q0D6Hh3HNwp5fwNgrkw\n2pSzMYVZJReYF2yp0A6uH92VO2vySjdvItt3qYOTGZiXTAH0M44JLQDTqBLzFVtqf8fOC3P1GG6Q\ncDIL5mt2EHUpZSPWsuaN3JRVzeJ5MYeR2DXp31PycVcUouRVzcW25rLIM9BIf0sw4GgAXRHMB6Be\nvb08Pbf7lShLWbSgY8+vU7ZqsitqQhsy/SsmYpslmmIQFiWpikiZu4sp0uT/86YQP45grHIa7SVP\nJVnfPx4zrH4Fk9O5D5Er2revLZweDvlMbaSTF+tcn2iIHNCMOkJyoNzku/B9a8OOOV7feUDr5wSf\nJkR0NnNb4nr+Bb/HklI=\n&apos;}
+eJydULFuwyAU3PmRZAk2uI6TbK7SSJWqtEra+ckGnD7JBgq4Sv6+j0rt0q0D6Hh3HNwp5fwNgrkw
+2pSzMYVZJReYF2yp0A6uH92VO2vySjdvItt3qYOTGZiXTAH0M44JLQDTqBLzFVtqf8fOC3P1GG6Q
+cDIL5mt2EHUpZSPWsuaN3JRVzeJ5MYeR2DXp31PycVcUouRVzcW25rLIM9BIf0sw4GgAXRHMB6Be
+vb08Pbf7lShLWbSgY8+vU7ZqsitqQhsy/SsmYpslmmIQFiWpikiZu4sp0uT/86YQP45grHIa7SVP
+JVnfPx4zrH4Fk9O5D5Er2revLZweDvlMbaSTF+tcn2iIHNCMOkJyoNzku/B9a8OOOV7feUDr5wSf
+JkR0NnNb4nr+Bb/HklI=
+
+https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1002/A_dsb.xml
+A_dsb.xml
+(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:An error occurred while importing the device support bundle. A_dsb.xml: Cannot parse XML: [no element found at line 1, column 0, byte 0:&lt;br /&gt;&amp;#0;&lt;br /&gt;^&lt;br /&gt; at /us...]&lt;br /&gt;[warn].)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;An error occurred while importing the device support bundle. A_dsb.xml: Cannot parse XML: [no element found at line 1, column 0, byte 0:&lt;br /&gt;&amp;#0;&lt;br /&gt;^&lt;br /&gt; at /us...]&lt;br /&gt;[warn].&quot;\n}&apos;)
+</system-out><system-err>tar: A_dsb.xml: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (26) couldn&apos;t open file &quot;A_dsb.xml&quot;
+</system-err></testcase><testcase classname="WAPI82_Automation.test_discovery_function_call.RangeTemplate" file="WAPI82_Automation/test_discovery_function_call.py" line="52" name="test_2_Delete_device_support_bundle" time="0.0670828819275"><system-out>&quot;discovery:devicesupportbundle/Li5kZXZpY2Vfc3VwcG9ydF9idW5kbGUkQV9kc2I:A_dsb&quot;
+</system-out></testcase></testsuite>

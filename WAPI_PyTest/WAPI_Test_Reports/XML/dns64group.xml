@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="dns64group_results" skips="0" tests="37" time="1.695"><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="20" name="test_1_Format_Of_dns_64_group" time="0.033212184906"><system-out>[{u&apos;comment&apos;: u&apos;Auto-created default group for well-known prefix.&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;default&apos;}]
+{u&apos;comment&apos;: u&apos;Auto-created default group for well-known prefix.&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="34" name="test_2_Csv_Export_dns_64_group" time="0.0434701442719"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: dns64group objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;dns64group objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="47" name="test_3_Create_New_dns_64_group" time="0.0477612018585"><system-out>&quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="61" name="test_4_Create_Duplicate_dns_64_group" time="0.0380659103394"><system-out>{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Duplicate object &apos;test&apos; of type &apos;dns64_group&apos; already exists in the database.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Duplicate object &apos;test&apos; of type &apos;dns64_group&apos; already exists in the database.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="74" name="test_5_Create_Second_New_dns_64_group" time="0.0354208946228"><system-out>&quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="87" name="test_6_Update_On_dns_64_group" time="0.0770902633667"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+&quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="107" name="test_7_Datatype_of_Address_dns_64_group" time="0.0719952583313"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;&apos;&quot;
+}
+{u&apos;text&apos;: u&quot;Invalid address_string &apos;&apos;&quot;, u&apos;code&apos;: u&apos;Client.Ibap.Data.Conflict&apos;, u&apos;Error&apos;: u&quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;&apos;)&quot;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="128" name="test_8_Datatype_of_Comment_dns_64_group" time="0.0692601203918"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: true: Must be string type&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for comment: true: Must be string type&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for comment: true: Must be string type&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="148" name="test_9_Serach_comment_exact_equality" time="0.0323894023895"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;test&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;asm&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="159" name="test_10_Serach_comment_case_insensitive" time="0.0373039245605"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;test&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;asm&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="169" name="test_11_Serach_comment_regular_expression" time="0.0358726978302"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;test&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;asm&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="180" name="test_12_Datatype_of_disable_dns_64_group" time="0.0746536254883"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for disable: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for disable: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for disable: &quot;Yes&quot;: Must be boolean type&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for disable: &quot;Yes&quot;: Must be boolean type&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="201" name="test_13_Serach_disable_exact_equality" time="0.0271687507629"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="213" name="test_14_Serach_disable_case_insensitive" time="0.0272707939148"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="225" name="test_15_Serach_disable_regular_expression" time="0.027987241745"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="236" name="test_16_Datatype_of_enable_dnssec_dns64_dns_64_group" time="0.0651330947876"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_dnssec_dns64: \&quot;Yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_dnssec_dns64: \&quot;Yes\&quot;: Must be boolean type&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for enable_dnssec_dns64: &quot;Yes&quot;: Must be boolean type&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for enable_dnssec_dns64: &quot;Yes&quot;: Must be boolean type&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="257" name="test_17_Serach_enable_dnssec_dns64_exact_equality" time="0.027664899826"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_dnssec_dns64&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_dnssec_dns64&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="269" name="test_18_Serach_enable_dnssec_dns64_case_insensitive" time="0.0276036262512"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_dnssec_dns64&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_dnssec_dns64&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="281" name="test_19_Serach_enable_dnssec_dns64_regular_expression" time="0.028195142746"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_dnssec_dns64&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_dnssec_dns64&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="292" name="test_20_Address_Field_dns_64_group" time="0.0589141845703"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;1&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;1&apos;&quot;
+}
+{u&apos;text&apos;: u&quot;Invalid address_string &apos;1&apos;&quot;, u&apos;code&apos;: u&apos;Client.Ibap.Data.Conflict&apos;, u&apos;Error&apos;: u&quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;1&apos;)&quot;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="312" name="test_21_return_fields_dns_64_group" time="0.0310637950897"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;exclude&quot;: []
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;exclude&quot;: [
+            {
+                &quot;address&quot;: &quot;1::1&quot;, 
+                &quot;permission&quot;: &quot;ALLOW&quot;
+            }
+        ]
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;exclude&quot;: []
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="325" name="test_22_permission_Field_dns_64_group" time="0.0575420856476"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;ALlow\&quot;) valid values are: ALLOW, DENY&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;ALlow\&quot;) valid values are: ALLOW, DENY&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for permission (&quot;ALlow&quot;) valid values are: ALLOW, DENY&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for permission (&quot;ALlow&quot;) valid values are: ALLOW, DENY&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="346" name="test_23_extattrs_dns_64_group" time="0.0303659439087"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;extattrs&quot;: {}
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;extattrs&quot;: {
+            &quot;Site&quot;: {
+                &quot;value&quot;: &quot;bang&quot;
+            }
+        }
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;extattrs&quot;: {}
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="359" name="test_24_extattrs_Field_dns_64_group" time="0.0565369129181"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Bad value for extensible attribute \&quot;Site\&quot;&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Bad value for extensible attribute \&quot;Site\&quot;&quot;
+}
+{u&apos;text&apos;: u&apos;Bad value for extensible attribute &quot;Site&quot;&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Bad value for extensible attribute &quot;Site&quot;&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="379" name="test_25_mapped_Field_dns_64_group" time="0.0301320552826"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;mapped&quot;: []
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;mapped&quot;: [
+            {
+                &quot;address&quot;: &quot;10.3.2.1&quot;, 
+                &quot;permission&quot;: &quot;ALLOW&quot;
+            }
+        ]
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;mapped&quot;: []
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="392" name="test_26_name_field_In_dns_64_group" time="0.0287711620331"><system-out>[{u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&apos;, u&apos;name&apos;: u&apos;default&apos;}, {u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&apos;, u&apos;name&apos;: u&apos;test&apos;}, {u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&apos;, u&apos;name&apos;: u&apos;asm&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="406" name="test_27_Datatype_of_name_dns_64_group" time="0.0572807788849"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for name: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for name: true: Must be string type&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for name: true: Must be string type&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for name: true: Must be string type&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="427" name="test_28_Serach_name_exact_equality" time="0.0331749916077"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="441" name="test_2_Serach_name_case_insensitive" time="0.0287761688232"><system-out>[{u&apos;comment&apos;: u&apos;testing&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;test&apos;}]
+{u&apos;comment&apos;: u&apos;testing&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;test&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="456" name="test_30_Serach_name_exact_equality" time="0.0290780067444"><system-out>[{u&apos;comment&apos;: u&apos;testing&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;test&apos;}]
+{u&apos;comment&apos;: u&apos;testing&apos;, u&apos;_ref&apos;: u&apos;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;test&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="470" name="test_31_Prefix_dns_64_group" time="0.0295310020447"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;prefix&quot;: &quot;64:ff9b::/96&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;prefix&quot;: &quot;64:ff9b::/96&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;prefix&quot;: &quot;64:ff9b::/96&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="482" name="test_32_Datatype_of_prefix_dns_64_group" time="0.0555901527405"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for prefix: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for prefix: true: Must be string type&quot;
+}
+{u&apos;text&apos;: u&apos;Invalid value for prefix: true: Must be string type&apos;, u&apos;code&apos;: u&apos;Client.Ibap.Proto&apos;, u&apos;Error&apos;: u&apos;AdmConProtoError: Invalid value for prefix: true: Must be string type&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="502" name="test_33_Serach_prefix_exact_equality" time="0.029721736908"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;comment&quot;: &quot;Auto-created default group for well-known prefix.&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;default&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;test&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;asm&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="513" name="test_34_Serach_prefix_case_insensitive" time="0.0286099910736"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: prefix&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: prefix&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="524" name="test_35erach_prefix_regular_expression" time="0.0308442115784"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuZGVmYXVsdA:default&quot;, 
+        &quot;comment&quot;: &quot;Auto-created default group for well-known prefix.&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;default&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;test&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;, 
+        &quot;comment&quot;: &quot;testing&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;asm&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="534" name="test_36_DELETE_dns_64_group" time="0.0726718902588"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test
+&quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAudGVzdA:test&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_dns64group.dns_64_group" file="WAPI82_Automation/test_dns64group.py" line="550" name="test_37_DELETE_dns_64_group" time="0.0718948841095"><system-out>dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm
+&quot;dns64group/ZG5zLmRuczY0X2dyb3VwJDAuYXNt:asm&quot;
+</system-out></testcase></testsuite>

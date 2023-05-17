@@ -1,0 +1,50 @@
+set state 0
+set timeout 180
+set tos 0
+set failed_login 0
+
+set IPaddress [lindex $argv 0];
+puts [lindex $argv 0]
+spawn ssh -o StrictHostKeyChecking=no kperiyaswamy@10.36.199.7
+expect {
+        "*assword:" {
+                     send "Lucky@786\r";
+                     sleep 10
+                     send "ssh root@$IPaddress\r";
+                     expect {
+                             "#"
+                                {
+                                 send "ssh admin@10.39.10.12\r";
+                                 expect {
+                                         "*assword:" {
+                                                      send "Infoblox.123\r";
+                                                      sleep 10
+                                                      expect {
+                                                              "*:>"
+								   {
+                                                                    send "client delete -client lnv\r";
+                                                                    expect {
+                                                                            ">" {
+                                                                                 send "proceed\r";
+                                                                                 expect {
+                                                                                         "*:>" {
+                                                                                                send "exit\r"
+                                                                                                expect {
+                                                                                                        "#" {
+                                                                                                             send "exit\n"
+                                                                                                             }
+                                                                                                       }
+                                                                                                }
+                                                                                         }
+                                                                                 }
+                                                                            }
+                                                                   }
+                                                              }
+                                                     }
+                                         }
+
+                                 }
+                             }
+                    }
+       }
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="approval_workflow_results" skips="0" tests="24" time="0.913"><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="25" name="test_1_create_admin_group" time="0.0499119758606"><system-out>&quot;admingroup/b25lLmFkbWluX2dyb3VwJC5hcHBfd2Y:app_wf&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="34" name="test_2_create_admin_group" time="0.0490708351135"><system-out>&quot;admingroup/b25lLmFkbWluX2dyb3VwJC5hcHBfd2Yx:app_wf1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="42" name="test_3_create_approval_workflow_with_all_fields" time="0.0420620441437"><system-out>&quot;approvalworkflow/b25lLndvcmtmbG93X2FwcHJvdmFsJC5hcHBfd2Yx:app_wf1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="50" name="test_4_delete_approval_workflow" time="0.0329451560974"><system-out>&quot;approvalworkflow/b25lLndvcmtmbG93X2FwcHJvdmFsJC5hcHBfd2Yx:app_wf1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="57" name="test_5_create_approval_workflow_with_all_fields" time="0.0390610694885"><system-out>&quot;approvalworkflow/b25lLndvcmtmbG93X2FwcHJvdmFsJC5hcHBfd2Yx:app_wf1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="65" name="test_6_Modify_the_approval_workflow" time="0.0349378585815"><system-out>&quot;approvalworkflow/b25lLndvcmtmbG93X2FwcHJvdmFsJC5hcHBfd2Yx:app_wf1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="74" name="test_7_Get_operation_to_read_approval_workflow_object" time="0.0358939170837"><system-out>[{u&apos;_ref&apos;: u&apos;approvalworkflow/b25lLndvcmtmbG93X2FwcHJvdmFsJC5hcHBfd2Yx:app_wf1&apos;, u&apos;approval_group&apos;: u&apos;app_wf&apos;, u&apos;submitter_group&apos;: u&apos;app_wf1&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="90" name="test_8_Search_operation_to_read_approval_workflow_object" time="0.0288853645325"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: submitter_group&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: submitter_group&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="101" name="test_9_Search_operation_to_read_approval_workflow_object" time="0.0274379253387"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: approver_comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: approver_comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="112" name="test_10_Search_operation_to_read_approval_workflow_object" time="0.0334632396698"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: submitter_comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: submitter_comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="123" name="test_11_Search_operation_to_read_approval_workflow_object" time="0.0345757007599"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ticket_number&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ticket_number&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="134" name="test_12_Search_operation_to_read_approval_workflow_object" time="0.0277237892151"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_approval_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_approval_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="144" name="test_13_Search_operation_to_read_approval_workflow_object" time="0.0373258590698"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: approval_notify_to&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: approval_notify_to&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="155" name="test_14_Search_operation_to_read_approval_workflow_object" time="0.030266046524"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_approved_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_approved_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="166" name="test_15_Search_operation_to_read_approval_workflow_object" time="0.0284249782562"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: approved_notify_to&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: approved_notify_to&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="176" name="test_16_Search_operation_to_read_approval_workflow_object" time="0.0403311252594"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_failed_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_failed_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="197" name="test_17_Search_operation_to_read_approval_workflow_object" time="0.0282323360443"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_notify_group&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_notify_group&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="209" name="test_18_Search_operation_to_read_approval_workflow_object" time="0.0272662639618"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_notify_user&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_notify_user&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="220" name="test_19_Search_operation_to_read_approval_workflow_object" time="0.0370490550995"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_rejected_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_rejected_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="231" name="test_20_Search_operation_to_read_approval_workflow_object" time="0.0290107727051"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: rejected_notify_to&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: rejected_notify_to&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="242" name="test_21_Search_operation_to_read_approval_workflow_object" time="0.0301849842072"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_rescheduled_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_rescheduled_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="253" name="test_22_Search_operation_to_read_approval_workflow_object" time="0.0341119766235"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: rescheduled_notify_to&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: rescheduled_notify_to&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="264" name="test_23_Search_operation_to_read_approval_workflow_object" time="0.0293591022491"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_succeeded_notify&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_succeeded_notify&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_approval_workflow.RangeTemplate" file="WAPI82_Automation/test_approval_workflow.py" line="275" name="test_24_Search_operation_to_read_approval_workflow_object" time="0.0298430919647"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: succeeded_notify_to&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: succeeded_notify_to&quot;
+}
+</system-out></testcase></testsuite>

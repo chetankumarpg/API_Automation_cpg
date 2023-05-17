@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="tacacsplus_authservice_F_Call_results" skips="0" tests="10" time="5.771"><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="25" name="test_1_Create_Tacacsplus_server" time="0.041020154953"><system-out>&quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="38" name="test_2_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="5.11901497841"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+{
+    &quot;acct_time&quot;: 0, 
+    &quot;auth_time&quot;: 0, 
+    &quot;error_message&quot;: &quot;[TacacsError] AUTH : Can&apos;t establish connection to the server. Check IP Address/port.&quot;, 
+    &quot;overall_status&quot;: &quot;FAILED&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="59" name="test_3_tacacsplus_server_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0693120956421"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: tacacsplus_server&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: tacacsplus_server&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="79" name="test_4_tacacsplus_server_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0683331489563"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_tacacsplus_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_tacacsplus_server_settings illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="96" name="test_5_Address_1_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0700879096985"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="115" name="test_6_Address_2_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0695190429688"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for address: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for address: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="134" name="test_7_Shared_Secret_1_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0678322315216"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: shared_secret&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: shared_secret&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="154" name="test_8_Shared_Secret_2_check_tacacsplus_server_settings_FC_Tacacsplus_Authservice" time="0.0678110122681"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for shared_secret: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for shared_secret: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="171" name="test_9_DELETE_check_FC_tacacsplus_server_settings_Tacacsplus_Authservice" time="0.0679261684418"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_tacacsplus_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_tacacsplus_server_settings illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_tacacsplus_authservice_F_Call.Tacacsplus_Authservice_Function_Call" file="WAPI82_Automation/test_tacacsplus_authservice_F_Call.py" line="190" name="test_10_DELETE_Tacacsplus_Server" time="0.0736041069031"><system-out>tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin
+&quot;tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin&quot;
+</system-out></testcase></testsuite>

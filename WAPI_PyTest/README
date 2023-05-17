@@ -1,0 +1,16 @@
+This is a README file for WAPI 8.2 Pytest Automation
+
+WAPI Pytest Documentation Link: https://docs.google.com/document/d/1tIFj9FYvq7NAQfOFAnhxhyUmKresIaQrEt3dIw9tEQI/edit?usp=sharing
+
+
+Required files in Framework:
+============================
+Path: /home/kperiyaswamy/Wapi_py_test/TEST
+
+ib_NIOS.py
+run.py
+ib_utils/ib_conf_gen.py
+ib_utils/ib_NIOS.py
+ib_utils/ib_papi.py
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="ipv6dhcpoptionspace_results" skips="0" tests="10" time="0.562"><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="25" name="test_create_ipv6dhcpoptionspace" time="0.0475080013275"><system-out>&quot;ipv6dhcpoptionspace/ZG5zLm9wdGlvbl9zcGFjZSRkaGNwdjZvcHRpb25yYW5nZTEuLmZhbHNl:dhcpv6optionrange1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="39" name="test_duplicate_ipv6dhcpoptionspace" time="0.0375638008118"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for name: 123: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for name: 123: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="53" name="test_name_ipv6dhcpoptionspace" time="0.030464887619"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: enterprise_number&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: enterprise_number&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="65" name="test_address_ipv6dhcpoptionspace" time="0.0484960079193"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enterprise_number: true: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enterprise_number: true: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="90" name="test_duplicate_name_ipv6dhcpoptionspace" time="0.0461120605469"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Duplicate object &apos;dhcpv6optionrange1&apos; of type &apos;option_space&apos; already exists in the database.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Duplicate object &apos;dhcpv6optionrange1&apos; of type &apos;option_space&apos; already exists in the database.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="102" name="test_get_ipv6dhcpoptionspace" time="0.039523601532"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;ipv6dhcpoptionspace/ZG5zLm9wdGlvbl9zcGFjZSRkaGNwdjZvcHRpb25yYW5nZTEuLmZhbHNl:dhcpv6optionrange1&quot;, 
+        &quot;enterprise_number&quot;: 433321, 
+        &quot;name&quot;: &quot;dhcpv6optionrange1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="117" name="test_tsig_key_ipv6dhcpoptionspace" time="0.0345268249512"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: enterprise_number&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: enterprise_number&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="129" name="test_tsig_key_alg_ipv6dhcpoptionspace" time="0.048318862915"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: enterprise_number&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: enterprise_number&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="142" name="test_tsig_key_name_ipv6dhcpoptionspace" time="0.028413772583"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: enterprise_number&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: enterprise_number&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_ipv6dhcpoptionspace.Ipv6_ipv6dhcp_option_range" file="WAPI82_Automation/test_ipv6dhcpoptionspace.py" line="156" name="test_DELETE_ipv6dhcpoptionspace" time="0.0971350669861"><system-out>ipv6dhcpoptionspace/ZG5zLm9wdGlvbl9zcGFjZSRkaGNwdjZvcHRpb25yYW5nZTEuLmZhbHNl:dhcpv6optionrange1
+&quot;ipv6dhcpoptionspace/ZG5zLm9wdGlvbl9zcGFjZSRkaGNwdjZvcHRpb25yYW5nZTEuLmZhbHNl:dhcpv6optionrange1&quot;
+</system-out></testcase></testsuite>

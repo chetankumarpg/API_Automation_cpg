@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="zonerolloverinfo_results" skips="0" tests="9" time="0.613"><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="24" name="test_1_Zonerolloverinfo_Structure" time="0.0573627948761"><system-out>zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default
+{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;fqdn&apos;: u&apos;testing.com&apos;, u&apos;view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="39" name="test_2_Days_Field_In_Zonerolloverinfo" time="0.0345652103424"><system-out>[{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;dnssec_ksk_rollover_date&apos;: 1533799603}]
+{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;dnssec_ksk_rollover_date&apos;: 1533799603}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="56" name="test_3_display_domain_Field_In_Zonerolloverinfo" time="0.0460250377655"><system-out>[{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;display_domain&apos;: u&apos;testing.com&apos;}]
+{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;display_domain&apos;: u&apos;testing.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="73" name="test_4_View_In_Zonerolloverinfo" time="0.0412709712982"><system-out>[{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&apos;, u&apos;view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="90" name="test_5_dnssec_ksk_rollover_date_In_Zonerolloverinfo" time="0.0337200164795"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: dnssec_ksk_rollover_date&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: dnssec_ksk_rollover_date&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="103" name="test_6_display_domain_In_Zonerolloverinfo" time="0.0492687225342"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: display_domain&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: display_domain&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="117" name="test_7_display_domain_In_Zonerolloverinfo" time="0.0638568401337"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5hc20:asm.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="132" name="test_8_DELETE_Zonerolloverinfo" time="0.102180957794"><system-out>zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5hc20:asm.com/default
+&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5hc20:asm.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zonerolloverinfo.Zone_Roll_Over_Info" file="WAPI82_Automation/test_zonerolloverinfo.py" line="148" name="test_9_DELETE_Zonerolloverinfo" time="0.131546020508"><system-out>zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default
+&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&quot;
+</system-out></testcase></testsuite>

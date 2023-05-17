@@ -1,0 +1,575 @@
+bject Name tacacsplus:authservice============
+Test Case:1
+Test the format of tacacsplus:authservice object.
+Command Used:
+Command: curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infobloxhttps://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=name,servers
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "name": "admin",
+        "servers": [
+            {
+                "address": "10.39.39.45",
+                "auth_type": "CHAP",
+                "disable": false,
+                "port": 49,
+                "use_accounting": false,
+                "use_mgmt_port": false
+            }
+        ]
+    }
+]Response code:200
+
+============================
+Test Case:2
+Test the restriction for the tacacsplus:authservice object -Scheduling
+Command Used:
+curl -k1 -u admin:infoblox -X POST https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_schedinfo.scheduled_time=1924223800
+
+
+ Result
+{ "Error": "AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:tacacsplus:authservice does not support scheduling.)",
+  "code": "Client.Ibap.Data.Conflict",
+  "text": "tacacsplus:authservice does not support scheduling."
+}
+
+============================
+Test Case:3
+Test the restriction for the tacacsplus:authservice object - CSV Export
+Command Used:
+curl -k1 -u admin:infoblox -H 'content-type:application/json' -X POST -w 'Response code:%{http_code}' https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_function=csv_export
+
+
+ Result
+{ "Error": "AdmConProtoError: Function csv_export is not valid for this object",
+  "code": "Client.Ibap.Proto",
+  "text": "Function csv_export is not valid for this object"
+}Response code:400
+
+============================
+Test Case:4
+Test the _return_fields for default values in tacacsplus:authservice  object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -X GET
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:5
+Peform CREATE operation on tacacsplus object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d '{name: admin,servers: [{address: 10.39.39.45,shared_secret:hello}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Only one TACACS+ Authentication Service may be configured)",
+  "code": "Client.Ibap.Data.Conflict",
+  "text": "Only one TACACS+ Authentication Service may be configured"
+}Response code:400
+
+============================
+Test Case:6
+Test the fields are required to create this object -1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d '{servers: [{address: 10.39.39.45,shared_secret:hello}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: field for create missing: name",
+  "code": "Client.Ibap.Proto",
+  "text": "field for create missing: name"
+}Response code:400
+
+============================
+Test Case:7
+Test the fields are required to create this object -2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d '{name: admin}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: field for create missing: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "field for create missing: servers"
+}Response code:400
+
+============================
+Test Case:8
+Test the acct_retries field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=acct_retries
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "acct_retries": 0
+    }
+]Response code:200
+
+============================
+Test Case:9
+perform search for acct_retries field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:10
+perform search for acct_retries field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout:=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:11
+perform search for acct_retries field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout~=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:12
+Test the acct_timeout field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=acct_timeout
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "acct_timeout": 1000
+    }
+]Response code:200
+
+============================
+Test Case:13
+perform search for acct_timeout field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:14
+perform search for acct_timeout field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout:=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:15
+perform search for acct_timeout field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?acct_timeout~=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:16
+Test the auth_retries field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=auth_retries
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "auth_retries": 0
+    }
+]Response code:200
+
+============================
+Test Case:17
+perform search for auth_retries field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_retries=0
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:18
+perform search for auth_retries field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_retries:=0
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:19
+perform search for auth_retries field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_retries~=0
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:20
+Test the auth_timeout field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=auth_timeout
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "auth_timeout": 5000
+    }
+]Response code:200
+
+============================
+Test Case:21
+perform search for auth_timeout field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_timeout=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:22
+perform search for auth_timeout field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_timeout:=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:23
+perform search for auth_timeout field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?auth_timeout~=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:24
+Test the comment field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=comment
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing"
+    }
+]Response code:200
+
+============================
+Test Case:25
+perform search for comment field with different type of search modifiers-1
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d comment=QA_Testing
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:26
+perform search for comment field with different type of search modifiers-2
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d comment:=qA_Testing
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:27
+perform search for comment field with different type of search modifiers-3
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d comment:=qA_Testing
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:28
+Determines whether the TACACS+ authentication service object is disabled
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=disable
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "disable": false
+    }
+]Response code:200
+
+============================
+Test Case:29
+perform search for disable field with different type of search modifiers-1
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d disable=false
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: disable",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: disable"
+}Response code:400
+
+============================
+Test Case:30
+perform search for disable field with different type of search modifiers-2
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d disable:=false
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: disable",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: disable"
+}Response code:400
+
+============================
+Test Case:31
+perform search for disable field with different type of search modifiers-3
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d disable~=false
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: disable",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: disable"
+}Response code:400
+
+============================
+Test Case:32
+Test the name field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=name
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:33
+perform search for name field with different type of search modifiers-1
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d name=admin
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:34
+perform search for name field with different type of search modifiers-2
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d name:=ADmin
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:35
+perform search for name field with different type of search modifiers-3
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d name~=adm*
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "comment": "QA_Testing",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:36
+Test the servers field in tacacsplus:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/tacacsplus:authservice?_return_fields=servers
+
+
+ Result
+[
+    {
+        "_ref": "tacacsplus:authservice/b25lLnRhY2Fjc3BsdXNfYXV0aF9zZXJ2aWNlJGFkbWlu:admin",
+        "servers": [
+            {
+                "address": "10.39.39.45",
+                "auth_type": "CHAP",
+                "disable": false,
+                "port": 49,
+                "use_accounting": false,
+                "use_mgmt_port": false
+            }
+        ]
+    }
+]Response code:200
+
+============================
+Test Case:37
+perform search for servers field with different type of search modifiers-1
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d servers=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+Test Case:38
+perform search for servers field with different type of search modifiers-2
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d servers:=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+Test Case:39
+perform search for servers field with different type of search modifiers-3
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/tacacsplus:authservice -d servers~=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+
+

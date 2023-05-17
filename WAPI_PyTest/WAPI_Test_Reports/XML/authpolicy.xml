@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="authpolicy_results" skips="0" tests="27" time="1.753"><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="24" name="test_create_authpolicy" time="0.0451350212097"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for authpolicy&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for authpolicy&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="37" name="test_format_authpolicy" time="0.0437169075012"></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="49" name="test_csv_export_authpolicy" time="0.0303831100464"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="62" name="test_schedule_authpolicy" time="0.0325088500977"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for authpolicy&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for authpolicy&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="73" name="test_globalsearch_authpolicy" time="0.442933797836"><system-out>[{u&apos;_ref&apos;: u&apos;admingroup/b25lLmFkbWluX2dyb3VwJC5hZG1pbi1ncm91cA:admin-group&apos;, u&apos;name&apos;: u&apos;admin-group&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="87" name="test_return_fields_authpolicy" time="0.0349228382111"></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="99" name="test_admin_groups_field" time="0.0385851860046"><system-out>[{u&apos;_ref&apos;: u&apos;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&apos;, u&apos;admin_groups&apos;: []}]
+{u&apos;_ref&apos;: u&apos;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&apos;, u&apos;admin_groups&apos;: []}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="115" name="test_Serach_admin_groups_exact_equality" time="0.0473883152008"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: admin_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: admin_groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="128" name="test_Serach_admin_groups_case_insensitive" time="0.0308420658112"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: admin_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: admin_groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="141" name="test_Serach_admin_groups_case_regular_expression" time="0.0378618240356"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: admin_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: admin_groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="153" name="test_default_group_field" time="0.0342090129852"></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="168" name="test_Serach_default_group_exact_equality" time="0.0440320968628"></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="182" name="test_Serach_default_group_case_insensitive" time="0.0360817909241"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: default_group&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: default_group&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="193" name="test_Serach_default_group_case_regular_expression" time="0.029895067215"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: default_group&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: default_group&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="206" name="test_usage_type_field" time="0.0472939014435"><system-out>[{u&apos;_ref&apos;: u&apos;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&apos;, u&apos;usage_type&apos;: u&apos;FULL&apos;}]
+{u&apos;_ref&apos;: u&apos;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&apos;, u&apos;usage_type&apos;: u&apos;FULL&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="222" name="test_Serach_usage_type_exact_equality" time="0.0327436923981"><system-out>{u&apos;_ref&apos;: u&apos;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&apos;, u&apos;usage_type&apos;: u&apos;FULL&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="235" name="test_Serach_usage_type_case_insensitive" time="0.0449900627136"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: usage_type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: usage_type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="247" name="test_Serach_usage_type_regular_expression" time="0.0286118984222"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: usage_type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: usage_type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="260" name="test_auth_services_field" time="0.0436899662018"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&quot;, 
+        &quot;auth_services&quot;: [
+            &quot;localuser:authservice/Li5sb2NhbF91c2VyX2F1dGhfc2VydmljZSQw:Local%20Admin&quot;
+        ]
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="271" name="test_Serach_auth_services_exact_equality" time="0.0314447879791"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_services&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_services&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="283" name="test_Serach_auth_services_case_insensitive" time="0.0463039875031"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_services&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_services&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="296" name="test_Serach_auth_services_regular_expression" time="0.0304811000824"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: auth_services&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: auth_services&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="308" name="test_DELETE_authpolicy" time="0.0847737789154"><system-out>authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for authpolicy&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for authpolicy&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="327" name="test_Update_On_usage_type_AUTH_ONLY" time="0.083074092865"><system-out>authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy
+&quot;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="341" name="test_Update_On_usage_type_FULL" time="0.102725982666"><system-out>authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy
+&quot;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="354" name="test_Update_On_default_group_admin_group" time="0.0688180923462"><system-out>authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy
+&quot;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_authpolicy.Auth_Policy" file="WAPI82_Automation/test_authpolicy.py" line="370" name="test_Update_On_default_group_cloud_api_only" time="0.0763010978699"><system-out>authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy
+&quot;authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy&quot;
+</system-out></testcase></testsuite>

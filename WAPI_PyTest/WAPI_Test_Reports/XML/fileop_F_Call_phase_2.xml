@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="fileop_F_Call_phase_2_results" skips="0" tests="7" time="2.030"><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="12" name="test_1_uploadinit_Fileop_Function_Call" time="0.0462710857391"><system-out>{
+    &quot;token&quot;: &quot;eJydUE1PwzAMvfuPbJe1TbuuG7ehMQkJDbTB2WqTdFhqk5CkaPv3OENw4cYhke33kTxLad0VvT4D\nX9KaEP0ko/XgBMwlmd52g71k1uh04tXpALs2tnjUPbgSJGI30RDJIIIiGcFVMFduCaeZvjjyV4w0\n6hm4GvaiLsqyEU25zqpyWVSNgHCaTX5geMWC9xhduMtzUWRVnYlNnZV5mqEi/lzEngaNZHOvP5DU\n4u3l6Xm7W4iiqHIanfXfDDZrki8prtZs+5fOwCZRFCfhWhTMygPHbs86j6P736tC/HiiNtIqMuc0\nLdn8/vGQyuqXMFp1k6Q97bavWzw+7FNfQ4hHJ1Zph6JhsCc9qIDRorSja/1NtYZDCti1Dsm4KeKn\n9oGsSdiGsS77AoXOlQg=\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1003/import_file&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="25" name="test_2_generatesafenetclientcert_Fileop_Function_Call" time="0.689554929733"><system-out>{
+    &quot;token&quot;: &quot;eJylUMFqwzAMvetH2kuTOF2aZreOrDAYLbSDHUViO50gsT3bGe3fT95g7LDbDhaS3tOTn6S07oZe\nX4CDtCZEP8toPTgBS0lmsP1or5k1Or14czpA28UOT3oAV4JE7GcaIxlEUCQjuDUslbuD80JfHfkb\nRpr0AlwFe1EVZVmLumyygqMQEM6L2Y+Mbpj/FqML93kuimxdZaKpsjJPPVTEf4s40KiRbO71O5Ja\ntcfXw/Nx165EUVS/hzKnJ5askzopzrYs/tcQQ00iKTbEuSiYlwd23110Hif3n+3f5pIyaiOtInNJ\n3ZJXPDwdUrr+IUxWpQuJdLR297LD0+M+1RWEeHJikw4qagYH0qMKGC1KO7nOf01t4ZCM9p1DMm6O\n+KF9IGsS1jDWZ59pQZSE\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-DOWNLOAD-1005/10.35.195.2.pem&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="38" name="test_3_getsafenetclientcert_Fileop_Function_Call" time="0.0332269668579"><system-out>{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:RSASHA1 Client certificate does not exist.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;RSASHA1 Client certificate does not exist.&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="50" name="test_4_uploadinit_Fileop_Function_Call" time="0.0385329723358"><system-out>{
+    &quot;token&quot;: &quot;eJydUMFOwzAMvftHtsvapqPryq1oTEJCA21wttokHZHaxCQp2v4eZxJcuHFI5Pg9P+c9KR1d0esz\n8CWdDdHPMjoPJGApjR1cP7pL5qxOJ15JB9h1scOjHoBKkIj9bMZoLCIoIyPQGpaK7uC00Bcy/orR\nTHoBVMFeVEVZ1qIum6xoRFM3EE6L2Y+Mbpj/ESOF+zwXRbauMtFUWZmnHirDf4s4mFGjcbnXn2jU\n6v31+aXdrURRbPIEOUI/jzroyHp1kjaKqy0r/51g4LZdsReuRcGsPLDx7qzzONG/FwvxI4vaSqeM\nPaduyfoPT4dUrn8Jk1MpGZHC2rVvLR4f9+ldQYhHEpsUpKgZHIweVcDoULqJOn+b2sIheew7QmNp\njvilfTDOJqxhrM++AVAdl4E=\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1006/fileop_ruleset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="63" name="test_5_uploadinit_Fileop_Function_Call" time="0.0381770133972"><system-out>{
+    &quot;token&quot;: &quot;eJylUMFOwzAMvftHtsvaplvXldvQmISEBtrgbLVJOiy1iUlS2P6eZBJcOHJIZPv5PdtPSstXdPoM\n8ZPW+OAmGawDFjCXZHrbDfaSWaPTC1fWHnZtaPGoe+ASJGI30RDIIIIiGYCXMFe8gtNMX5jcFQON\negZcwV5URVnWoi6bTCzFalM04E+zyQ0RXkfCewjs7/JcFNmyykRTZWWeaqgoLhewp0Ej2dzpDyS1\neHt5et7uFqIo6jxBltHoL3TToL0OUbNO8qRitInqf1kRuG2g4kExFkXsyn28vj3rPIz8r+FC/Eij\nNtIqMudULeOM+8dDCpe/DaNVySKRXNttX7d4fNinvAIfjizWyVFRR7AnPSiPwaK0I7fuxtrAId3Z\ntYxkeAr4qZ0naxLWRKzLvgErspr9\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1007/fileop_new_ruleset&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="78" name="test_6_get_last_uploaded_atp_ruleset_Fileop_Function_Call" time="0.0401811599731"><system-out>{
+    &quot;token&quot;: &quot;eJzz0wMAAMwAfQ==\n&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_fileop_F_Call_phase_2.Fileop_Function_Call" file="WAPI82_Automation/test_fileop_F_Call_phase_2.py" line="92" name="test_7_download_atp_rule_update_Fileop_Function_Call" time="1.1046693325"><system-out>{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:Unable to apply new rules now: Could not resolve host: ts.infoblox.com)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Unable to apply new rules now: Could not resolve host: ts.infoblox.com&quot;
+}
+400
+</system-out></testcase></testsuite>

@@ -1,0 +1,773 @@
+============Object Name radius:authservice============
+Test Case:1
+Peform CREATE operation on radius object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice -d '{name: admin,servers: [{address: 10.39.39.45,shared_secret:hello}]}' -X POST
+
+
+ Result
+"radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin"Response code:201
+
+============================
+Test Case:2
+Test the format of radius:authservice object.
+Command Used:
+Command: curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infobloxhttps://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=name,servers
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "name": "admin",
+        "servers": [
+            {
+                "acct_port": 1813,
+                "address": "10.39.39.45",
+                "auth_port": 1812,
+                "auth_type": "PAP",
+                "disable": false,
+                "use_accounting": true,
+                "use_mgmt_port": false
+            }
+        ]
+    }
+]Response code:200
+
+============================
+Test Case:3
+Test the restriction for the radius:authservice object -Scheduling
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X POST https://10.35.118.15/wapi/v2.7/radius:authservice?_schedinfo.scheduled_time=1924223800
+
+
+ Result
+{ "Error": "AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:radius:authservice does not support scheduling.)",
+  "code": "Client.Ibap.Data.Conflict",
+  "text": "radius:authservice does not support scheduling."
+}Response code:400
+
+============================
+Test Case:4
+Test the restriction for the radius:authservice object - CSV Export
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -H 'content-type:application/json' -X POST -w 'Response code:%{http_code}' https://10.35.118.15/wapi/v2.7/radius:authservice?_function=csv_export
+
+
+ Result
+{ "Error": "AdmConProtoError: Function csv_export is not valid for this object",
+  "code": "Client.Ibap.Proto",
+  "text": "Function csv_export is not valid for this object"
+}Response code:400
+
+============================
+Test Case:5
+Test the _return_fields for default values in radius:authservice  object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice -X GET
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:6
+Test the fields are required to create this object -1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice -d '{servers: [{address: 10.39.39.45,shared_secret:hello}]}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: field for create missing: name",
+  "code": "Client.Ibap.Proto",
+  "text": "field for create missing: name"
+}Response code:400
+
+============================
+Test Case:7
+Test the fields are required to create this object -2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice -d '{name: admin}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: field for create missing: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "field for create missing: servers"
+}Response code:400
+
+============================
+Test Case:8
+Test the acct_retries field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=acct_retries
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "acct_retries": 1000
+    }
+]Response code:200
+
+============================
+Test Case:9
+perform search for acct_retries field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:10
+perform search for acct_retries field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout:=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:11
+perform search for acct_retries field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout~=1000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:12
+Test the acct_timeout field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=acct_timeout
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "acct_timeout": 5000
+    }
+]Response code:200
+
+============================
+Test Case:13
+perform search for acct_timeout field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:14
+perform search for acct_timeout field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout:=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:15
+perform search for acct_timeout field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?acct_timeout~=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: acct_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: acct_timeout"
+}Response code:400
+
+============================
+Test Case:16
+Test the auth_retries field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=auth_retries
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "auth_retries": 6
+    }
+]Response code:200
+
+============================
+Test Case:17
+perform search for auth_retries field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_retries=6
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:18
+perform search for auth_retries field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_retries:=6
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:19
+perform search for auth_retries field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_retries~=6
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_retries",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_retries"
+}Response code:400
+
+============================
+Test Case:20
+Test the auth_timeout field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=auth_timeout
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "auth_timeout": 5000
+    }
+]Response code:200
+
+============================
+Test Case:21
+perform search for auth_timeout field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_timeout=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:22
+perform search for auth_timeout field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_timeout:=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:23
+perform search for auth_timeout field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?auth_timeout~=5000
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: auth_timeout",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: auth_timeout"
+}Response code:400
+
+============================
+Test Case:24
+Test the comment field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=comment
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin"
+    }
+]Response code:200
+
+============================
+Test Case:25
+perform search for comment field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d comment=QA_Testing
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:26
+perform search for comment field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d comment:=qA_Testing
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:27
+perform search for comment field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d comment:=qA_Testing
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:28
+Determines whether the TACACS+ authentication service object is disabled
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=disable
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false
+    }
+]Response code:200
+
+============================
+Test Case:29
+perform search for disable field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d disable=false
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:30
+perform search for disable field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d disable:=false
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:31
+perform search for disable field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d disable~=false
+
+
+ Result
+{ "Error": "AdmConProtoError: JSON Decoding: No JSON object could be decoded",
+  "code": "Client.Ibap.Proto.JSONDecoding",
+  "text": "JSON Decoding: No JSON object could be decoded"
+}Response code:400
+
+============================
+Test Case:32
+Test the name field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=name
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:33
+perform search for name field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d name=admin
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:34
+perform search for name field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d name:=ADmin
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:35
+perform search for name field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice -d name~=adm*
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:36
+Test the servers field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=servers
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "servers": [
+            {
+                "acct_port": 1813,
+                "address": "10.39.39.45",
+                "auth_port": 1812,
+                "auth_type": "PAP",
+                "disable": false,
+                "use_accounting": true,
+                "use_mgmt_port": false
+            }
+        ]
+    }
+]Response code:200
+
+============================
+Test Case:37
+perform search for servers field with different type of search modifiers-1
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice  -d servers=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+Test Case:38
+perform search for servers field with different type of search modifiers-2
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice  -d servers:=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+Test Case:39
+perform search for servers field with different type of search modifiers-3
+Command Used:
+curl -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice  -d servers~=10.35.118.15
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: servers",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: servers"
+}Response code:400
+
+============================
+Test Case:40
+Test the cache_ttl field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -k1 -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=cache_ttl
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "cache_ttl": 3600
+    }
+]Response code:200
+
+============================
+Test Case:41
+perform search for cache_ttl field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?cache_ttl=3600
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: cache_ttl",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: cache_ttl"
+}Response code:400
+
+============================
+Test Case:42
+perform search for cache_ttl field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?cache_ttl:=3600
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: cache_ttl",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: cache_ttl"
+}Response code:400
+
+============================
+Test Case:43
+perform search for cache_ttl field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?cache_ttl~:=3600
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: cache_ttl",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: cache_ttl"
+}Response code:400
+
+============================
+Test Case:44
+Test the enable_cache field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -k1 -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=enable_cache
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "enable_cache": false
+    }
+]Response code:200
+
+============================
+Test Case:45
+perform search for enable_cache field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?enable_cache=false
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: enable_cache",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: enable_cache"
+}Response code:400
+
+============================
+Test Case:46
+perform search for enable_cache field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?enable_cache:=False
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: enable_cache",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: enable_cache"
+}Response code:400
+
+============================
+Test Case:47
+perform search for enable_cache field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?enable_cache~=fal*
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: enable_cache",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: enable_cache"
+}Response code:400
+
+============================
+Test Case:48
+Test the mode field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=mode
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "mode": "HUNT_GROUP"
+    }
+]Response code:200
+
+============================
+Test Case:49
+perform search for mode field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?mode=HUNT_GROUP
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "disable": false,
+        "name": "admin"
+    }
+]Response code:200
+
+============================
+Test Case:50
+perform search for mode field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?mode:=huNT_GROUP
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier ':' not allowed for field: mode",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier ':' not allowed for field: mode"
+}Response code:400
+
+============================
+Test Case:51
+perform search for mode field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?mode~=HUNT_GR*
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier '~' not allowed for field: mode",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier '~' not allowed for field: mode"
+}Response code:400
+
+============================
+Test Case:52
+Test the recovery_interval field in radius:authservice object
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -k1 -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?_return_fields=recovery_interval
+
+
+ Result
+[
+    {
+        "_ref": "radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin",
+        "recovery_interval": 30
+    }
+]Response code:200
+
+============================
+Test Case:53
+perform search for recovery_interval field with different type of search modifiers-1
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?recovery_interval=30
+
+
+ Result
+curl: (6) Could not resolve host: application
+
+
+============================
+Test Case:54
+perform search for recovery_interval field with different type of search modifiers-2
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?recovery_interval:=30
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: recovery_interval",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: recovery_interval"
+}Response code:400
+
+============================
+Test Case:55
+perform search for recovery_interval field with different type of search modifiers-3
+Command Used:
+curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/radius:authservice?recovery_interval~=30
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: recovery_interval",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: recovery_interval"
+}Response code:400
+
+============================
+

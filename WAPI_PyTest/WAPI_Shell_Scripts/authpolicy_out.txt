@@ -1,0 +1,271 @@
+============================
+Test Case:1
+Create A new authpolicy
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy -d '{admin_groups: admin-group,auth_services:[localuser:authservice/Li5sb2NhbF91c2VyX2F1dGhfc2VydmljZSRk:Local%20Admin],default_group:cloud-api-only,usage_type: FULL}' -X POST
+
+
+ Result
+{ "Error": "AdmConProtoError: Operation create not allowed for authpolicy",
+  "code": "Client.Ibap.Proto",
+  "text": "Operation create not allowed for authpolicy"
+}Response code:400
+
+============================
+Test Case:2
+Test the format of authpolicy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:3
+Test the restriction for the authentication policy object - CSV Export
+Command : curl -k1 -u admin:infoblox -H 'content-type:application/json' -X POST -w 'Response code:%
+{http_code}' https://10.35.118.15/wapi/v2.7/authpolicy?_function=csv_export
+
+
+ Result
+{ "Error": "AdmConProtoError: Function csv_export is not valid for this object",
+  "code": "Client.Ibap.Proto",
+  "text": "Function csv_export is not valid for this object"
+}Response code:400
+
+============================
+Test Case:4
+Test the restriction for the authentication policy object - Scheduling
+Command : curl -k1 -u admin:infoblox -H 'content-type:application/json' -X POST -w 'Response code:%{http_code}' https://10.35.118.15/wapi/v2.7/authpolicy?_schedinfo.scheduled_time=1496390800
+
+
+ Result
+{ "Error": "AdmConProtoError: Operation create not allowed for authpolicy",
+  "code": "Client.Ibap.Proto",
+  "text": "Operation create not allowed for authpolicy"
+}Response code:400
+
+============================
+Test Case:5
+Test the restriction for the authentication policy object - Global search
+Command : curl -k1 -u admin:infoblox -H 'content-type:application/json' -w 'Response code:%{http_code}' https://10.35.118.15//wapi/v2.7/search?search_string=admin-group -X GET
+
+
+ Result
+[
+    {
+        "_ref": "admingroup/b25lLmFkbWluX2dyb3VwJC5hZG1pbi1ncm91cA:admin-group",
+        "name": "admin-group"
+    }
+]Response code:200
+
+============================
+Test Case:6
+Test the _return_fields for default values in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:7
+Test the admin_groups field in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy?_return_fields=admin_groups
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "admin_groups": [
+            "admin-group",
+            "useradmin1",
+            "useradmin2"
+        ]
+    }
+]Response code:200
+
+============================
+Test Case:8
+Check the admin_groups field with different type of search modifiers-1
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?admin_groups=admin-group
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: admin_groups",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: admin_groups"
+}Response code:400
+
+============================
+Test Case:9
+Check the admin_groups field with different type of search modifiers-2
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?admin_groups:=admin-group
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: admin_groups",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: admin_groups"
+}Response code:400
+
+============================
+Test Case:10
+Check the admin_groups field with different type of search modifiers -3
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?admin_groups~=admin-group
+
+
+ Result
+{ "Error": "AdmConProtoError: Field is not searchable: admin_groups",
+  "code": "Client.Ibap.Proto",
+  "text": "Field is not searchable: admin_groups"
+}Response code:400
+
+============================
+Test Case:11
+Test the default_group field in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy?_return_fields=default_group
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only"
+    }
+]Response code:200
+
+============================
+Test Case:12
+Test the default_group field in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy?_return_fields=default_group
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only"
+    }
+]Response code:200
+
+============================
+Test Case:13
+Check the default_group field with different search modifiers-1
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?default_group=cloud-api-only
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:14
+Check the default_group field with different search modifiers-2
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?default_group:=cloud-api-only
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier ':' not allowed for field: default_group",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier ':' not allowed for field: default_group"
+}Response code:400
+
+============================
+Test Case:15
+Check the default_group field with different search modifiers-3
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?default_group~=cloud-api-only
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier '~' not allowed for field: default_group",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier '~' not allowed for field: default_group"
+}Response code:400
+
+============================
+Test Case:16
+Test the usage_type field in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy?_return_fields=usage_type
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:17
+Test the usage_type field in authentication policy object
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox https://10.35.118.15/wapi/v2.7/authpolicy?_return_fields=usage_type
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:18
+Check the usage_type field with different search modifiers-1
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?usage_type=FULL
+
+
+ Result
+[
+    {
+        "_ref": "authpolicy/b25lLnJlbW90ZV9hZG1pbl9wb2xpY3kkMA:authpolicy",
+        "default_group": "cloud-api-only",
+        "usage_type": "FULL"
+    }
+]Response code:200
+
+============================
+Test Case:19
+Check the usage_type field with different search modifiers-2
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?usage_type:=FULL
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier ':' not allowed for field: usage_type",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier ':' not allowed for field: usage_type"
+}Response code:400
+
+============================
+Test Case:20
+Check the usage_type field with different search modifiers-3
+Command : curl -H Content-Type: application/json -k1 -w 'Response code:%{http_code}' -u admin:infoblox -X GET https://10.35.118.15/wapi/v2.7/authpolicy?usage_type~=FULL
+
+
+ Result
+{ "Error": "AdmConProtoError: Search modifier '~' not allowed for field: usage_type",
+  "code": "Client.Ibap.Proto",
+  "text": "Search modifier '~' not allowed for field: usage_type"
+}Response code:400
+
+============================
+

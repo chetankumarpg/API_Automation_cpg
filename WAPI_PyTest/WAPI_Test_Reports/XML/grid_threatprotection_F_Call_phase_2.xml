@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="4" name="grid_threatprotection_F_Call_phase_2_results" skips="0" tests="10" time="2.597"><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="25" name="test_1_create_ruleset" time="0.273455142975"><failure message="TypeError: expected string or buffer">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_1_create_ruleset&gt;
+
+    @grid_threatprotection_F_Call_phase_2_results.mark.run(order=1)
+    def test_1_create_ruleset(self):
+        filename=&quot;new_ruleset&quot;
+        data = {&quot;filename&quot;:filename}
+        logging.info(&quot;upload PT rule set&quot;)
+        create_file = ib_NIOS.wapi_request(&apos;POST&apos;, object_type=&quot;fileop&quot;,fields=json.dumps(data),params=&quot;?_function=uploadinit&quot;)
+        logging.info(create_file)
+        res = json.loads(create_file)
+        token = json.loads(create_file)[&apos;token&apos;]
+        url = json.loads(create_file)[&apos;url&apos;]
+        print create_file
+        print res
+        print token
+        print url
+        os.system(&apos;curl -k1 -u admin:infoblox -F name=%s -F filedata=@%s %s&apos;%(filename,filename,url))
+        filename=&quot;/&quot;+filename
+        print filename
+        data = {&quot;token&quot;: token}
+        create_file1 = ib_NIOS.wapi_request(&apos;POST&apos;, object_type=&quot;fileop&quot;,fields=json.dumps(data),params=&quot;?_function=update_atp_ruleset&quot;)
+        logging.info(create_file1)
+        print create_file1
+&gt;       assert re.search(r&quot;&quot;,create_file1)
+
+WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pattern = &apos;&apos;
+string = (400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:Rule update failed: unable to decrypt the rule update file.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;Rule update failed: unable to decrypt the rule update file.&quot;\n}&apos;)
+flags = 0
+
+    def search(pattern, string, flags=0):
+        &quot;&quot;&quot;Scan through string looking for a match to the pattern, returning
+        a match object, or None if no match was found.&quot;&quot;&quot;
+&gt;       return _compile(pattern, flags).search(string)
+E       TypeError: expected string or buffer
+
+/usr/lib64/python2.7/re.py:146: TypeError</failure><system-out>{
+    &quot;token&quot;: &quot;eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn\nRpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV\n0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP\nMGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn\njD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY\n62eETx2icTZhLWF99g3h6pVh\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset&quot;
+}
+{u&apos;url&apos;: u&apos;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset&apos;, u&apos;token&apos;: u&apos;eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn\nRpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV\n0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP\nMGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn\njD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY\n62eETx2icTZhLWF99g3h6pVh\n&apos;}
+eJydUEFOwzAQvPsj7aVxnDRpwq2oVEJCBbVwXiW2UywltrE30P6edSW4cONga70zO+sZKZ2/QtBn
+Rpd0NmKYJbrAvGBLaezg+tFdMmd1Onj1OrJdhx0c9cB8wSRAP5sRjQVgykhkvmRL5dfstNAXb8IV
+0Ex6wXzF9qLKi2JTNnWdNVXTNuuWxdNiDiPBNQ28I/p4x7nIs7LKRFtlBU89UIY+hzCYUYNxPOgP
+MGr19vL0vN2tRJ433OovCPOoo0YS2yRdo6hqSPYvnYDbakVOqBY5sXgk291Zc5z8/7YK8aMJ2kqn
+jD2nbkHi94+HVJa/hMmpFIpIOe22r1s4PuzTu2IRj17UKUOxIXAwelQR0IF0k+/Cbaphh2Sw7zwY
+62eETx2icTZhLWF99g3h6pVh
+
+https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1008/new_ruleset
+/new_ruleset
+(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataError: IB.Data:Rule update failed: unable to decrypt the rule update file.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, \n  &quot;text&quot;: &quot;Rule update failed: unable to decrypt the rule update file.&quot;\n}&apos;)
+</system-out><system-err>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (26) couldn&apos;t open file &quot;new_ruleset&quot;
+</system-err></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="53" name="test_2_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0885508060455"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: atp_object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: atp_object&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="70" name="test_3_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0431048870087"><failure message="IndexError: list index out of range">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_3_atp_object_reset_Grid_Threatprotection_Function_Call&gt;
+
+    @grid_threatprotection_F_Call_phase_2_results.mark.run(order=3)
+    def test_3_atp_object_reset_Grid_Threatprotection_Function_Call(self):
+            get_ref1 = ib_NIOS.wapi_request(&apos;GET&apos;, object_type=&quot;threatprotection:ruleset&quot;)
+            logging.info(get_ref1)
+            res1 = json.loads(get_ref1)
+&gt;           ref1 = json.loads(get_ref1)[0][&apos;_ref&apos;]
+E           IndexError: list index out of range
+
+WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:76: IndexError</failure></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="93" name="test_4_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0430889129639"><failure message="IndexError: list index out of range">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_4_atp_object_reset_Grid_Threatprotection_Function_Call&gt;
+
+    @grid_threatprotection_F_Call_phase_2_results.mark.run(order=4)
+    def test_4_atp_object_reset_Grid_Threatprotection_Function_Call(self):
+            get_ref1 = ib_NIOS.wapi_request(&apos;GET&apos;, object_type=&quot;threatprotection:ruleset&quot;)
+            logging.info(get_ref1)
+            res1 = json.loads(get_ref1)
+&gt;           ref1 = json.loads(get_ref1)[0][&apos;_ref&apos;]
+E           IndexError: list index out of range
+
+WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:99: IndexError</failure></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="118" name="test_5_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0446379184723"><failure message="IndexError: list index out of range">self = &lt;test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call testMethod=test_5_atp_object_reset_Grid_Threatprotection_Function_Call&gt;
+
+    @grid_threatprotection_F_Call_phase_2_results.mark.run(order=5)
+    def test_5_atp_object_reset_Grid_Threatprotection_Function_Call(self):
+            get_ref1 = ib_NIOS.wapi_request(&apos;GET&apos;, object_type=&quot;threatprotection:ruleset&quot;)
+            logging.info(get_ref1)
+            res1 = json.loads(get_ref1)
+&gt;           ref1 = json.loads(get_ref1)[0][&apos;_ref&apos;]
+E           IndexError: list index out of range
+
+WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py:124: IndexError</failure></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="140" name="test_6_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0868442058563"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field \&quot;atp_object\&quot; must be a string reference&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field \&quot;atp_object\&quot; must be a string reference&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="157" name="test_7_PUT_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0935170650482"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function atp_object_reset illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function atp_object_reset illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="174" name="test_8_DELETE_atp_object_reset_Grid_Threatprotection_Function_Call" time="0.0974371433258"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function atp_object_reset illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function atp_object_reset illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="190" name="test_9_test_atp_server_connectivity_Grid_Threatprotection_Function_Call" time="1.62930226326"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{
+    &quot;error_messages&quot;: [
+        &quot;Grid Master/ib-10-35-195-2.infoblox.com : Could not resolve host: ts.infoblox.com&quot;
+    ], 
+    &quot;overall_status&quot;: &quot;FAILED&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_grid_threatprotection_F_Call_phase_2.Grid_Threatprotection_Function_Call" file="WAPI82_Automation/test_grid_threatprotection_F_Call_phase_2.py" line="211" name="test_10_DELETE_test_atp_server_connectivity_Grid_Threatprotection_Function_Call" time="0.0749881267548"><system-out>grid:threatprotection/YXRwLmNsdXN0ZXJfYXRwX3Byb3BlcnRpZXMkMA:Infoblox
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function test_atp_server_connectivity illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function test_atp_server_connectivity illegal with this method&quot;
+}
+</system-out></testcase></testsuite>

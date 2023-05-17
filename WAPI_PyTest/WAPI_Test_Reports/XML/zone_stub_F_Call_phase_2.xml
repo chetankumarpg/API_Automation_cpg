@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="zone_stub_F_Call_phase_2_results" skips="0" tests="7" time="0.711"><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="23" name="test_1_Create_zone_stub" time="0.0743017196655"><system-out>&quot;zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="36" name="test_2_lock_unlock_zone_FC_zone_stub" time="0.0982837677002"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="57" name="test_3_lock_unlock_zone_FC_zone_stub" time="0.103311061859"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="78" name="test_4_lock_unlock_zone_FC_zone_stub_datatype" time="0.0903930664062"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="97" name="test_5_DELETE_lock_unlock_zone_FC_zone_stub" time="0.0909140110016"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="115" name="test_6_Update_lock_unlock_zone_FC_zone_stub_datatype" time="0.095499753952"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_stub_F_Call_phase_2.zone_stub" file="WAPI82_Automation/test_zone_stub_F_Call_phase_2.py" line="133" name="test_7_DELETE_zone_stub" time="0.118750810623"><system-out>zone_stub/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5zdHViem9uZQ:stubzone.com/default
+</system-out></testcase></testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="upgradegroup_member_results" skips="0" tests="1" time="0.148"><testcase classname="WAPI82_Automation.test_upgradegroup_member.Upgradeschedule" file="WAPI82_Automation/test_upgradegroup_member.py" line="11" name="test_1_GET_the_upgradegroup_object" time="0.121662378311"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;upgradegroup/b25lLnVwZ3JhZGVfZ3JvdXAkR3JpZCBNYXN0ZXI:Grid%20Master&quot;, 
+        &quot;comment&quot;: &quot;Grid Master Group&quot;, 
+        &quot;name&quot;: &quot;Grid Master&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;upgradegroup/b25lLnVwZ3JhZGVfZ3JvdXAkRGVmYXVsdA:Default&quot;, 
+        &quot;comment&quot;: &quot;Default Upgrade Group &quot;, 
+        &quot;name&quot;: &quot;Default&quot;
+    }
+]
+</system-out></testcase></testsuite>

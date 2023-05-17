@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="upgradeschedule_results" skips="0" tests="13" time="1.856"><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="11" name="test_1_GET_On_Upgradeschedule" time="0.0964879989624"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade&quot;, 
+        &quot;active&quot;: false, 
+        &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="25" name="test_2_GET_With_all_fields_Upgradeschedule" time="0.0999298095703"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade&quot;, 
+        &quot;active&quot;: false, 
+        &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;, 
+        &quot;upgrade_groups&quot;: [
+            {
+                &quot;name&quot;: &quot;Default&quot;, 
+                &quot;time_zone&quot;: &quot;(UTC - 8:00) Pacific Time (US and Canada), Tijuana&quot;
+            }
+        ]
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="39" name="test_3_Update_On_Upgradeschedule" time="0.195571660995"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: time_zone&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: time_zone&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="56" name="test_4_Update_2_On_Upgradeschedule" time="0.206543922424"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="71" name="test_5_Add_the_upgradeschedule_with_name_time_zone_upgrade_time" time="0.126485109329"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for upgradeschedule&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for upgradeschedule&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="88" name="test_6_DELETE_upgradegroup_schedule_field_with_upgradeschedule_object" time="0.121736049652"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for upgradeschedule&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for upgradeschedule&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="106" name="test_7_Modify_upgradegroup_schedule_field_with_upgradeschedule_object_upgrade_time" time="0.207946062088"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="123" name="test_8_Modify_upgradegroup_schedule_field_with_upgradeschedule_object_distribution_time" time="0.228312253952"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Error converting argument distribution_time: Invalid value, must be an integer between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Error converting argument distribution_time: Invalid value, must be an integer between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="140" name="test_9_Modify_upgradegroup_schedule_field_with_upgradeschedule_object_Default" time="0.197150707245"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="157" name="test_10_Modify_upgradegroup_schedule_field_with_upgradeschedule_object_Upgrade_group" time="0.199316978455"><system-out>upgradeschedule/Li51cGdyYWRlc2NoZWR1bGUkdXBncmFkZV9zY2hlZHVsZQ:upgrade
+400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Missing upgrade groups)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Missing upgrade groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="177" name="test_11_Search_the_upgradeschedule_object_with_upgrade_groups_field_N" time="0.0325541496277"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: upgrade_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: upgrade_groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="193" name="test_12_Search_the_upgradeschedule_object_with_upgrade_groups_field_time_zone_N" time="0.0359740257263"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: upgrade_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: upgrade_groups&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_upgradeschedule.Upgradeschedule" file="WAPI82_Automation/test_upgradeschedule.py" line="208" name="test_13_Search_the_upgradeschedule_object_with_upgrade_groups_field_start_time_N" time="0.0385160446167"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: upgrade_groups&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: upgrade_groups&quot;
+}
+</system-out></testcase></testsuite>

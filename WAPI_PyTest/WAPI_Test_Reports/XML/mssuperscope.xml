@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="mssuperscope_results" skips="0" tests="59" time="3.237"><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="25" name="test_1_Create_New_MS_Superscope" time="0.114172935486"><system-out>range/ZG5zLmRoY3BfcmFuZ2UkMTkuMC4wLjEvMTkuMC4wLjI1NC8vLzAvMA:19.0.0.1/19.0.0.254/default
+&quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="44" name="test_2_Csv_Export_MS_Superscope" time="0.029070854187"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="56" name="test_3_comment_MS_Superscope" time="0.0532791614532"><system-out>[{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;}]
+{u&apos;comment&apos;: u&apos;QA_Testing&apos;, u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="72" name="test_4_Serach_comment_exact_equality" time="0.03759765625"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="87" name="test_5_Serach_comment_case_insensitive" time="0.0490920543671"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="101" name="test_6_Serach_comment_regular_expression" time="0.0537731647491"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="116" name="test_7_Req_Fields_for_MS_Superscope" time="0.0361928939819"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="129" name="test_8_Req_Fields_for_MS_Superscope" time="0.0320608615875"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: ranges&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: ranges&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="142" name="test_9_Test_name_MS_Superscope" time="0.0432050228119"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: ranges&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: ranges&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="155" name="test_10_Serach_name_exact_equality" time="0.0307869911194"><system-out>[]
+[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="170" name="test_11_Serach_name_case_insensitive" time="0.0563108921051"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="184" name="test_12_Serach_name_regular_expression" time="0.0583860874176"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="200" name="test_13_Update_On_dhcp_utilization_MS_Superscope" time="0.0700349807739"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: dhcp_utilization&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: dhcp_utilization&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="217" name="test_14_Serach_dhcp_utilization_exact_equality" time="0.0397369861603"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="227" name="test_15_Serach_dhcp_utilization_case_insensitive" time="0.0365159511566"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="237" name="test_16_Serach_dhcp_utilization_regular_expression" time="0.0431897640228"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="247" name="test_17_Update_On_dhcp_utilization_status_MS_Superscope" time="0.0832426548004"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="262" name="test_18_Serach_dhcp_utilization_status_exact_equality" time="0.0376446247101"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization_status&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="273" name="test_19_Serach_dhcp_utilization_status_case_insensitive" time="0.0467219352722"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization_status&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="283" name="test_20_Serach_dhcp_utilization_status_regular_expression" time="0.0291678905487"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dhcp_utilization_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dhcp_utilization_status&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="295" name="test_21_Test_disable_MS_Superscope" time="0.0708038806915"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="310" name="test_22_Serach_disable_exact_equality" time="0.0283651351929"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="321" name="test_23_Serach_disable_case_insensitive" time="0.0361514091492"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="331" name="test_24_Serach_disable_regular_expression" time="0.0288469791412"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: disable&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: disable&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="341" name="test_25_Update_On_MS_Superscope" time="0.0788640975952"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="359" name="test_26_Serach_dynamic_hosts_exact_equality" time="0.0309119224548"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dynamic_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dynamic_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="370" name="test_27_Serach_dynamic_hosts_case_insensitive" time="0.0403110980988"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dynamic_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dynamic_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="380" name="test_24_Serach_dynamic_hosts_regular_expression" time="0.0348162651062"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dynamic_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dynamic_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="391" name="test_29_Test_dynamic_hosts_MS_Superscope" time="0.0858597755432"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="407" name="test_30_Update_high_water_mark_MS_Superscope" time="0.0715758800507"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="423" name="test_31_Serach_high_water_mark_exact_equality" time="0.0389821529388"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="434" name="test_32_Serach_high_water_mark_case_insensitive" time="0.0288162231445"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="444" name="test_33_Serach_high_water_mark_regular_expression" time="0.0449531078339"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="455" name="test_34_Update_high_water_mark_Reset_MS_Superscope" time="0.0807671546936"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="470" name="test_35_Serach_high_water_mark_reset_exact_equality" time="0.0299918651581"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="481" name="test_36_Serach_high_water_mark_reset_case_insensitive" time="0.054762840271"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="491" name="test_37_Serach_high_water_mark_reset_regular_expression" time="0.0324311256409"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: high_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: high_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="502" name="test_38_Update_low_water_mark_MS_Superscope" time="0.0877351760864"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="518" name="test_39_Serach_low_water_mark_exact_equality" time="0.0531709194183"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="529" name="test_40_Serach_low_water_mark_case_insensitive" time="0.0290508270264"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="539" name="test_41_Serach_low_water_mark_regular_expression" time="0.0422029495239"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="550" name="test_42_Update_low_water_mark_reset_MS_Superscope" time="0.0726761817932"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="566" name="test_43_Serach_low_water_mark_reset_exact_equality" time="0.0331301689148"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="577" name="test_44_Serach_low_water_mark_reset_case_insensitive" time="0.0293550491333"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="587" name="test_45_Serach_low_water_mark_reset_regular_expression" time="0.032399892807"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: low_water_mark_reset&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: low_water_mark_reset&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="597" name="test_46_Update_network_view_MS_Superscope" time="0.133970022202"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;network_view&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="619" name="test_47_Serach_network_view_exact_equality" time="0.0560672283173"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;, 
+        &quot;disable&quot;: false, 
+        &quot;name&quot;: &quot;Ms_Superscope&quot;, 
+        &quot;network_view&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;_ref&apos;: u&apos;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&apos;, u&apos;disable&apos;: False, u&apos;name&apos;: u&apos;Ms_Superscope&apos;, u&apos;network_view&apos;: u&apos;default&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="633" name="test_48_Serach_network_view_case_insensitive" time="0.0412740707397"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: network_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: network_view&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="643" name="test_49_Serach_network_view_regular_expression" time="0.0459041595459"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: network_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: network_view&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="670" name="test_50_Serach_static_hosts_exact_equality" time="0.0378468036652"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: static_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: static_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="654" name="test_50_Update_static_hosts_MS_Superscope" time="0.0834336280823"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="681" name="test_51_Serach_static_hosts_case_insensitive" time="0.03014087677"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: static_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: static_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="691" name="test_52_Serach_static_hosts_regular_expression" time="0.044958114624"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: static_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: static_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="701" name="test_53_Update_total_hosts_MS_Superscope" time="0.0678610801697"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="717" name="test_55_Serach_total_hosts_exact_equality" time="0.0407497882843"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: total_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: total_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="729" name="test_56_Serach_total_hosts_case_insensitive" time="0.0405158996582"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: total_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: total_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="739" name="test_57_Serach_total_hosts_regular_expression" time="0.0336122512817"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: total_hosts&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: total_hosts&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="749" name="test_58_DELETE_MS_Superscope" time="0.0772929191589"><system-out>mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default
+&quot;mssuperscope/ZG5zLm1zX3N1cGVyc2NvcGUkTXNfU3VwZXJzY29wZS4wLjA:Ms_Superscope/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_mssuperscope.Microsoft_Superscope" file="WAPI82_Automation/test_mssuperscope.py" line="767" name="test_59_DELETE_MS_Network" time="0.0967988967896"><system-out>network/ZG5zLm5ldHdvcmskMTkuMC4wLjAvOC8w:19.0.0.0/8/default
+&quot;network/ZG5zLm5ldHdvcmskMTkuMC4wLjAvOC8w:19.0.0.0/8/default&quot;
+</system-out></testcase></testsuite>

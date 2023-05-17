@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="namedacl_function_call_results" skips="0" tests="4" time="0.244"><testcase classname="WAPI82_Automation.test_namedacl_function_call.RangeTemplate" file="WAPI82_Automation/test_namedacl_function_call.py" line="24" name="test_1_create_namedacl" time="0.0487358570099"><system-out>&quot;namedacl/b25lLmRlZmluZWRfYWNsJDAubmFjMQ:nac1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_namedacl_function_call.RangeTemplate" file="WAPI82_Automation/test_namedacl_function_call.py" line="33" name="test_2_create_namedacl" time="0.0390713214874"><system-out>&quot;namedacl/b25lLmRlZmluZWRfYWNsJDAubmFjMg:nac2&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_namedacl_function_call.RangeTemplate" file="WAPI82_Automation/test_namedacl_function_call.py" line="41" name="test_3_create_namedacl" time="0.0597701072693"><system-out>&quot;namedacl/b25lLmRlZmluZWRfYWNsJDAubmFjMw:nac3&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_namedacl_function_call.RangeTemplate" file="WAPI82_Automation/test_namedacl_function_call.py" line="49" name="test_4_Get_namedacl_object" time="0.0702238082886"><system-out>namedacl/b25lLmRlZmluZWRfYWNsJDAubmFjMQ:nac1
+{
+    &quot;token&quot;: &quot;eJylUMFOwzAMvedHtsvapls7ym1oIE1CA21wttIkHZa6JCTutP09DhJcOHJIZPu952dbax9uEO1J\n8Ke9SxQnTT6KIMVcoxt8P/pr4Z3Nj27BJrFVpOBgBxFqoQH6CUdCByAMahJhKeYmrMRxZq8B4w0I\nz3YmQiN2sqnquu3W7Uqk42yKI5dbJn4QhXRflrIqlk0hu6aoy1wDgzwUwYCjBfRltJ+AZvH++vyy\n2S5kVcnyokY0itA7nj9NIxU6XbjtOjug4eiODf4KGegyhbWKY1kxq0y8uDrZks7hv/5S/nQH67Q3\n6E65WrPNw26fw+Uv4exNPpDMN9tu3jZweHzKeSMSHYJs8z3lmsEB7WgSkAftz0HFb9Wd2OdVexUA\nXZgILjYmnidjHWN98QWJt5uM\n&quot;, 
+    &quot;url&quot;: &quot;https://10.35.195.2/http_direct_file_io/req_id-UPLOAD-1001/validation_result.csv&quot;
+}
+</system-out></testcase></testsuite>

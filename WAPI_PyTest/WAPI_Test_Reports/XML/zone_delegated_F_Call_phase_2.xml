@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="zone_delegated_F_Call_phase_2_results" skips="0" tests="9" time="0.868"><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="25" name="test_1_Create_Zone_Auth_for_Zone_Delegation" time="0.0898039340973"><system-out>&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0:test.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="39" name="test_2_Create_Zone_Delegation" time="0.0692591667175"><system-out>&quot;zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="53" name="test_3_lock_unlock_zone_FC_zone_delegated" time="0.0933790206909"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="74" name="test_4_lock_unlock_zone_FC_zone_delegated" time="0.0845749378204"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="95" name="test_5_lock_unlock_zone_FC_zone_delegated_datatype" time="0.0812711715698"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="114" name="test_6_DELETE_lock_unlock_zone_FC_zone_delegated" time="0.0673832893372"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="132" name="test_7_Update_lock_unlock_zone_FC_zone_delegated_datatype" time="0.0807750225067"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="150" name="test_8_DELETE_zone_delegated" time="0.114646911621"><system-out>zone_delegated/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0LmNvbS5kZWxlZ2F0ZWRfem9uZQ:delegated_zone.com.test.com/default
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_delegated_F_Call_phase_2.zone_delegated" file="WAPI82_Automation/test_zone_delegated_F_Call_phase_2.py" line="169" name="test_9_DELETE_Zone_Auth" time="0.120364189148"><system-out>zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0:test.com/default
+&quot;zone_auth/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0:test.com/default&quot;
+</system-out></testcase></testsuite>

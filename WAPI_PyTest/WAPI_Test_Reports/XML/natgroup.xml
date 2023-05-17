@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="natgroup_results" skips="0" tests="10" time="0.772"><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="25" name="test_1_create_natgroup" time="0.0399491786957"><system-out>&quot;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="38" name="test_2_duplicate_natgroup" time="0.0458314418793"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Duplicate object &apos;natgroup1&apos; of type &apos;nat_group&apos; already exists in the database.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Duplicate object &apos;natgroup1&apos; of type &apos;nat_group&apos; already exists in the database.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="52" name="test_3_name_natgroup" time="0.0444152355194"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="67" name="test_4_get_natgroup" time="0.0486700534821"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&quot;, 
+        &quot;comment&quot;: &quot;for the qa testing&quot;, 
+        &quot;name&quot;: &quot;natgroup1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="81" name="test_5_get_natgroup" time="0.0423493385315"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&quot;, 
+        &quot;comment&quot;: &quot;for the qa testing&quot;, 
+        &quot;name&quot;: &quot;natgroup1&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="96" name="test_6_put_natgroup_comment" time="0.127692222595"><system-out>natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1
+[{u&apos;comment&apos;: u&apos;for the validation effort&apos;, u&apos;_ref&apos;: u&apos;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&apos;}]
+{u&apos;comment&apos;: u&apos;for the validation effort&apos;, u&apos;_ref&apos;: u&apos;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="120" name="test_7_delete_natgroup_name" time="0.094190120697"><system-out>natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1
+&quot;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDE:natgroup1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="138" name="test_9_post_natgroup_without_name" time="0.0556378364563"><system-out>&quot;natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDI:natgroup2&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="153" name="test_10_put_natgroup_name" time="0.136037826538"><system-out>natgroup/b25lLm5hdF9ncm91cCRuYXRncm91cDI:natgroup2
+[{u&apos;_ref&apos;: u&apos;natgroup/b25lLm5hdF9ncm91cCRuYXQyMg:nat22&apos;, u&apos;name&apos;: u&apos;nat22&apos;}]
+{u&apos;_ref&apos;: u&apos;natgroup/b25lLm5hdF9ncm91cCRuYXQyMg:nat22&apos;, u&apos;name&apos;: u&apos;nat22&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_natgroup.nat_group" file="WAPI82_Automation/test_natgroup.py" line="178" name="test_10_delete_natgroup_name" time="0.0817000865936"><system-out>natgroup/b25lLm5hdF9ncm91cCRuYXQyMg:nat22
+&quot;natgroup/b25lLm5hdF9ncm91cCRuYXQyMg:nat22&quot;
+</system-out></testcase></testsuite>

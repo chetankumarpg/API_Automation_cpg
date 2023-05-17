@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="zone_rp_F_Call_phase_2_results" skips="0" tests="7" time="0.766"><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="24" name="test_1_Create_Zone_Rp" time="0.147793769836"><system-out>&quot;zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS50ZXN0aW5n:testing.com/default&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="37" name="test_2_lock_unlock_zone_FC_zone_rp" time="0.101035356522"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="58" name="test_3_lock_unlock_zone_FC_zone_rp" time="0.0942761898041"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+{}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="79" name="test_4_lock_unlock_zone_FC_zone_rp_datatype" time="0.0986311435699"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for operation (true) valid values are: LOCK, UNLOCK&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="98" name="test_5_DELETE_lock_unlock_zone_FC_zone_rp" time="0.096351146698"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="116" name="test_6_Update_lock_unlock_zone_FC_zone_rp_datatype" time="0.0970001220703"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function lock_unlock_zone illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function lock_unlock_zone illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_zone_rp_F_Call_phase_2.Zone_Rp" file="WAPI82_Automation/test_zone_rp_F_Call_phase_2.py" line="134" name="test_7_DELETE_Zone_rp" time="0.0837593078613"><system-out>zone_rp/ZG5zLnpvbmUkLl9kZWZhdWx0LmNvbS5ycHo:rpz.com/default
+(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Cannot delete the Response Policy Zone that was configured through Threat Insight.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, \n  &quot;text&quot;: &quot;Cannot delete the Response Policy Zone that was configured through Threat Insight.&quot;\n}&apos;)
+</system-out></testcase></testsuite>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="smartfolder_queryitem_results" skips="0" tests="40" time="2.905"><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="24" name="test_1_GET_operation_to_smartfolder_global_object_with_query_items" time="0.0413990020752"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="35" name="test_2_smartfolder_global_with_query_items_field_type_EXTATTR" time="0.0935578346252"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzE:testing1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="44" name="test_3_smartfolder_global_with_query_items_field_type_NORMAL" time="0.0757489204407"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkU21hcnQgRm9sZGVyMQ:Smart%20Folder1&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="52" name="test_4_smartfolder_global_with_query_items_operator_EQ" time="0.0810561180115"><system-out>(400, &apos;{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Duplicate object \&apos;Smart Folder1\&apos; of type \&apos;global_smart_folder\&apos; already exists in the database.)&quot;, \n  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, \n  &quot;text&quot;: &quot;Duplicate object \&apos;Smart Folder1\&apos; of type \&apos;global_smart_folder\&apos; already exists in the database.&quot;\n}&apos;)
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="60" name="test_5_smartfolder_global_with_query_items_operator_BEGINS_WITH" time="0.105762004852"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzM:testing3&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="69" name="test_6_smartfolder_global_with_query_items_operator_HAS_VALUE" time="0.108541250229"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzI:testing2&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="77" name="test_7_Create_smartfolder_global_object_with_query_items_operator_GT_N" time="0.0815789699554"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;IS GT&apos; for field &apos;network_view&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;IS GT&apos; for field &apos;network_view&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="89" name="test_8_Create_smartfolder_global_object_with_query_items_operator_GEQ_N" time="0.0795729160309"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;IS NOT GEQ&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;IS NOT GEQ&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="101" name="test_9_Create_smartfolder_global_object_with_query_items_operator_GEQ_N" time="0.0674316883087"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;IS NOT LT&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;IS NOT LT&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="114" name="test_10_Create_smartfolder_global_object_with_query_items_operator_GEQ_N" time="0.0772140026093"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;IS NOT LEQ&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;IS NOT LEQ&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="127" name="test_11_Create_smartfolder_global_object_with_query_items_operator_ENDS_WITH_N" time="0.0672619342804"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT ENDS_WITH&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT ENDS_WITH&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="140" name="test_12_Create_smartfolder_global_object_with_query_items_operator_CONTAINS_N" time="0.0767033100128"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT CONTAINS&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT CONTAINS&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="152" name="test_13_Create_smartfolder_global_object_with_query_items_operator_RELATIVE_DATE_N" time="0.088479757309"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT RELATIVE_DATE&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT RELATIVE_DATE&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="165" name="test_14_Create_smartfolder_global_object_with_query_items_operator_RISES_BY_N" time="0.0718388557434"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT RISES_BY&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT RISES_BY&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="178" name="test_15_Create_smartfolder_global_object_with_query_items_operator_DROPS_BY_N" time="0.0692501068115"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT DROPS_BY&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT DROPS_BY&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="190" name="test_16_Create_smartfolder_global_object_with_query_items_operator_INHERITANCE_STATE_EQUALS_N" time="0.0785272121429"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Inheritance state value must be in [&apos;OVERRIDDEN&apos;, &apos;INHERITED&apos;])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Inheritance state value must be in [&apos;OVERRIDDEN&apos;, &apos;INHERITED&apos;]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="203" name="test_17_Create_smartfolder_global_object_with_query_items_operator_IP_ADDR_WITHIN_N" time="0.069669008255"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT IP_ADDR_WITHIN&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT IP_ADDR_WITHIN&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="216" name="test_18_Create_smartfolder_global_object_with_query_items_operator_SUFFIX_MATCH_N" time="0.0688757896423"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT SUFFIX_MATCH&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT SUFFIX_MATCH&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="230" name="test_19_Create_smartfolder_global_object_with_query_items_operator_MATCH_EXPR_N" time="0.0727598667145"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid operator &apos;DOES NOT MATCH_EXPR&apos; for ext attrs field &apos;Site&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid operator &apos;DOES NOT MATCH_EXPR&apos; for ext attrs field &apos;Site&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="243" name="test_20_Create_smartfolder_global_object_with_query_items_operator_Eq_N" time="0.0419492721558"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for operator (\&quot;Eq\&quot;) valid values are: EQ, GT, GEQ, LT, LEQ, HAS_VALUE, BEGINS_WITH, ENDS_WITH, CONTAINS, RELATIVE_DATE, RISES_BY, DROPS_BY, INHERITANCE_STATE_EQUALS, IP_ADDR_WITHIN, SUFFIX_MATCH, MATCH_EXPR&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for operator (\&quot;Eq\&quot;) valid values are: EQ, GT, GEQ, LT, LEQ, HAS_VALUE, BEGINS_WITH, ENDS_WITH, CONTAINS, RELATIVE_DATE, RISES_BY, DROPS_BY, INHERITANCE_STATE_EQUALS, IP_ADDR_WITHIN, SUFFIX_MATCH, MATCH_EXPR&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="255" name="test_21_Create_smartfolder_global_object_with_query_items_operator_op_match_N" time="0.0448970794678"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for op_match: \&quot;\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for op_match: \&quot;\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="267" name="test_22_smartfolder_global_with_query_items_value_type_STRING" time="0.0955348014832"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzk5:testing99&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="276" name="test_23_Create_smartfolder_global_object_with_query_items_operator_value_type_INTEGER_N" time="0.0861949920654"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [INTEGER, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [INTEGER, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="290" name="test_24_Create_smartfolder_global_object_with_query_items_operator_value_type_BOOLEAN_N" time="0.0695350170135"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [BOOLEAN, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [BOOLEAN, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="302" name="test_25_Create_smartfolder_global_object_with_query_items_operator_value_type_DATE_N" time="0.090735912323"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [DATE, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [DATE, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="316" name="test_26_Create_smartfolder_global_object_with_query_items_operator_value_type_ENUM_N" time="0.0846939086914"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [ENUM, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [ENUM, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="328" name="test_27_Create_smartfolder_global_object_with_query_items_operator_value_type_EMAIL_N" time="0.0901169776917"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [EMAIL, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [EMAIL, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="340" name="test_28_Create_smartfolder_global_object_with_query_items_operator_value_type_URL_N" time="0.0881597995758"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [URL, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [URL, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="352" name="test_29_Create_smartfolder_global_object_with_query_items_operator_value_type_OBJTYPE_N" time="0.0849757194519"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Value type of query item does not match meta data for field Site. [OBJTYPE, STRING])&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Value type of query item does not match meta data for field Site. [OBJTYPE, STRING]&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="365" name="test_30_Create_smartfolder_global_object_with_query_items_operator_value_type_STRING_N" time="0.0512099266052"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for value_string: 1234: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for value_string: 1234: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="379" name="test_31_modify_smrtfolder_global_object_for_query_items_fields" time="0.0877819061279"><system-out>&quot;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzk5:testing99&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="389" name="test_32_Modify_smrtfolder_global_object_for_query_items_fields_N" time="0.0824646949768"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:&apos;Site&apos; is not a valid query item nor an existing extensible attribute.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;&apos;Site&apos; is not a valid query item nor an existing extensible attribute.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="403" name="test_33_GET_operation_to_smartfolder_global_object_with_query_items" time="0.0369081497192"><system-out>[{u&apos;_ref&apos;: u&apos;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzE:testing1&apos;, u&apos;name&apos;: u&apos;testing1&apos;}, {u&apos;_ref&apos;: u&apos;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkU21hcnQgRm9sZGVyMQ:Smart%20Folder1&apos;, u&apos;name&apos;: u&apos;Smart Folder1&apos;}, {u&apos;_ref&apos;: u&apos;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzM:testing3&apos;, u&apos;name&apos;: u&apos;testing3&apos;}, {u&apos;_ref&apos;: u&apos;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzI:testing2&apos;, u&apos;name&apos;: u&apos;testing2&apos;}, {u&apos;_ref&apos;: u&apos;smartfolder:global/b25lLmdsb2JhbF9zbWFydF9mb2xkZXIkdGVzdGluZzk5:testing99&apos;, u&apos;name&apos;: u&apos;testing99&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="414" name="test_34_DELETE_the_smartfolder_global_object" time="0.0341210365295"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="422" name="test_35_DELETE_the_smartfolder_global_object" time="0.0284430980682"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="431" name="test_36_DELETE_the_smartfolder_global_object" time="0.0421192646027"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="442" name="test_37_DELETE_the_smartfolder_global_object" time="0.0363991260529"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="451" name="test_38_DELETE_the_smartfolder_global_object" time="0.040864944458"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="460" name="test_39_DELETE_the_smartfolder_global_object" time="0.0426790714264"></testcase><testcase classname="WAPI82_Automation.test_smartfolder_queryitem.RangeTemplate" file="WAPI82_Automation/test_smartfolder_queryitem.py" line="469" name="test_40_DELETE_the_smartfolder_global_object" time="0.0421950817108"></testcase></testsuite>

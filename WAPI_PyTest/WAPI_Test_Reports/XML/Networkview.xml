@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="Networkview_results" skips="0" tests="62" time="2.678"><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="27" name="test_1_The_Networkview_Object" time="0.0334153175354"><system-out>[{u&apos;is_default&apos;: True, u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;name&apos;: u&apos;default&apos;}]
+{u&apos;is_default&apos;: True, u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;name&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="43" name="test_Create_Networkview" time="0.13140630722"><system-out>&quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="56" name="test__Schedule_Networkview" time="0.0315873622894"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:networkview does not support scheduling.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;networkview does not support scheduling.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="68" name="test_Csv_Export_Networkview" time="0.0321509838104"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function csv_export is not valid for this object&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function csv_export is not valid for this object&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="80" name="test_5_Req_Fields_1_Create_networkview" time="0.029834985733"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: field for create missing: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;field for create missing: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="92" name="test_6_name_Tacacsplus_networkview" time="0.0304529666901"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for name: 10: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for name: 10: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="106" name="test_7_Serach_name_networkview_exact_equality" time="0.03067278862"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="117" name="test_8_Serach_name_networkview_case_insensitive" time="0.0339250564575"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="127" name="test_9_Serach_name_networkview_regular_expression" time="0.0327868461609"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="137" name="test_10_associated_dns_views_Tacacsplus_networkview" time="0.0323541164398"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: associated_dns_views&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: associated_dns_views&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="149" name="test_11_Serach_associated_dns_views_networkview_exact_equality" time="0.0305390357971"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_dns_views&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_dns_views&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="160" name="test_12_Serach_associated_dns_views_networkview_case_insensitive" time="0.0298101902008"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_dns_views&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_dns_views&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="170" name="test_13_Serach_associated_dns_views_networkview_regular_expression" time="0.0286419391632"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_dns_views&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_dns_views&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="180" name="test_14_associated_members_networkview" time="0.0373978614807"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: associated_members&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="194" name="test_15_Serach_associated_members_networkview_exact_equality" time="0.0291647911072"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_members&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="204" name="test_16_Serach_associated_members_networkview_case_insensitive" time="0.0285470485687"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_members&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="214" name="test_17_Serach_associated_members_networkview_regular_expression" time="0.042466878891"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: associated_members&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: associated_members&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="224" name="test_18_cloud_info_networkview" time="0.0299563407898"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Structure expected in cloud_info (True)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Structure expected in cloud_info (True)&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="236" name="test_19_Serach_cloud_info_networkview_exact_equality" time="0.0279879570007"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cloud_info&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cloud_info&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="247" name="test_20_Serach_cloud_info_networkview_case_insensitive" time="0.0332291126251"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cloud_info&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cloud_info&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="258" name="test_21_Serach_cloud_info_networkview_regular_expression" time="0.0291998386383"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: cloud_info&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: cloud_info&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="269" name="test_22_comment_Tacacsplus_networkview" time="0.0368499755859"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="283" name="test_23_Serach_comment_networkview_exact_equality" time="0.0382912158966"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="294" name="test_24_Serach_comment_networkview_case_insensitive" time="0.0333728790283"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="304" name="test_25_Serach_comment_networkview_regular_expression" time="0.0462746620178"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;, 
+        &quot;comment&quot;: &quot;QA_Testing&quot;, 
+        &quot;is_default&quot;: false, 
+        &quot;name&quot;: &quot;Testing&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="314" name="test_26_ddns_dns_view_networkview" time="0.0444641113281"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ddns_dns_view: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ddns_dns_view: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="328" name="test_27_Serach_ddns_dns_view_networkview_exact_equality" time="0.0363256931305"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_dns_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_dns_view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="339" name="test_28_Serach_ddns_dns_view_networkview_case_insensitive" time="0.0410950183868"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_dns_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_dns_view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="350" name="test_29_Serach_ddns_dns_view_networkview_regular_expression" time="0.0452570915222"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_dns_view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_dns_view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="360" name="test_30_ddns_zone_primaries_networkview" time="0.0497272014618"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: ddns_zone_primaries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: ddns_zone_primaries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="374" name="test_31_Serach_ddns_zone_primaries_networkview_exact_equality" time="0.046942949295"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_zone_primaries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_zone_primaries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="385" name="test_32_Serach_ddns_zone_primaries_networkview_case_insensitive" time="0.0410139560699"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ddns_zone_primaries&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ddns_zone_primaries&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="410" name="test_33_Serach_internal_forward_zones_networkview_exact_equality" time="0.0467557907104"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: internal_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: internal_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="396" name="test_33_internal_forward_zones_networkview" time="0.042083978653"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: internal_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: internal_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="421" name="test_34_Serach_internal_forward_zones_networkview_case_insensitive" time="0.0514259338379"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: internal_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: internal_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="431" name="test_35_Serach_internal_forward_zones_networkview_regular_expression" time="0.0350842475891"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: internal_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: internal_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="441" name="test_37_is_default_networkview" time="0.0377969741821"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: is_default&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: is_default&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="455" name="test_38_Serach_is_default_networkview_exact_equality" time="0.0468599796295"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&quot;, 
+        &quot;is_default&quot;: true, 
+        &quot;name&quot;: &quot;default&quot;
+    }
+]
+[{u&apos;is_default&apos;: True, u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;name&apos;: u&apos;default&apos;}]
+{u&apos;is_default&apos;: True, u&apos;_ref&apos;: u&apos;networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true&apos;, u&apos;name&apos;: u&apos;default&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="471" name="test_39_Serach_is_default_networkview_case_insensitive" time="0.047847032547"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: is_default&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: is_default&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="482" name="test_40_Serach_is_default_networkview_regular_expression" time="0.0338609218597"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: is_default&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: is_default&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="492" name="test_41_mgm_privatet_networkview" time="0.0339338779449"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for mgm_private: \&quot;yes\&quot;: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for mgm_private: \&quot;yes\&quot;: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="506" name="test_42_Serach_mgm_privatet_networkview_exact_equality" time="0.038754940033"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: mgm_private&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: mgm_private&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="517" name="test_43_Serach_mgm_privatet_networkview_case_insensitive" time="0.0459260940552"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: mgm_private&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: mgm_private&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="528" name="test_44_Serach_mgm_privatet_networkview_regular_expression" time="0.041121006012"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: mgm_private&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: mgm_private&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="538" name="test_45_ms_ad_user_data_networkview" time="0.035224199295"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: ms_ad_user_data&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: ms_ad_user_data&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="552" name="test_46_Serach_ms_ad_user_data_networkview_exact_equality" time="0.0406000614166"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ms_ad_user_data&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ms_ad_user_data&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="563" name="test_47_Serach_ms_ad_user_data_networkview_case_insensitive" time="0.0384590625763"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ms_ad_user_data&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ms_ad_user_data&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="574" name="test_48_Serach_ms_ad_user_data_networkview_regular_expression" time="0.0320830345154"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ms_ad_user_data&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ms_ad_user_data&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="584" name="test_49_remote_forward_zones_networkview" time="0.0348808765411"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: remote_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: remote_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="598" name="test_50_Serach_remote_forward_zones_networkview_exact_equality" time="0.0370759963989"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="609" name="test_51_Serach_remote_forward_zones_networkview_case_insensitive" time="0.029834985733"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="620" name="test_52_Serach_remote_forward_zones_networkview_regular_expression" time="0.0296602249146"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_forward_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_forward_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="630" name="test_53_remote_reverse_zones_networkview" time="0.0349192619324"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: List value expected for field: remote_reverse_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;List value expected for field: remote_reverse_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="644" name="test_54_Serach_remote_reverse_zones_networkview_exact_equality" time="0.0323021411896"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_reverse_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_reverse_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="655" name="test_55_Serach_remote_reverse_zones_networkview_case_insensitive" time="0.0339441299438"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_reverse_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_reverse_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="665" name="test_56_Serach_remote_reverse_zones_networkview_regular_expression" time="0.0317399501801"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: remote_reverse_zones&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: remote_reverse_zones&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="675" name="test_57_extattrs_networkview" time="0.0300931930542"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field \&quot;extattrs\&quot; should be a dict&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field \&quot;extattrs\&quot; should be a dict&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="687" name="test_58_Serach_extattrs_networkview_exact_equality" time="0.0360391139984"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="698" name="test_59_Serach_extattrs_networkview_case_insensitive" time="0.0335466861725"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="709" name="test_60_Serach_extattrs_networkview_regular_expression" time="0.0309300422668"><system-out>{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: extattrs&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: extattrs&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="719" name="test_61_Try_DELETE_default_networkview" time="0.0724377632141"><system-out>networkview/ZG5zLm5ldHdvcmtfdmlldyQw:default/true
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Cannot delete the default network view &apos;default&apos;.)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Cannot delete the default network view &apos;default&apos;.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_Networkview.Networkview" file="WAPI82_Automation/test_Networkview.py" line="738" name="test_62_DELETE_networkview" time="0.0961830615997"><system-out>networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false
+&quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQx:Testing/false&quot;
+</system-out></testcase></testsuite>

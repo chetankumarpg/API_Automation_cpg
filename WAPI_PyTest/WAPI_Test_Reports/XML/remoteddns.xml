@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="remoteddns_results" skips="0" tests="11" time="0.665"><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="24" name="test_create_remoteddnszone" time="0.122230291367"><system-out>&quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQy:Testing/false&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="37" name="test_fqdn_remoteddnszone" time="0.0396540164948"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: fqdn&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: fqdn&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="51" name="test_gss_tsig_dns_principal_remoteddnszone" time="0.0320241451263"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for gss_tsig_dns_principal: 123: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for gss_tsig_dns_principal: 123: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="63" name="test_gss_tsig_domain_remoteddnszone" time="0.0379478931427"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for gss_tsig_domain: 1234: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for gss_tsig_domain: 1234: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="75" name="test_key_type_remoteddnszone" time="0.0395500659943"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for key_type (\&quot;ASM\&quot;) valid values are: GSS-TSIG, NONE, TSIG&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for key_type (\&quot;ASM\&quot;) valid values are: GSS-TSIG, NONE, TSIG&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="88" name="test_server_address_remoteddnszone" time="0.0453100204468"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: server_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: server_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="100" name="test_server_address_type_remoteddnszone" time="0.041424036026"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for server_address: \&quot;10.39.A.45\&quot;: Invalid IP address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for server_address: \&quot;10.39.A.45\&quot;: Invalid IP address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="114" name="test_tsig_key_remoteddnszone" time="0.0534629821777"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tsig_key: 1234: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tsig_key: 1234: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="126" name="test_tsig_key_alg_remoteddnszone" time="0.051353931427"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tsig_key_alg (\&quot;true\&quot;) valid values are: HMAC-MD5, HMAC-SHA256&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tsig_key_alg (\&quot;true\&quot;) valid values are: HMAC-MD5, HMAC-SHA256&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="139" name="test_tsig_key_name_remoteddnszone" time="0.0312540531158"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tsig_key_name: 12345: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tsig_key_name: 12345: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_remoteddns.Remote_Ddns_Zone" file="WAPI82_Automation/test_remoteddns.py" line="153" name="test_DELETE_remoteddnszone" time="0.115658998489"><system-out>networkview/ZG5zLm5ldHdvcmtfdmlldyQy:Testing/false
+&quot;networkview/ZG5zLm5ldHdvcmtfdmlldyQy:Testing/false&quot;
+</system-out></testcase></testsuite>

@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="member_filedistribution_original_results" skips="0" tests="226" time="11.807"><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="21" name="test_1_get_member_FD" time="0.10524392128"></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="33" name="test_2_create_member_FD" time="0.0321609973907"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for member:filedistribution&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for member:filedistribution&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="47" name="test_3_delete_member_FD" time="0.0332441329956"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for member:filedistribution&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for member:filedistribution&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="58" name="test_4_csvexport_member_FD" time="0.0286448001862"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: member:filedistribution objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;member:filedistribution objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="69" name="test_5_globalsearch_member_FD" time="0.389472723007"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="82" name="test_6_schedule_member_FD" time="0.045731306076"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for member:filedistribution&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for member:filedistribution&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="96" name="test_7_approvable_Non_super_user_member_FD" time="0.0433020591736"></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="103" name="test_8_approvable_Super_user_member_FD" time="0.0399467945099"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="116" name="test_9_approvable_Non_super_user_with_ref_member_FD" time="0.0346291065216"><system-out>404
+{ &quot;Error&quot;: &quot;AdmConDataNotFoundError: Reference member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:infoblox.localdomain not found&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.NotFound&quot;, 
+  &quot;text&quot;: &quot;Reference member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:infoblox.localdomain not found&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="128" name="test_10_approvable_Super_user_with_ref_member_FD" time="0.0554490089417"><system-out>{
+    &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;, 
+    &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;, 
+    &quot;status&quot;: &quot;INACTIVE&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="144" name="test_11_allow_uploads_member_FD" time="0.0410211086273"><system-out>{u&apos;allow_uploads&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="154" name="test_12_allow_uploads_with_true_member_FD" time="0.0613367557526"><system-out>{u&apos;allow_uploads&apos;: True, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="166" name="test_13_allow_uploads_with_false_member_FD" time="0.0755751132965"><system-out>{u&apos;allow_uploads&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="177" name="test_14_allow_uploads_with_invalid_member_FD" time="0.0314350128174"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for allow_uploads: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for allow_uploads: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="188" name="test_15_allow_uploads_with_search1_member_FD" time="0.0396978855133"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="198" name="test_16_allow_uploads_with_search2_member_FD" time="0.0372159481049"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="208" name="test_17_allow_uploads_with_search3_member_FD" time="0.0394787788391"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="218" name="test_18_allow_uploads_with_search4_member_FD" time="0.0489010810852"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="228" name="test_19_allow_uploads_with_search5_member_FD" time="0.0460500717163"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="238" name="test_20_allow_uploads_with_search6_member_FD" time="0.0428750514984"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="252" name="test_21_comment_member_FD" time="0.0428240299225"></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="262" name="test_22_comment_with_value_member_FD" time="0.0678849220276"><system-out>{
+    &quot;_ref&quot;: &quot;member/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="274" name="test_23_comment_member_FD" time="0.0386910438538"><system-out>{
+    &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="286" name="test_24_comment_with_value_for_ref_member_FD" time="0.0425696372986"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="298" name="test_25_comment_with_search1_member_FD" time="0.0412449836731"></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="311" name="test_26_comment_with_search1_member" time="0.0414671897888"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="323" name="test_27_comment_with_search2_member" time="0.0365159511566"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="337" name="test_28_comment_with_search2_member_FD" time="0.0520532131195"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="350" name="test_29_comment_with_search3_member_FD" time="0.0509331226349"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="364" name="test_30_comment_with_search4_member_FD" time="0.0462939739227"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="375" name="test_31_comment_with_search5_member_FD" time="0.0432949066162"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;!&apos; not allowed for field: comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;!&apos; not allowed for field: comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="386" name="test_32_comment_with_search6_member_FD" time="0.0415277481079"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="396" name="test_33_comment_with_search7_member_FD" time="0.0433700084686"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: comment&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: comment&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="409" name="test_34_enable_ftp_member_FD" time="0.0388131141663"><system-out>{u&apos;enable_ftp&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="419" name="test_35_enable_ftp_with_true_member_FD" time="0.0712640285492"><system-out>{u&apos;enable_ftp&apos;: True, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="431" name="test_36_enable_ftp_with_false_member_FD" time="0.0642869472504"><system-out>{u&apos;enable_ftp&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="442" name="test_37_enable_ftp_with_invalid_member_FD" time="0.0321371555328"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_ftp: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_ftp: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="453" name="test_38_enable_ftp_with_search1_member_FD" time="0.0361220836639"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="463" name="test_39_enable_ftp_with_search2_member_FD" time="0.0498690605164"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="475" name="test_40_enable_ftp_with_search3_member_FD" time="0.0375661849976"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="485" name="test_41_enable_ftp_with_search4_member_FD" time="0.039299249649"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="495" name="test_42_enable_ftp_with_search5_member_FD" time="0.0417940616608"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="505" name="test_43_enable_ftp_with_search6_member_FD" time="0.0503010749817"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="517" name="test_44_enable_ftp_filelist_member_FD" time="0.0456149578094"><system-out>{u&apos;enable_ftp_filelist&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="527" name="test_45_enable_ftp_filelist_with_true_member_FD" time="0.0702483654022"><system-out>{u&apos;enable_ftp_filelist&apos;: True, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="539" name="test_46_enable_ftp_filelist_with_false_member_FD" time="0.0689997673035"><system-out>{u&apos;enable_ftp_filelist&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="550" name="test_47_enable_ftp_filelist_with_invalid_member_FD" time="0.0490353107452"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_ftp_filelist: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_ftp_filelist: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="561" name="test_48_enable_ftp_filelist_with_search1_member_FD" time="0.0436449050903"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="571" name="test_49_enable_ftp_filelist_with_search2_member_FD" time="0.0417106151581"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="581" name="test_50_enable_ftp_filelist_with_search3_member_FD" time="0.0467767715454"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="591" name="test_51_enable_ftp_filelist_with_search4_member_FD" time="0.0412559509277"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="601" name="test_52_enable_ftp_filelist_with_search5_member_FD" time="0.0355257987976"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="611" name="test_53_enable_ftp_filelist_with_search6_member_FD" time="0.0396127700806"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_filelist&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_filelist&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="623" name="test_54_enable_ftp_passive_member_FD" time="0.0465750694275"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_ftp_passive&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="633" name="test_55_enable_ftp_passive_with_true_member_FD" time="0.0825657844543"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_ftp_passive&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="645" name="test_56_enable_ftp_passive_with_false_member_FD" time="0.0724351406097"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_ftp_passive&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="656" name="test_57_enable_ftp_passive_with_invalid_member_FD" time="0.0441801548004"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_ftp_passive: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_ftp_passive: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="667" name="test_58_enable_ftp_passive_with_search1_member_FD" time="0.0465588569641"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="677" name="test_59_enable_ftp_passive_with_search2_member_FD" time="0.0310637950897"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="687" name="test_60_enable_ftp_passive_with_search3_member_FD" time="0.0382618904114"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="697" name="test_61_enable_ftp_passive_with_search4_member_FD" time="0.0504243373871"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="707" name="test_62_enable_ftp_passive_with_search5_member_FD" time="0.0317897796631"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="717" name="test_63_enable_ftp_passive_with_search6_member_FD" time="0.0453901290894"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_ftp_passive&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_ftp_passive&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="729" name="test_64_enable_http_member_FD" time="0.0397942066193"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="739" name="test_65_enable_http_with_true_member_FD" time="0.0685439109802"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="751" name="test_66_enable_http_with_false_member_FD" time="0.0840318202972"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="762" name="test_67_enable_http_with_invalid_member_FD" time="0.0455021858215"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_http: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_http: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="773" name="test_68_enable_http_with_search1_member_FD" time="0.0448260307312"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="783" name="test_69_enable_http_with_search2_member_FD" time="0.0452630519867"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="793" name="test_70_enable_http_with_search3_member_FD" time="0.0412440299988"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="803" name="test_71_enable_http_with_search4_member_FD" time="0.0523109436035"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="813" name="test_72_enable_http_with_search5_member_FD" time="0.0433661937714"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="823" name="test_73_enable_http_with_search6_member_FD" time="0.0399568080902"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="836" name="test_74_enable_http_acl_member_FD" time="0.0462522506714"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="846" name="test_75_enable_http_acl_with_true_member_FD" time="0.0720019340515"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="858" name="test_76_enable_http_acl_with_false_member_FD" time="0.0742309093475"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="869" name="test_77_enable_http_acl_with_invalid_member_FD" time="0.038477897644"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_http_acl: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_http_acl: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="880" name="test_78_enable_http_acl_with_search1_member_FD" time="0.0459508895874"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="890" name="test_79_enable_http_acl_with_search2_member_FD" time="0.0462069511414"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="900" name="test_80_enable_http_acl_with_search3_member_FD" time="0.0458219051361"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="910" name="test_81_enable_http_acl_with_search4_member_FD" time="0.0356180667877"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="920" name="test_82_enable_http_acl_with_search5_member_FD" time="0.0371460914612"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="930" name="test_83_enable_http_acl_with_search6_member_FD" time="0.0365700721741"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="942" name="test_84_enable_http_acl_member_FD" time="0.0391192436218"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="952" name="test_85_enable_http_acl_with_true_member_FD" time="0.0856261253357"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: True}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="964" name="test_86_enable_http_acl_with_false_member_FD" time="0.0693957805634"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;enable_http_acl&apos;: False}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="975" name="test_87_enable_http_acl_with_invalid_member_FD" time="0.0414662361145"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for enable_http_acl: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for enable_http_acl: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="986" name="test_88_enable_http_acl_with_search1_member_FD" time="0.0327780246735"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="996" name="test_89_enable_http_acl_with_search2_member_FD" time="0.0448989868164"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1006" name="test_90_enable_http_acl_with_search3_member_FD" time="0.0390779972076"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1016" name="test_91_enable_http_acl_with_search4_member_FD" time="0.0465908050537"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1026" name="test_92_enable_http_acl_with_search5_member_FD" time="0.0277230739594"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1036" name="test_93_enable_http_acl_with_search6_member_FD" time="0.0407502651215"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: enable_http_acl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: enable_http_acl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1047" name="test_94_ftp_acls_member_FD" time="0.0470840930939"><system-out>[{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_acls&apos;: []}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;, u&apos;ftp_acls&apos;: []}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;, u&apos;ftp_acls&apos;: []}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1056" name="test_95_ftp_acls_with_true_member_FD" time="0.0879709720612"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_acls&apos;: [{u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.36.199.7&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.36.199.8&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.35.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.37.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;Any&apos;}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1067" name="test_96_ftp_acls_with_true_member_FD" time="0.0648448467255"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_acls&apos;: []}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1078" name="test_97_ftp_acls_with_invalid1_grid_FD" time="0.0485560894012"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;10.36.199.711&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;10.36.199.711&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1089" name="test_98_ftp_acls_with_invalid2_grid_FD" time="0.0355799198151"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;ALLOW1\&quot;) valid values are: ALLOW, DENY&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;ALLOW1\&quot;) valid values are: ALLOW, DENY&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1100" name="test_99_ftp_acls_with_invalid3_grid_FD" time="0.0305159091949"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;10.35.0.0/166&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;10.35.0.0/166&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1111" name="test_100_ftp_acls_with_invalid4_grid_FD" time="0.0311341285706"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;DENY1\&quot;) valid values are: ALLOW, DENY&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;DENY1\&quot;) valid values are: ALLOW, DENY&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1123" name="test_101_ftp_acls_with_invalid5_grid_FD" time="0.0452842712402"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;ANY&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;ANY&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1135" name="test_102_ftp_acls_with_true_member_FD" time="0.0759739875793"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_acls&apos;: [{u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.36.199.7&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.36.199.8&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.37.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.35.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;Any&apos;}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1149" name="test_103_ftp_acls_with_search1_member_FD" time="0.0471701622009"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1159" name="test_104_ftp_acls_with_search2_member_FD" time="0.0483999252319"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1169" name="test_105_ftp_acls_with_search3_member_FD" time="0.0386908054352"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1179" name="test_106_ftp_acls_with_search4_member_FD" time="0.0343689918518"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1189" name="test_107_ftp_acls_with_search5_member_FD" time="0.0427141189575"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1199" name="test_108_ftp_acls_with_search6_member_FD" time="0.0447380542755"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1210" name="test_109_ftp_port_member_FD" time="0.0519089698792"><system-out>[{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_port&apos;: 21}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;, u&apos;ftp_port&apos;: 21}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;, u&apos;ftp_port&apos;: 21}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1221" name="test_110_ftp_port_with_invalid1_grid_FD" time="0.0342280864716"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ftp_port: 0.0: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ftp_port: 0.0: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1232" name="test_111_ftp_port_with_invalid2_grid_FD" time="0.0425720214844"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ftp_port: -1: Invalid value, must be between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ftp_port: -1: Invalid value, must be between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1243" name="test_112_ftp_port_with_invalid3_grid_FD" time="0.0504088401794"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: Invalid FTP port number. It should be an integer from 1 to 63999&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Invalid FTP port number. It should be an integer from 1 to 63999&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1254" name="test_113_ftp_port_with_invalid4_grid_FD" time="0.037849187851"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for ftp_port: \&quot;a\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for ftp_port: \&quot;a\&quot;: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1265" name="test_114_ftp_port_with_invalid4_grid_FD" time="0.0543804168701"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: Invalid FTP port number. It should be an integer from 1 to 63999&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Invalid FTP port number. It should be an integer from 1 to 63999&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1278" name="test_115_ftp_port_with_search1_member_FD" time="0.0294680595398"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1288" name="test_116_ftp_port_with_search2_member_FD" time="0.0370020866394"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1298" name="test_117_ftp_port_with_search3_member_FD" time="0.0293827056885"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1308" name="test_118_ftp_port_with_search4_member_FD" time="0.0334289073944"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1318" name="test_119_ftp_port_with_search5_member_FD" time="0.0300002098083"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1328" name="test_120_ftp_port_with_search6_member_FD" time="0.0415740013123"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1338" name="test_121_ftp_status_member_FD" time="0.107137203217"><system-out>[{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;ftp_status&apos;: u&apos;INACTIVE&apos;}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;, u&apos;ftp_status&apos;: u&apos;INACTIVE&apos;}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;, u&apos;ftp_status&apos;: u&apos;INACTIVE&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1349" name="test_122_ftp_status_with_invalid1_grid_FD" time="0.0402281284332"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1362" name="test_123_ftp_status_with_search1_member_FD" time="0.0328359603882"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1372" name="test_124_ftp_status_with_search2_member_FD" time="0.0437490940094"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1382" name="test_125_ftp_status_with_search3_member_FD" time="0.0350458621979"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1392" name="test_126_ftp_status_with_search4_member_FD" time="0.0516903400421"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1402" name="test_127_ftp_status_with_search5_member_FD" time="0.0460739135742"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1412" name="test_128_ftp_status_with_search6_member_FD" time="0.0452144145966"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1423" name="test_129_host_name_member_FD" time="0.0593078136444"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-20-15.infoblox.com&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-173-10.infoblox.com&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1435" name="test_130_host_name_with_invalid1_grid_FD" time="0.0467920303345"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: host_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: host_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1448" name="test_131_host_name_with_search1_member_FD" time="0.0576839447021"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1464" name="test_132_host_name_with_search2_member_FD" time="0.0425882339478"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1478" name="test_133_host_name_with_search3_member_FD" time="0.0528998374939"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1491" name="test_134_host_name_with_search4_member_FD" time="0.034569978714"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;!&apos; not allowed for field: host_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;!&apos; not allowed for field: host_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1501" name="test_135_host_name_with_search5_member_FD" time="0.0416858196259"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: host_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: host_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1511" name="test_136_host_name_with_search6_member_FD" time="0.0370211601257"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: host_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: host_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1521" name="test_137_http_acls_member_FD" time="0.0428431034088"><system-out>[{u&apos;http_acls&apos;: [], u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}, {u&apos;http_acls&apos;: [], u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;}, {u&apos;http_acls&apos;: [], u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1530" name="test_138_http_acls_with_valid1_grid_FD" time="0.0745701789856"><system-out>{u&apos;http_acls&apos;: [{u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.36.199.7&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.35.0.0/16&apos;}], u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1542" name="test_139_http_acls_with_Invalid1_grid_FD" time="0.0605578422546"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Anonymous ACL contains ac item with permission &apos;DENY&apos; which is not allowed for &apos;HTTP&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Anonymous ACL contains ac item with permission &apos;DENY&apos; which is not allowed for &apos;HTTP&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1553" name="test_140_http_acls_with_Invalid1_grid_FD" time="0.0387420654297"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;10.35.0.0/166&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;10.35.0.0/166&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1567" name="test_141_http_acls_with_search1_member_FD" time="0.047614812851"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1577" name="test_142_http_acls_with_search2_member_FD" time="0.0411491394043"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1587" name="test_143_http_acls_with_search3_member_FD" time="0.055065870285"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1597" name="test_144_http_acls_with_search4_member_FD" time="0.032634973526"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1607" name="test_145_http_acls_with_search5_member_FD" time="0.0425198078156"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1617" name="test_146_http_acls_with_search6_member_FD" time="0.0468671321869"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1628" name="test_147_http_status_member_FD" time="0.107919931412"><system-out>[{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;http_status&apos;: u&apos;INACTIVE&apos;}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;, u&apos;http_status&apos;: u&apos;INACTIVE&apos;}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;, u&apos;http_status&apos;: u&apos;INACTIVE&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1639" name="test_148_http_status_with_invalid1_grid_FD" time="0.0492389202118"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1652" name="test_149_http_status_with_search1_member_FD" time="0.0413269996643"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1662" name="test_150_http_status_with_search2_member_FD" time="0.0472402572632"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1672" name="test_151_http_status_with_search3_member_FD" time="0.0422801971436"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1682" name="test_152_http_status_with_search4_member_FD" time="0.0407617092133"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1692" name="test_153_http_status_with_search5_member_FD" time="0.0352499485016"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1702" name="test_154_http_status_with_search6_member_FD" time="0.0399203300476"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: http_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: http_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1712" name="test_155_ipv4_address_member_FD" time="0.0507671833038"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.20.15&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.173.10&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1725" name="test_156_ipv4_address_with_invalid1_grid_FD" time="0.0521960258484"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: ipv4_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: ipv4_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1738" name="test_157_ipv4_address_with_search1_member_FD" time="0.0526762008667"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1755" name="test_158_ipv4_address_with_search3_member_FD" time="0.0578329563141"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1768" name="test_159_ipv4_address_with_search2_member_FD" time="0.0449070930481"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: ipv4_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: ipv4_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1779" name="test_160_ipv4_address_with_search4_member_FD" time="0.0403771400452"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;!&apos; not allowed for field: ipv4_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;!&apos; not allowed for field: ipv4_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1789" name="test_161_ipv4_address_with_search5_member_FD" time="0.0396931171417"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: ipv4_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: ipv4_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1799" name="test_162_ipv4_address_with_search6_member_FD" time="0.0334620475769"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: ipv4_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: ipv4_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1809" name="test_163_ipv4_address_member_FD" time="0.0619902610779"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::140f&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::ad0a&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1822" name="test_164_ipv6_address_with_invalid1_grid_FD" time="0.0480098724365"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: ipv6_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: ipv6_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1835" name="test_165_ipv6_address_with_search1_member_FD" time="0.113040208817"><system-out>[
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;, 
+        &quot;status&quot;: &quot;INACTIVE&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-20-15.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.20.15&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::140f&quot;, 
+        &quot;status&quot;: &quot;INACTIVE&quot;
+    }, 
+    {
+        &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&quot;, 
+        &quot;host_name&quot;: &quot;ib-10-35-173-10.infoblox.com&quot;, 
+        &quot;ipv4_address&quot;: &quot;10.35.173.10&quot;, 
+        &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::ad0a&quot;, 
+        &quot;status&quot;: &quot;INACTIVE&quot;
+    }
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1851" name="test_166_ipv6_address_with_search3_member_FD" time="0.0578110218048"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1864" name="test_167_ipv6_address_with_search2_member_FD" time="0.034628868103"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: ipv6_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: ipv6_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1875" name="test_168_ipv6_address_with_search4_member_FD" time="0.0288057327271"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;!&apos; not allowed for field: ipv6_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;!&apos; not allowed for field: ipv6_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1885" name="test_169_ipv6_address_with_search5_member_FD" time="0.0399715900421"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: ipv6_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: ipv6_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1895" name="test_170_ipv6_address_with_search6_member_FD" time="0.0346691608429"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: ipv6_address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: ipv6_address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1905" name="test_171_status_member_FD" time="0.106444835663"><system-out>[{u&apos;status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}, {u&apos;status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;}, {u&apos;status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1916" name="test_172_status_with_invalid1_grid_FD" time="0.039174079895"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1929" name="test_173_status_with_search1_member_FD" time="0.0410900115967"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1939" name="test_174_status_with_search2_member_FD" time="0.0480198860168"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1949" name="test_175_status_with_search3_member_FD" time="0.0474281311035"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1959" name="test_176_status_with_search4_member_FD" time="0.0377559661865"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1969" name="test_177_status_with_search5_member_FD" time="0.0440020561218"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1979" name="test_178_status_with_search6_member_FD" time="0.041054725647"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1989" name="test_179_tftp_acls_member_FD" time="0.051568031311"><system-out>[{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;tftp_acls&apos;: []}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;, u&apos;tftp_acls&apos;: []}, {u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;, u&apos;tftp_acls&apos;: []}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="1998" name="test_180_tftp_acls_with_true_member_FD" time="0.0931370258331"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;tftp_acls&apos;: [{u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.36.199.7&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.36.199.8&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.35.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.37.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;Any&apos;}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2009" name="test_181_tftp_acls_with_true_member_FD" time="0.0679428577423"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;tftp_acls&apos;: []}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2020" name="test_182_tftp_acls_with_invalid1_grid_FD" time="0.0381751060486"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;10.36.199.711&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;10.36.199.711&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2031" name="test_183_tftp_acls_with_invalid2_grid_FD" time="0.0382030010223"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;ALLOW1\&quot;) valid values are: ALLOW, DENY&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;ALLOW1\&quot;) valid values are: ALLOW, DENY&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2042" name="test_184_tftp_acls_with_invalid3_grid_FD" time="0.0482249259949"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;10.35.0.0/166&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;10.35.0.0/166&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2053" name="test_185_tftp_acls_with_invalid4_grid_FD" time="0.0398924350739"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for permission (\&quot;DENY1\&quot;) valid values are: ALLOW, DENY&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for permission (\&quot;DENY1\&quot;) valid values are: ALLOW, DENY&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2065" name="test_186_tftp_acls_with_invalid5_grid_FD" time="0.0346541404724"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: None (IBDataConflictError: IB.Data.Conflict:Invalid address_string &apos;ANY&apos;)&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data.Conflict&quot;, 
+  &quot;text&quot;: &quot;Invalid address_string &apos;ANY&apos;&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2077" name="test_187_tftp_acls_with_true_member_FD" time="0.0742168426514"><system-out>{u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;, u&apos;tftp_acls&apos;: [{u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.36.199.7&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.36.199.8&apos;}, {u&apos;permission&apos;: u&apos;ALLOW&apos;, u&apos;address&apos;: u&apos;10.37.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;10.35.0.0/16&apos;}, {u&apos;permission&apos;: u&apos;DENY&apos;, u&apos;address&apos;: u&apos;Any&apos;}]}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2091" name="test_188_tftp_acls_with_search1_member_FD" time="0.0291700363159"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2101" name="test_189_tftp_acls_with_search2_member_FD" time="0.0413286685944"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2111" name="test_190_tftp_acls_with_search3_member_FD" time="0.0375711917877"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2121" name="test_191_tftp_acls_with_search4_member_FD" time="0.0441720485687"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2131" name="test_192_tftp_acls_with_search5_member_FD" time="0.0497310161591"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2141" name="test_193_tftp_acls_with_search6_member_FD" time="0.0378081798553"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_acls&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_acls&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2151" name="test_194_tftp_port_member_FD" time="0.0438437461853"><system-out>[{u&apos;tftp_port&apos;: 69, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}, {u&apos;tftp_port&apos;: 69, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;}, {u&apos;tftp_port&apos;: 69, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2162" name="test_195_tftp_port_with_invalid1_grid_FD" time="0.0400590896606"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tftp_port: 0.0: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tftp_port: 0.0: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2173" name="test_196_tftp_port_with_invalid2_grid_FD" time="0.0428357124329"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tftp_port: -1: Invalid value, must be between 0 and 4294967295&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tftp_port: -1: Invalid value, must be between 0 and 4294967295&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2184" name="test_197_tftp_port_with_invalid3_grid_FD" time="0.0622160434723"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: Invalid TFTP port number. It should be an integer from 1 to 63999&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Invalid TFTP port number. It should be an integer from 1 to 63999&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2195" name="test_198_tftp_port_with_invalid4_grid_FD" time="0.0400700569153"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for tftp_port: \&quot;a\&quot;: Must be integer type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for tftp_port: \&quot;a\&quot;: Must be integer type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2206" name="test_199_tftp_port_with_invalid4_grid_FD" time="0.0624780654907"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConDataError: Invalid TFTP port number. It should be an integer from 1 to 63999&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Data&quot;, 
+  &quot;text&quot;: &quot;Invalid TFTP port number. It should be an integer from 1 to 63999&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2219" name="test_200_tftp_port_with_search1_member_FD" time="0.0292296409607"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2229" name="test_201_tftp_port_with_search2_member_FD" time="0.0356678962708"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2239" name="test_202_tftp_port_with_search3_member_FD" time="0.0327179431915"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2249" name="test_203_tftp_port_with_search4_member_FD" time="0.0454459190369"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2259" name="test_204_tftp_port_with_search5_member_FD" time="0.0467562675476"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2269" name="test_205_tftp_port_with_search6_member_FD" time="0.0320711135864"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_port&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_port&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2279" name="test_206_tftp_status_member_FD" time="0.11020898819"><system-out>[{u&apos;tftp_status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}, {u&apos;tftp_status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMQ:ib-10-35-20-15.infoblox.com&apos;}, {u&apos;tftp_status&apos;: u&apos;INACTIVE&apos;, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMw:ib-10-35-173-10.infoblox.com&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2290" name="test_207_tftp_status_with_invalid1_grid_FD" time="0.0536780357361"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not writable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not writable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2303" name="test_208_tftp_status_with_search1_member_FD" time="0.0348887443542"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2313" name="test_209_tftp_status_with_search2_member_FD" time="0.040275812149"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2323" name="test_210_tftp_status_with_search3_member_FD" time="0.0499999523163"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2333" name="test_211_tftp_status_with_search4_member_FD" time="0.0440099239349"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2343" name="test_212_tftp_status_with_search5_member_FD" time="0.0308892726898"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2353" name="test_213_tftp_status_with_search6_member_FD" time="0.0464453697205"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: tftp_status&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: tftp_status&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2363" name="test_214_use_allow_uploads_member_FD" time="0.0477209091187"><system-out>{u&apos;use_allow_uploads&apos;: True, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2373" name="test_215_use_allow_uploads_with_true_member_FD" time="0.056548833847"><system-out>{u&apos;use_allow_uploads&apos;: False, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2385" name="test_216_use_allow_uploads_with_false_member_FD" time="0.0729489326477"><system-out>{u&apos;use_allow_uploads&apos;: True, u&apos;_ref&apos;: u&apos;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&apos;}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2396" name="test_217_use_allow_uploads_with_invalid_member_FD" time="0.0343549251556"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for use_allow_uploads: 1: Must be boolean type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for use_allow_uploads: 1: Must be boolean type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2407" name="test_218_use_allow_uploads_with_search1_member_FD" time="0.046019077301"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2417" name="test_219_use_allow_uploads_with_search2_member_FD" time="0.0313920974731"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2427" name="test_220_use_allow_uploads_with_search3_member_FD" time="0.0463988780975"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2437" name="test_221_use_allow_uploads_with_search4_member_FD" time="0.0375559329987"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2447" name="test_222_use_allow_uploads_with_search5_member_FD" time="0.0309753417969"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2457" name="test_223_use_allow_uploads_with_search6_member_FD" time="0.0422210693359"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: use_allow_uploads&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: use_allow_uploads&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2467" name="test_224_get_member_FD_with_all_fields" time="0.10454916954"><system-out>{
+    &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;allow_uploads&quot;: false, 
+    &quot;enable_ftp&quot;: false, 
+    &quot;enable_ftp_filelist&quot;: false, 
+    &quot;enable_ftp_passive&quot;: false, 
+    &quot;enable_http&quot;: false, 
+    &quot;enable_http_acl&quot;: true, 
+    &quot;enable_tftp&quot;: false, 
+    &quot;ftp_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.36.199.8&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.37.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;Any&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }
+    ], 
+    &quot;ftp_port&quot;: 21, 
+    &quot;ftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;http_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }
+    ], 
+    &quot;http_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;, 
+    &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;, 
+    &quot;status&quot;: &quot;INACTIVE&quot;, 
+    &quot;tftp_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.36.199.8&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.37.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;Any&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }
+    ], 
+    &quot;tftp_port&quot;: 69, 
+    &quot;tftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;use_allow_uploads&quot;: true
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2479" name="test_225_update_member_FD_with_all_fields" time="0.156694173813"><system-out>{
+    &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;allow_uploads&quot;: true, 
+    &quot;enable_ftp&quot;: true, 
+    &quot;enable_ftp_filelist&quot;: true, 
+    &quot;enable_ftp_passive&quot;: true, 
+    &quot;enable_http&quot;: true, 
+    &quot;enable_http_acl&quot;: true, 
+    &quot;enable_tftp&quot;: true, 
+    &quot;ftp_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.36.199.8&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.37.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;Any&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }
+    ], 
+    &quot;ftp_port&quot;: 21, 
+    &quot;ftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;http_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }
+    ], 
+    &quot;http_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;, 
+    &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;, 
+    &quot;status&quot;: &quot;INACTIVE&quot;, 
+    &quot;tftp_acls&quot;: [
+        {
+            &quot;address&quot;: &quot;10.36.199.8&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.36.199.7&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.37.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;ALLOW&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;10.35.0.0/16&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }, 
+        {
+            &quot;address&quot;: &quot;Any&quot;, 
+            &quot;permission&quot;: &quot;DENY&quot;
+        }
+    ], 
+    &quot;tftp_port&quot;: 69, 
+    &quot;tftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;use_allow_uploads&quot;: true
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_member_filedistribution_original.MemberFileDistribution" file="WAPI82_Automation/test_member_filedistribution_original.py" line="2494" name="test_226_default_values_member_FD" time="0.130769968033"><system-out>{
+    &quot;_ref&quot;: &quot;member:filedistribution/b25lLm1lbWJlcl90ZnRwX3Byb3BlcnRpZXMkMA:ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;allow_uploads&quot;: false, 
+    &quot;enable_ftp&quot;: false, 
+    &quot;enable_ftp_filelist&quot;: false, 
+    &quot;enable_ftp_passive&quot;: true, 
+    &quot;enable_http&quot;: false, 
+    &quot;enable_http_acl&quot;: false, 
+    &quot;enable_tftp&quot;: false, 
+    &quot;ftp_acls&quot;: [], 
+    &quot;ftp_port&quot;: 21, 
+    &quot;ftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;host_name&quot;: &quot;ib-10-35-195-2.infoblox.com&quot;, 
+    &quot;http_acls&quot;: [], 
+    &quot;http_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;ipv4_address&quot;: &quot;10.35.195.2&quot;, 
+    &quot;ipv6_address&quot;: &quot;2620:10a:6000:2400::c302&quot;, 
+    &quot;status&quot;: &quot;INACTIVE&quot;, 
+    &quot;tftp_acls&quot;: [], 
+    &quot;tftp_port&quot;: 69, 
+    &quot;tftp_status&quot;: &quot;INACTIVE&quot;, 
+    &quot;use_allow_uploads&quot;: false
+}
+</system-out></testcase></testsuite>

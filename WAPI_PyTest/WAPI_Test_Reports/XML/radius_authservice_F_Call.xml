@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="radius_authservice_F_Call_results" skips="0" tests="10" time="10.866"><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="27" name="test_1_Create_radius_server" time="0.0475752353668"><system-out>&quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="41" name="test_2_check_Radius_server_settings_FC_Tacacsplus_Authservice" time="10.1386091709"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+{
+    &quot;error_message&quot;: &quot;[RadiusError] AUTH : No Response. Please check IP Address/Port\n&quot;, 
+    &quot;overall_status&quot;: &quot;FAILED&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="63" name="test_3_radius_server_check_radius_server_settings_FC_radius_Authservice" time="0.0776855945587"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: required function parameter missing: radius_server&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;required function parameter missing: radius_server&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="83" name="test_4_radius_server_check_radius_server_settings_FC_radius_Authservice" time="0.0814681053162"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_radius_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_radius_server_settings illegal with this method&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="101" name="test_5_Address_1_check_radius_server_settings_FC_radius_Authservice" time="0.0845787525177"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: address&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: address&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="120" name="test_6_Address_2_check_radius_server_settings_FC_radius_Authservice" time="0.0792338848114"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for address: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for address: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="139" name="test_7_Shared_Secret_1_check_radius_server_settings_FC_radius_Authservice" time="0.0751049518585"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Required field missing: shared_secret&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Required field missing: shared_secret&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="159" name="test_8_Shared_Secret_2_check_radius_server_settings_FC_radius_Authservice" time="0.0806548595428"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for shared_secret: true: Must be string type&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for shared_secret: true: Must be string type&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="179" name="test_9_DELETE_check_FC_radius_server_settings_radius_Authservice" time="0.0708367824554"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+{ &quot;Error&quot;: &quot;AdmConProtoError: Function check_radius_server_settings illegal with this method&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Function check_radius_server_settings illegal with this method&quot;
+}
+400
+</system-out></testcase><testcase classname="WAPI82_Automation.test_radius_authservice_F_Call.radius_Authservice_Function_Call" file="WAPI82_Automation/test_radius_authservice_F_Call.py" line="197" name="test_10_DELETE_Radius_Server" time="0.0663402080536"><system-out>radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin
+&quot;radius:authservice/b25lLmFkbWluX3JhZGl1c19wcm9wZXJ0aWVzJDAuYWRtaW4:admin&quot;
+</system-out></testcase></testsuite>

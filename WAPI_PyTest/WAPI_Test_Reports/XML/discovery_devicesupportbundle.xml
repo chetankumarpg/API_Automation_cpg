@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="discovery_devicesupportbundle_results" skips="0" tests="11" time="0.551"><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="25" name="test_1_create_discovery_devicesupportbundle_object_N" time="0.0359468460083"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for discovery:devicesupportbundle&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for discovery:devicesupportbundle&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="38" name="test_2_Modify_the_discovery_devicesupportbundle_N" time="0.0388009548187"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation update not allowed for discovery:devicesupportbundle&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation update not allowed for discovery:devicesupportbundle&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="52" name="test_3_create_discovery_devicesupportbundle_object_N" time="0.04789686203"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: discovery:devicesupportbundle objects do not support CSV export.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;discovery:devicesupportbundle objects do not support CSV export.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="65" name="test_4_Get_operation_to_read_discovery_devicesupportbundle_object_N" time="0.0315709114075"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: author&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: author&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="77" name="test_5_Get_operation_to_read_discovery_devicesupportbundle_object_N" time="0.0415377616882"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: integrated_ind&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: integrated_ind&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="89" name="test_6_Get_operation_to_read_discovery_devicesupportbundle_object" time="0.0719065666199"><system-out>[{u&apos;_ref&apos;: u&apos;discovery:devicesupportbundle/Li5kZXZpY2Vfc3VwcG9ydF9idW5kbGUkQnJvY2FkZS1JQ1g3NDUwMjQtMDhfMF8zMGNUMjEz:Brocade-ICX745024-08_0_30cT213&apos;, u&apos;integrated_ind&apos;: True, u&apos;name&apos;: u&apos;Brocade-ICX745024-08_0_30cT213&apos;, u&apos;version&apos;: u&apos;201608230000&apos;, u&apos;author&apos;: u&apos;infoblox&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="107" name="test_7_Get_operation_to_read_discovery_devicesupportbundle_object" time="0.056921005249"><system-out>[{u&apos;_ref&apos;: u&apos;discovery:devicesupportbundle/Li5kZXZpY2Vfc3VwcG9ydF9idW5kbGUkQnJvY2FkZS1JQ1g3NDUwMjQtMDhfMF8zMGNUMjEz:Brocade-ICX745024-08_0_30cT213&apos;, u&apos;integrated_ind&apos;: True, u&apos;name&apos;: u&apos;Brocade-ICX745024-08_0_30cT213&apos;, u&apos;version&apos;: u&apos;201608230000&apos;, u&apos;author&apos;: u&apos;infoblox&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="126" name="test_8_Get_operation_to_read_discovery_devicesupportbundle_object" time="0.067195892334"><system-out>[{u&apos;_ref&apos;: u&apos;discovery:devicesupportbundle/Li5kZXZpY2Vfc3VwcG9ydF9idW5kbGUkQnJvY2FkZS1JQ1g3NDUwMjQtMDhfMF8zMGNUMjEz:Brocade-ICX745024-08_0_30cT213&apos;, u&apos;integrated_ind&apos;: True, u&apos;name&apos;: u&apos;Brocade-ICX745024-08_0_30cT213&apos;, u&apos;version&apos;: u&apos;201608230000&apos;, u&apos;author&apos;: u&apos;infoblox&apos;}]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="143" name="test_9_Get_operation_to_read_discovery_devicesupportbundle_object_N" time="0.0285499095917"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&lt;&apos; not allowed for field: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&lt;&apos; not allowed for field: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="156" name="test_10_Get_operation_to_read_discovery_devicesupportbundle_object_N" time="0.0348658561707"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;&gt;&apos; not allowed for field: name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;&gt;&apos; not allowed for field: name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_discovery_devicesupportbundle.RangeTemplate" file="WAPI82_Automation/test_discovery_devicesupportbundle.py" line="168" name="test_11_Get_operation_to_read_discovery_devicesupportbundle_object_N" time="0.0373728275299"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: version&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: version&quot;
+}
+</system-out></testcase></testsuite>

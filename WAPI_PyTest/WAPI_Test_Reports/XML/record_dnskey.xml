@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="record_dnskey_results" skips="0" tests="31" time="1.383"><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="24" name="test_1_Get_operation_to_read_record_dnskey_object" time="0.0487217903137"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="42" name="test_2_create_record_dnskey_object_N" time="0.0286099910736"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for record:dnskey&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for record:dnskey&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="55" name="test_3_Delete_record_dnskey_object_N" time="0.0325849056244"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation delete not allowed for record:dnskey&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation delete not allowed for record:dnskey&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="66" name="test_4_Modify_record_dnskey_object_N" time="0.0357000827789"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation update not allowed for record:dnskey&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation update not allowed for record:dnskey&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="79" name="test_5_schedule_creation_for_record_dnskey" time="0.047534942627"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Operation create not allowed for record:dnskey&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Operation create not allowed for record:dnskey&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="89" name="test_6_Search_operation_to_read_record_dnskey_object_with_modifier_equal" time="0.0388150215149"><system-out>[
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="99" name="test_7_Search_operation_to_read_record_dnskey_object_with_modifier_colon" time="0.0330867767334"><system-out>[
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="110" name="test_8_Search_operation_to_read_record_dnskey_object_with_modifier_negotation" time="0.0449740886688"><system-out>[
+]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="121" name="test_9_Search_operation_to_read_record_ds_object_with_comment" time="0.0530469417572"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for comment: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for comment: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="134" name="test_10_Get_operation_to_read_record_dnskey_object_with_creation_timeN" time="0.0318682193756"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: creation_time&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: creation_time&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="147" name="test_11_Search_operation_to_read_record_dnskey_object_with_creator" time="0.0396087169647"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for creator (\&quot;lkpij\&quot;) valid values are: SYSTEM&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for creator (\&quot;lkpij\&quot;) valid values are: SYSTEM&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="160" name="test_12_Get_operation_to_read_record_dnskey_object_with_name" time="0.0447890758514"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="175" name="test_13_Search_operation_to_read_record_dnskey_object_with_name_modifier_negotation" time="0.0491490364075"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="195" name="test_14_Get_operation_to_read_record_dnskey_object_with_domain_nameN" time="0.0453941822052"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: dns_name&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: dns_name&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="207" name="test_15_Search_operation_to_read_record_dnskey_object_with_colon" time="0.0338931083679"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="218" name="test_16_Search_operation_to_read_record_dnskey_object_with_negotation" time="0.0458588600159"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: view&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: view&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="231" name="test_17_Search_operation_to_read_record_dnskey_object_with_view" time="0.0435121059418"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="250" name="test_18_Get_operation_to_read_record_dnskey_object_with_name" time="0.0388469696045"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="266" name="test_19_Get_operation_to_read_record_dnskey_object_with_zone" time="0.0455758571625"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="278" name="test_20_Search_operation_to_read_record_ds_object_with_zone" time="0.0402498245239"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Invalid value for zone: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Invalid value for zone: \&quot; domain.com\&quot;: leading or trailing whitespace is not allowed.&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="291" name="test_21_Get_operation_to_read_record_dnskey_object_with_creation_timeN" time="0.0455873012543"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Field is not searchable: ttl&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Field is not searchable: ttl&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="305" name="test_22_Get_operation_with_algorithm" time="0.0501751899719"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="317" name="test_23_Search_operation_to_read_record_dnskey_object_with_negotation" time="0.0467040538788"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: algorithm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: algorithm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="329" name="test_24_Search_operation_to_read_record_dnskey_object_with_colon" time="0.0479590892792"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: algorithm&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: algorithm&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="340" name="test_25_Get_operation_to_read_record_dnskey_object_with_flags" time="0.0448400974274"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="355" name="test_26_Get_operation_to_read_record_dnskey_object_with_flags" time="0.0352189540863"><system-out>[]
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="372" name="test_27_Search_operation_to_read_record_dnskey_object_with_negotation" time="0.0352761745453"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: flags&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: flags&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="384" name="test_28_Search_operation_to_read_record_dnskey_object_with_colon" time="0.0328981876373"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: flags&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: flags&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="395" name="test_29_Search_operation_to_read_record_dnskey_object_with_negotation" time="0.0335490703583"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;~&apos; not allowed for field: key_tag&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;~&apos; not allowed for field: key_tag&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="407" name="test_30_Search_operation_to_read_record_dnskey_object_with_colon" time="0.030378818512"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: key_tag&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: key_tag&quot;
+}
+</system-out></testcase><testcase classname="WAPI82_Automation.test_record_dnskey.RangeTemplate" file="WAPI82_Automation/test_record_dnskey.py" line="417" name="test_31_Search_operation_to_read_record_dnskey_object_with_colon_in_public_key" time="0.044086933136"><system-out>400
+{ &quot;Error&quot;: &quot;AdmConProtoError: Search modifier &apos;:&apos; not allowed for field: public_key&quot;, 
+  &quot;code&quot;: &quot;Client.Ibap.Proto&quot;, 
+  &quot;text&quot;: &quot;Search modifier &apos;:&apos; not allowed for field: public_key&quot;
+}
+</system-out></testcase></testsuite>
