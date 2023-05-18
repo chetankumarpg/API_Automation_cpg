@@ -251,6 +251,8 @@ def create_gmc_promotion_group(name,scheduled_time,members=[],gmc_promotion_poli
                     if type(response) == tuple or 'gmcgroup' not in response:
                         display_msg("FAIL: GMC Promotion Group '"+name+"' not updated")
                         assert False
+                    else:
+                        display_msg("PASS: GMC Promotion Group '"+name+"' updated")
         else:
             display_msg("FAIL: GMC Promotion Group '"+name+"' not created")
             assert False
