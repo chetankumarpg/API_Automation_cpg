@@ -199,22 +199,21 @@ def is_master(vip=config.grid1_master_vip):
             child = Popen(args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
             child.stdin.write("show network\n")
             child.stdin.write("exit")
-            result = child.communicate()
-            flag = False
-            for line in result:
-                display_msg(line)
-                if 'Master of Infoblox Grid' in line:
-                    flag = True
-            if not flag:
-                display_msg("WARNING: Expected output not found. Please debug the above message.")
-                return False
-            return True
         except Exception as E:
             display_msg(E)
             display_msg("FAIL: Debug above exception")
             assert False
         finally:
-            child.kill()
+            result = child.communicate()
+        flag = False
+        for line in result:
+            display_msg(line)
+            if 'Master of Infoblox Grid' in line:
+                flag = True
+        if not flag:
+            display_msg("WARNING: Expected output not found. Please debug the above message.")
+            return False
+        return True
     else:
         display_msg("WARNING: Device is not up and running. Please check.")
         return False
