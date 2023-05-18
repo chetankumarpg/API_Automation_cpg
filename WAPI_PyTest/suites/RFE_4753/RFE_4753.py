@@ -1142,7 +1142,7 @@ class RFE_4753(unittest.TestCase):
     @pytest.mark.run(order=29)
     def test_029_Update_scheduled_time_for_group_1(self):
         """
-        Update scheduled time for 'group 1' to 3 minutes in future.
+        Update scheduled time for 'group 1' to 5 minutes in future.
         """
         display_msg()
         display_msg("----------------------------------------------------")
@@ -1157,7 +1157,7 @@ class RFE_4753(unittest.TestCase):
         current_epoch_time = int(get_current_epoch_time(config.grid1_master_vip))
         
         #group 1
-        scheduled_time = current_epoch_time + (3*60)
+        scheduled_time = current_epoch_time + (5*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
         create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid1_member2_fqdn],grid_master=config.grid1_master_vip)
@@ -1301,8 +1301,8 @@ class RFE_4753(unittest.TestCase):
         display_msg(get_ref)
         
         for ref in json.loads(get_ref):
-            if config.grid1_member1_vip in ref['_ref']:
-                data = {"comment":"Updated comment in test_035"}
+            if 'group 1' in ref['name']:
+                data = {"comment":"Updated comment in test_034"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
                 if 'GMC Promotion is in progress' in response:
@@ -1314,20 +1314,19 @@ class RFE_4753(unittest.TestCase):
         display_msg("---------Test Case 34 Execution Completed----------")
 
     @pytest.mark.run(order=35)
-    def test_035_Execute_set_gmc_promotion_forced_end_CLI_on_Master(self):
+    def test_035_Execute_set_gmc_promotion_forced_end_CLI_on_GMC_Member(self):
         """
-        Execute set gmc_promotion forced_end CLI on the Master.
-        gmc_promotion_disable
+        Execute set gmc_promotion forced_end CLI on the GMC Member.
         """
         display_msg()
         display_msg("----------------------------------------------------")
         display_msg("|          Test Case 35 Execution Started          |")
         display_msg("----------------------------------------------------")
         
-        display_msg("Execute 'set gmc_promotion forced_end' CLI on Master")
-        return_code = gmc_promotion_forced_end(config.grid1_member1_vip)
+        display_msg("Execute 'set gmc_promotion forced_end' CLI on GMC Member")
+        return_code = gmc_promotion_forced_end(config.grid_vip)
         if return_code == 1: 
-            display_msg("PASS: Executing 'set gmc_promotion forced_end' is successful on the Master")
+            display_msg("PASS: Executing 'set gmc_promotion forced_end' is successful on the GMC Member")
         else:
             assert False
         
@@ -1348,8 +1347,8 @@ class RFE_4753(unittest.TestCase):
         display_msg(get_ref)
         
         for ref in json.loads(get_ref):
-            if config.grid1_member1_vip in ref['_ref']:
-                data = {"comment":"Updated comment in test_037"}
+            if 'group 1' in ref['name']:
+                data = {"comment":"Updated comment in test_036"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
                 if 'GMC Promotion is in progress' in response:
@@ -1414,7 +1413,7 @@ class RFE_4753(unittest.TestCase):
         display_msg("|          Test Case 39 Execution Started          |")
         display_msg("----------------------------------------------------")
         
-        display_msg("Execute 'set gmc_promotion disable' CLI on members")
+        display_msg("Execute 'set gmc_promotion disable' CLI on GMC members")
         return_code = gmc_promotion_disable(config.grid1_master_vip)
         if return_code: 
             display_msg("PASS: Executing 'set gmc_promotion disable' is successful on the Master")
