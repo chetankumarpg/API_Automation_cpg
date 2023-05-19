@@ -74,7 +74,7 @@ cat config.py
 ################################ End of Configuration Generator ##########################################
 
 
-pytest ${SUITE_NAME}.py -vss -rP -rF --html=${SUITE_NAME}_report.html --junit-xml=${SUITE_NAME}_results.xml -vv || true
+pytest ${SUITE_NAME}.py -rP -rF --html=${SUITE_NAME}_report.html --junit-xml=${SUITE_NAME}_results.xml -vv || true
 
 sed -i 's/="pytest"/="$SUITE_NAME_results"/g' $SUITE_NAME_results.xml
 
