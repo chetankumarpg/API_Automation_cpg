@@ -669,6 +669,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
+        count = 0
+        while count < 6:
+            status = is_grid_alive(config.grid_vip)
+            if status:
+                break
+            display_msg("GMC Member "+config.grid_vip+" is not up. Sleeping for 10s ...")
+            sleep(10)
+            count += 1
         online,offline = get_online_offline_members(config.grid1_member1_vip)
         display_msg("Online members: ")
         display_msg(online)
@@ -898,6 +906,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
+        count = 0
+        while count < 6:
+            status = is_grid_alive(config.grid1_member1_vip)
+            if status:
+                break
+            display_msg("GMC Member "+config.grid1_member1_vip+" is not up. Sleeping for 10s ...")
+            sleep(10)
+            count += 1
         online,offline = get_online_offline_members(config.grid1_master_vip)
         display_msg("Online members: ")
         display_msg(online)
@@ -1243,6 +1259,14 @@ class RFE_4753(unittest.TestCase):
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
+        count = 0
+        while count < 6:
+            status = is_grid_alive(config.grid_vip)
+            if status:
+                break
+            display_msg("GMC Member "+config.grid_vip+" is not up. Sleeping for 10s ...")
+            sleep(10)
+            count += 1
         online,offline = get_online_offline_members(config.grid1_member1_vip)
         display_msg("Online members: ")
         display_msg(online)
@@ -1305,28 +1329,28 @@ class RFE_4753(unittest.TestCase):
                 data = {"comment":"Updated comment in test_034"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
-                if 'GMC Promotion is in progress' in response:
+                if 'Operation performed is restricted as gmc promotion is in progress' in response:
                     display_msg("PASS: GMC Promotion process is still in progress")
                 else:
-                    display_msg("FAIL: GMC Promotion process is end")
+                    display_msg("FAIL: GMC Promotion process is completed")
                     assert False
         
         display_msg("---------Test Case 34 Execution Completed----------")
 
     @pytest.mark.run(order=35)
-    def test_035_Execute_set_gmc_promotion_forced_end_CLI_on_GMC_Member(self):
+    def test_035_Execute_set_gmc_promotion_forced_end_CLI_on_Master(self):
         """
-        Execute set gmc_promotion forced_end CLI on the GMC Member.
+        Execute set gmc_promotion forced_end CLI on the Master.
         """
         display_msg()
         display_msg("----------------------------------------------------")
         display_msg("|          Test Case 35 Execution Started          |")
         display_msg("----------------------------------------------------")
         
-        display_msg("Execute 'set gmc_promotion forced_end' CLI on GMC Member")
-        return_code = gmc_promotion_forced_end(config.grid_vip)
+        display_msg("Execute 'set gmc_promotion forced_end' CLI on the Master")
+        return_code = gmc_promotion_forced_end(config.grid1_member1_vip)
         if return_code == 1: 
-            display_msg("PASS: Executing 'set gmc_promotion forced_end' is successful on the GMC Member")
+            display_msg("PASS: Executing 'set gmc_promotion forced_end' is successful on the Master")
         else:
             assert False
         
@@ -1351,11 +1375,11 @@ class RFE_4753(unittest.TestCase):
                 data = {"comment":"Updated comment in test_036"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
-                if 'GMC Promotion is in progress' in response:
+                if 'Operation performed is restricted as gmc promotion is in progress' in response:
                     display_msg("FAIL: GMC Promotion process is still in progress")
                     assert False
                 else:
-                    display_msg("PASS: GMC Promotion process is end")
+                    display_msg("PASS: GMC Promotion process is completed")
                     
         display_msg("---------Test Case 36 Execution Completed----------")
 
