@@ -1329,7 +1329,7 @@ class RFE_4753(unittest.TestCase):
                 data = {"comment":"Updated comment in test_034"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
-                if 'gmc promotion is in progress' in response:
+                if 'gmc promotion is in progress' in str(response):
                     display_msg("PASS: GMC Promotion process is still in progress")
                 else:
                     display_msg("FAIL: GMC Promotion process is completed")
@@ -1375,7 +1375,7 @@ class RFE_4753(unittest.TestCase):
                 data = {"comment":"Updated comment in test_036"}
                 response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
                 display_msg(response)
-                if 'gmc promotion is in progress' in response:
+                if 'gmc promotion is in progress' in str(response):
                     display_msg("FAIL: GMC Promotion process is still in progress")
                     assert False
                 else:
