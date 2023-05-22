@@ -1441,6 +1441,9 @@ class RFE_4753(unittest.TestCase):
         return_code = gmc_promotion_disable(config.grid1_master_vip)
         if return_code: 
             display_msg("PASS: Executing 'set gmc_promotion disable' is successful on the Master")
+            return_code = gmc_promotion_disable(config.grid1_master_vip)
+            if return_code:
+                pass
         else:
             assert False
         
