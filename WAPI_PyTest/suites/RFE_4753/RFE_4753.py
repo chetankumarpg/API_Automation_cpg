@@ -185,6 +185,7 @@ def gmc_promotion_disable(grid=config.grid1_master_vip):
     if flag:
         display_msg("WARNING: Expected output not found. Please debug the above message.")
         return False
+    sleep(30)
     return True
 
 def is_master(vip=config.grid1_master_vip):
@@ -1882,13 +1883,13 @@ class RFE_4753(unittest.TestCase):
         count = 0
         flag = False
         while count < 3:
-            get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
+            get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_master_vip)
             display_msg(get_ref)
             
             for ref in json.loads(get_ref):
                 if 'group 1' in ref['name']:
                     data = {"comment":"Updated comment in test_053"}
-                    response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
+                    response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_master_vip)
                     display_msg(response)
                     if 'gmc promotion is in progress' in str(response):
                         display_msg("INFO: GMC Promotion process is still in progress")
