@@ -633,7 +633,7 @@ class RFE_4753(unittest.TestCase):
                 display_msg("Giving up after 5 tries")
                 assert False
             display_msg("Sleeping for 1 more minute...")
-            sleep(60)
+            sleep(120)
             count += 1
 
         display_msg("---------Test Case 13 Execution Completed----------")
@@ -864,7 +864,7 @@ class RFE_4753(unittest.TestCase):
         
         count = 0
         display_msg("Sleeping till Grid comes up")
-        sleep(60)
+        sleep(120)
         while not is_grid_alive():
             if count == 4:
                 display_msg("Giving up after 5 tries")
@@ -1158,7 +1158,7 @@ class RFE_4753(unittest.TestCase):
     @pytest.mark.run(order=29)
     def test_029_Update_scheduled_time_for_group_1(self):
         """
-        Update scheduled time for 'group 1' to 5 minutes in future.
+        Update scheduled time for 'group 1' to 6 minutes in future.
         """
         display_msg()
         display_msg("----------------------------------------------------")
@@ -1173,7 +1173,7 @@ class RFE_4753(unittest.TestCase):
         current_epoch_time = int(get_current_epoch_time(config.grid1_master_vip))
         
         #group 1
-        scheduled_time = current_epoch_time + (5*60)
+        scheduled_time = current_epoch_time + (6*60)
         display_msg("Current epoch time: "+str(current_epoch_time))
         display_msg("Scheduled time : "+str(scheduled_time))
         create_gmc_promotion_group('group 1',scheduled_time,members=[config.grid1_member2_fqdn],grid_master=config.grid1_master_vip)
@@ -1217,7 +1217,7 @@ class RFE_4753(unittest.TestCase):
         
         count = 0
         display_msg("Sleeping till Grid comes up")
-        sleep(60)
+        sleep(120)
         while not is_grid_alive(config.grid1_member1_vip):
             if count == 4:
                 display_msg("Giving up after 5 tries")
@@ -1472,13 +1472,75 @@ class RFE_4753(unittest.TestCase):
         display_msg("---------Test Case 40 Execution Completed----------")
 
     @pytest.mark.run(order=41)
-    def test_041_Add_offline_member(self):
+    def test_041_Validate_syslog_for_master_promotion_notice_3(self):
+        """
+        Validate syslog for below message when scheduled time is met for group 1.
+        All members of grid notified of master promotion.
+        """
+        display_msg()
+        display_msg("----------------------------------------------------")
+        display_msg("|          Test Case 41 Execution Started          |")
+        display_msg("----------------------------------------------------")
+        
+        display_msg("Start capturing syslog ...")
+        log("start","/var/log/messages",config.grid1_member1_vip)
+        
+        global scheduled_time
+        current_epoch_time = get_current_epoch_time(config.grid1_member1_vip)
+        sleep_time = int(scheduled_time) - int(current_epoch_time)
+        display_msg("Remaining scheduled time : "+str(sleep_time))
+        if sleep_time > 0:
+            display_msg("Sleeping "+str(sleep_time)+" seconds to meet the scheduled time")
+            sleep(sleep_time+120)
+            
+            display_msg("Stop capturing syslog ...")
+            log("stop","/var/log/messages",config.grid1_member1_vip)
+            
+            display_msg("Validate if the master promotion notice is sent to the group 1 members")
+            try:
+                logv("'Sent master promotion notice to grid member "+config.grid1_member2_fqdn+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'Acknowledgement is received from the pnode "+config.grid1_member2_vip+"'",'/var/log/messages',config.grid1_member1_vip)
+                logv("'All members of grid notified of master promotion'",'/var/log/messages',config.grid1_member1_vip)
+                display_msg("PASS: All the members of the grid notified of master promotion")
+            except Exception as E:
+                if 'returned non-zero exit status 1' in str(E):
+                    display_msg("FAIL: Above string is not found in the logs")
+                    assert False
+                display_msg(E)
+                assert False
+        else:
+            display_msg("Stop capturing syslog ...")
+            log("stop","/var/log/messages",config.grid1_member1_vip)
+            
+            display_msg("WARNING: Scheduled time has already passed")
+            try:
+                client = paramiko.SSHClient()
+                client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                client.connect(config.grid1_member1_vip, username='root', password = 'infoblox')
+                stdin, stdout, stderr = client.exec_command("cat /var/log/messages | grep 'All the members of the grid notified of master promotion'")
+                error = stderr.read()
+                output = stdout.read()
+            except Exception as E:
+                display_msg(E)
+                display_msg("FAIL: Debug the above exception")
+                assert False
+            finally:
+                client.close()
+            if error:
+                display_msg("Error: "+error)
+            display_msg("Output: "+output)
+            assert False
+        
+        display_msg("---------Test Case 41 Execution Completed----------")
+
+    @pytest.mark.run(order=42)
+    def test_042_Add_offline_member(self):
         """
         Add Offline member to the grid.
         """
         display_msg()
         display_msg("+--------------------------------------------------+")
-        display_msg("|          Test Case 41 Execution Started           |")
+        display_msg("|          Test Case 42 Execution Started           |")
         display_msg("+--------------------------------------------------+")
         
         display_msg("Add Offline member")
@@ -1494,10 +1556,10 @@ class RFE_4753(unittest.TestCase):
             assert False
         display_msg("PASS: Successfully added offline member")
         
-        display_msg("---------Test Case 41 Execution Completed----------")
+        display_msg("---------Test Case 42 Execution Completed----------")
 
-    @pytest.mark.run(order=42)
-    def test_042_Validate_offline_member(self):
+    @pytest.mark.run(order=43)
+    def test_043_Validate_offline_member(self):
         """
         Validate if offline member is added successfully.
         """
@@ -1513,16 +1575,16 @@ class RFE_4753(unittest.TestCase):
             display_msg("FAIL: Offline member not found")
             assert False
 
-        display_msg("---------Test Case 42 Execution Completed----------")
+        display_msg("---------Test Case 43 Execution Completed----------")
 
-    @pytest.mark.run(order=43)
-    def test_043_Delete_all_custom_GMC_groups(self):
+    @pytest.mark.run(order=44)
+    def test_044_Delete_all_custom_GMC_groups(self):
         """
         Delete all the custom GMC groups except Default group.
         """
         display_msg()
         display_msg("----------------------------------------------------")
-        display_msg("|          Test Case 43 Execution Started          |")
+        display_msg("|          Test Case 44 Execution Started          |")
         display_msg("----------------------------------------------------")
         
         display_msg("Deleting all the custom GMC groups")
@@ -1539,10 +1601,10 @@ class RFE_4753(unittest.TestCase):
                 assert False
         display_msg("PASS: All the custom groups are deleted")
         
-        display_msg("---------Test Case 43 Execution Completed----------")
+        display_msg("---------Test Case 44 Execution Completed----------")
 
-    @pytest.mark.run(order=44)
-    def test_044_Validate_all_GMC_groups_deleted(self):
+    @pytest.mark.run(order=45)
+    def test_045_Validate_all_GMC_groups_deleted(self):
         """
         Validate all the custom GMC groups are deleted.
         """
@@ -1560,10 +1622,10 @@ class RFE_4753(unittest.TestCase):
             assert False
         display_msg("PASS: All the custom groups are deleted")
         
-        display_msg("---------Test Case 44 Execution Completed----------")
+        display_msg("---------Test Case 45 Execution Completed----------")
 
-    @pytest.mark.run(order=45)
-    def test_045_Create_GMC_Group_group_1(self):
+    @pytest.mark.run(order=46)
+    def test_046_Create_GMC_Group_group_1(self):
         """
         Create GMC Group 'group 1'.
         Add offline member 'offline.member' to the group.
@@ -1571,7 +1633,7 @@ class RFE_4753(unittest.TestCase):
         """
         display_msg()
         display_msg("----------------------------------------------------")
-        display_msg("|          Test Case 45 Execution Started          |")
+        display_msg("|          Test Case 46 Execution Started          |")
         display_msg("----------------------------------------------------")
         
         global scheduled_time
@@ -1587,10 +1649,10 @@ class RFE_4753(unittest.TestCase):
         display_msg("Scheduled time : "+str(scheduled_time))
         create_gmc_promotion_group('group 1',scheduled_time,members=['offline.member'],grid_master=config.grid1_member1_vip)
         
-        display_msg("---------Test Case 45 Execution Completed----------")
+        display_msg("---------Test Case 46 Execution Completed----------")
 
-    @pytest.mark.run(order=46)
-    def test_046_Validate_created_GMC_Promotion_Group(self):
+    @pytest.mark.run(order=47)
+    def test_047_Validate_created_GMC_Promotion_Group(self):
         """
         Validate created GMC Promotion Groups 'group 1'.
         """        
@@ -1605,16 +1667,16 @@ class RFE_4753(unittest.TestCase):
             assert False
         display_msg("PASS: GMC Promotion Group 'group 1' found")
 
-        display_msg("---------Test Case 46 Execution Completed----------")
+        display_msg("---------Test Case 47 Execution Completed----------")
 
-    @pytest.mark.run(order=47)
-    def test_047_Activate_GMC_Group_Promotion_Schedule_2(self):
+    @pytest.mark.run(order=48)
+    def test_048_Activate_GMC_Group_Promotion_Schedule_2(self):
         """
         Enable Activate GMC Group Promotion Schedule.
         """
         display_msg()
         display_msg("+--------------------------------------------------+")
-        display_msg("|          Test Case 47 Execution Started           |")
+        display_msg("|          Test Case 48 Execution Started           |")
         display_msg("+--------------------------------------------------+")
         
         display_msg("Activate GMC Group Promotion Schedule")
@@ -1626,11 +1688,12 @@ class RFE_4753(unittest.TestCase):
             display_msg("FAIL: Activate GMC Group Promotion Schedule")
             assert False
         display_msg("PASS: Enabled Activate GMC Group Promotion Schedule")
+        sleep(30)
 
-        display_msg("---------Test Case 47 Execution Completed----------")
+        display_msg("---------Test Case 48 Execution Completed----------")
 
-    @pytest.mark.run(order=48)
-    def test_048_Validate_Activate_GMC_Group_Promotion_Schedule_2(self):
+    @pytest.mark.run(order=49)
+    def test_049_Validate_Activate_GMC_Group_Promotion_Schedule_2(self):
         """
         Validate if Activate GMC Group Promotion Schedule is enabled.
         """
@@ -1646,16 +1709,16 @@ class RFE_4753(unittest.TestCase):
             display_msg("FAIL: Activate GMC Group Promotion Schedule validation")
             assert False
         
-        display_msg("---------Test Case 48 Execution Completed----------")
+        display_msg("---------Test Case 49 Execution Completed----------")
 
-    @pytest.mark.run(order=49)
-    def test_049_Perform_Master_Promotion_4(self):
+    @pytest.mark.run(order=50)
+    def test_050_Perform_Master_Promotion_4(self):
         """
         Perform Master Promotion on GMC.
         """
         display_msg()
         display_msg("----------------------------------------------------")
-        display_msg("|          Test Case 49 Execution Started          |")
+        display_msg("|          Test Case 50 Execution Started          |")
         display_msg("----------------------------------------------------")
         
         display_msg("Perform GMC Promotion")
@@ -1686,7 +1749,7 @@ class RFE_4753(unittest.TestCase):
         
         count = 0
         display_msg("Sleeping till Grid comes up")
-        sleep(60)
+        sleep(120)
         while not is_grid_alive(config.grid1_master_vip):
             if count == 4:
                 display_msg("Giving up after 5 tries")
@@ -1695,10 +1758,10 @@ class RFE_4753(unittest.TestCase):
             sleep(60)
             count += 1
 
-        display_msg("---------Test Case 49 Execution Completed----------")
+        display_msg("---------Test Case 50 Execution Completed----------")
 
-    @pytest.mark.run(order=50)
-    def test_050_Validate_GMC_Promotion_4(self):
+    @pytest.mark.run(order=51)
+    def test_051_Validate_GMC_Promotion_4(self):
         """
         Validate GMC Promotion is complete on the new Master.
         """
@@ -1715,16 +1778,16 @@ class RFE_4753(unittest.TestCase):
             display_msg("FAIL: "+config.grid1_master_vip+" is not a master")
             assert False
 
-        display_msg("---------Test Case 50 Execution Completed----------")
+        display_msg("---------Test Case 51 Execution Completed----------")
 
-    @pytest.mark.run(order=51)
-    def test_051_Validate_Default_group_members_are_joined_4(self):
+    @pytest.mark.run(order=52)
+    def test_052_Validate_Default_group_members_are_joined_4(self):
         """
         Validate if the Deafult group's members are joined to new Master
         """
         display_msg()
         display_msg("----------------------------------------------------")
-        display_msg("|          Test Case 51 Execution Started          |")
+        display_msg("|          Test Case 52 Execution Started          |")
         display_msg("----------------------------------------------------")
         
         display_msg("Getting the Grid status")
@@ -1751,16 +1814,16 @@ class RFE_4753(unittest.TestCase):
             assert False
         display_msg("All the members from 'Default' group are joined to the new Master")
         
-        display_msg("---------Test Case 51 Execution Completed----------")
+        display_msg("---------Test Case 52 Execution Completed----------")
 
-    @pytest.mark.run(order=52)
-    def test_052_Validate_syslog_for_master_promotion_notice_4(self):
+    @pytest.mark.run(order=53)
+    def test_053_Validate_syslog_for_master_promotion_notice_4(self):
         """
         Validate syslog when scheduled time is met for offline member.
         """
         display_msg()
         display_msg("----------------------------------------------------")
-        display_msg("|          Test Case 52 Execution Started          |")
+        display_msg("|          Test Case 53 Execution Started          |")
         display_msg("----------------------------------------------------")
         
         display_msg("Start capturing syslog ...")
@@ -1773,9 +1836,6 @@ class RFE_4753(unittest.TestCase):
         if sleep_time > 0:
             display_msg("Sleeping "+str(sleep_time)+" seconds to meet the scheduled time")
             sleep(sleep_time+30)
-            
-            display_msg("Stop capturing syslog ...")
-            log("stop","/var/log/messages",config.grid1_master_vip)
             
         else:
             display_msg("WARNING: Scheduled time has already passed")
@@ -1807,3 +1867,40 @@ class RFE_4753(unittest.TestCase):
             assert False
         
         display_msg("---------Test Case 52 Execution Completed----------")
+
+    @pytest.mark.run(order=54)
+    def test_054_Validate_if_GMC_Promotion_ended_3(self):
+        """
+        Validate if GMC Promotion is ended (Positive).
+        """
+        display_msg()
+        display_msg("----------------------------------------------------")
+        display_msg("|          Test Case 54 Execution Started          |")
+        display_msg("----------------------------------------------------")
+        
+        display_msg("Validate GMC Promotion status")
+        count = 0
+        flag = False
+        while count < 3:
+            get_ref = ib_NIOS.wapi_request('GET',object_type="gmcgroup",grid_vip=config.grid1_member1_vip)
+            display_msg(get_ref)
+            
+            for ref in json.loads(get_ref):
+                if 'group 1' in ref['name']:
+                    data = {"comment":"Updated comment in test_053"}
+                    response = ib_NIOS.wapi_request("PUT",ref=ref['_ref'],fields=json.dumps(data),grid_vip=config.grid1_member1_vip)
+                    display_msg(response)
+                    if 'gmc promotion is in progress' in str(response):
+                        display_msg("INFO: GMC Promotion process is still in progress")
+                        display_msg("Sleeping for 60 seconds ...")
+                    else:
+                        display_msg("PASS: GMC Promotion process is completed")
+                        flag = True
+                        break
+            count += 1
+            sleep(60)
+        if not flag:
+            display_msg("FAIL: GMC Group Promotion Schedule wizard is still not released after 3 minutes")
+            assert False
+                    
+        display_msg("---------Test Case 54 Execution Completed----------")
